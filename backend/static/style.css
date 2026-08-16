@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: #eef3f8;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.hero {
+    width: 55%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #555;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+.features {
+    margin-top: 40px;
+}
+
+.features div {
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+.features span {
+    margin-left: 12px;
+}
+
+
+/* =========================
+   AUTH BOX
+========================= */
+
+.auth-box {
+    width: 45%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#login-section,
+#register-section {
+    width: 100%;
+    max-width: 420px;
+}
+
+.auth-box h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #444;
+}
+
+
+/* =========================
+   SWITCH
+========================= */
+
+.switch {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+}
+
+.switch button {
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+/* =========================
+   MESSAGES
+========================= */
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+    min-height: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .hero,
+    .auth-box {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}

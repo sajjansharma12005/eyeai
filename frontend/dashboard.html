@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EyeAI — Intelligent Eye Analysis</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ======================================================
+         BACKGROUND
+    ======================================================= -->
+
+    <div class="background-glow glow-one"></div>
+
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- ======================================================
+         DASHBOARD
+    ======================================================= -->
+
+    <div class="dashboard">
+
+
+        <!-- ==================================================
+             NAVBAR
+        =================================================== -->
+
+        <header class="dashboard-header">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    <span>◉</span>
+                </div>
+
+                <div class="brand-text">
+
+                    <h1>
+                        EyeAI
+                    </h1>
+
+                    <span>
+                        Intelligent Vision Analysis
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <div class="user-status">
+
+                    <span class="status-dot"></span>
+
+                    <span id="welcome-message">
+                        Welcome
+                    </span>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="logout-button"
+                    class="logout-button"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- ==================================================
+             MAIN
+        =================================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================================
+                 HERO
+            ================================================== -->
+
+            <section class="hero-section">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+
+                        <span class="eyebrow-dot"></span>
+
+                        AI-POWERED EYE ANALYSIS
+
+                    </div>
+
+
+                    <h2>
+
+                        See beyond
+
+                        <span>
+                            what the eye can see.
+                        </span>
+
+                    </h2>
+
+
+                    <p>
+
+                        Upload a retinal or OCT image and let
+                        our AI automatically identify the
+                        image type and analyze it using the
+                        appropriate trained model.
+
+                    </p>
+
+
+                    <div class="hero-features">
+
+                        <div>
+
+                            <span>
+                                ✦
+                            </span>
+
+                            Automatic detection
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                ✦
+                            </span>
+
+                            AI-powered analysis
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                ✦
+                            </span>
+
+                            Instant results
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="eye-orbit orbit-one"></div>
+
+                    <div class="eye-orbit orbit-two"></div>
+
+                    <div class="eye-core">
+
+                        <div class="eye-pupil"></div>
+
+                    </div>
+
+                    <div class="visual-label">
+                        AI VISION
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 DASHBOARD STATISTICS
+            ================================================== -->
+
+            <section
+                class="stats-grid"
+                id="dashboard-statistics"
+            >
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span class="stat-label">
+                            TOTAL SCANS
+                        </span>
+
+                        <span class="stat-icon">
+                            ◉
+                        </span>
+
+                    </div>
+
+                    <strong
+                        id="total-scans"
+                        class="stat-value"
+                    >
+                        0
+                    </strong>
+
+                    <span class="stat-description">
+                        All completed AI analyses
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span class="stat-label">
+                            THIS WEEK
+                        </span>
+
+                        <span class="stat-icon">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <strong
+                        id="weekly-scans"
+                        class="stat-value"
+                    >
+                        0
+                    </strong>
+
+                    <span class="stat-description">
+                        Analyses completed this week
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span class="stat-label">
+                            MOST DETECTED
+                        </span>
+
+                        <span class="stat-icon">
+                            ✦
+                        </span>
+
+                    </div>
+
+                    <strong
+                        id="most-detected"
+                        class="stat-value stat-value-text"
+                    >
+                        -
+                    </strong>
+
+                    <span class="stat-description">
+                        Most frequent prediction
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-top">
+
+                        <span class="stat-label">
+                            AVG CONFIDENCE
+                        </span>
+
+                        <span class="stat-icon">
+                            ✓
+                        </span>
+
+                    </div>
+
+                    <strong
+                        id="average-confidence"
+                        class="stat-value"
+                    >
+                        0%
+                    </strong>
+
+                    <span class="stat-description">
+                        Average model confidence
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 UPLOAD CARD
+            ================================================== -->
+
+            <section class="upload-card">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            STEP 01
+                        </span>
+
+
+                        <h2>
+                            Upload your image
+                        </h2>
+
+
+                        <p>
+
+                            Our system automatically detects
+                            whether your image is a Fundus
+                            or OCT scan.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="scan-badge">
+
+                        <span class="pulse-dot"></span>
+
+                        AI READY
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     UPLOAD AREA
+                ================================================== -->
+
+                <div
+                    class="upload-area"
+                    id="upload-area"
+                >
+
+                    <input
+                        type="file"
+                        id="image-input"
+                        accept="image/jpeg,image/jpg,image/png,image/webp"
+                        hidden
+                    >
+
+
+                    <!-- EMPTY STATE -->
+
+                    <div
+                        id="upload-empty"
+                        class="upload-empty"
+                    >
+
+                        <div class="upload-icon">
+
+                            <svg
+                                width="34"
+                                height="34"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+
+                                <path
+                                    d="M12 16V4"
+                                />
+
+                                <path
+                                    d="M7 9l5-5 5 5"
+                                />
+
+                                <path
+                                    d="M5 20h14"
+                                />
+
+                            </svg>
+
+                        </div>
+
+
+                        <h3>
+                            Drop your eye image here
+                        </h3>
+
+
+                        <p>
+                            or select an image from your device
+                        </p>
+
+
+                        <button
+                            type="button"
+                            id="browse-button"
+                            class="browse-button"
+                        >
+                            Browse Image
+                        </button>
+
+
+                        <span class="upload-formats">
+
+                            JPG · JPEG · PNG · WEBP
+
+                            <span>
+                                •
+                            </span>
+
+                            MAX 10 MB
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- IMAGE PREVIEW -->
+
+                    <div
+                        id="image-preview-container"
+                        class="image-preview-container"
+                    >
+
+                        <div class="preview-image-wrapper">
+
+                            <img
+                                id="image-preview"
+                                src=""
+                                alt="Selected eye image"
+                            >
+
+
+                            <div class="preview-overlay">
+
+                                <span>
+                                    IMAGE READY
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-details">
+
+                            <div>
+
+                                <span class="preview-label">
+                                    SELECTED IMAGE
+                                </span>
+
+
+                                <p
+                                    id="selected-image-name"
+                                >
+                                    -
+                                </p>
+
+                            </div>
+
+
+                            <button
+                                type="button"
+                                id="change-image-button"
+                                class="change-image-button"
+                            >
+                                Change
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     ANALYZE BUTTON
+                ================================================== -->
+
+                <div class="analyze-row">
+
+                    <div
+                        id="upload-message"
+                        class="upload-message"
+                    ></div>
+
+
+                    <button
+                        type="button"
+                        id="predict-button"
+                        class="analyze-button"
+                    >
+
+                        <span class="button-icon">
+                            ✦
+                        </span>
+
+
+                        <span class="button-text">
+                            Analyze Image
+                        </span>
+
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- ANALYZING STATE -->
+
+                <div
+                    id="analyzing-state"
+                    class="analyzing-state"
+                >
+
+                    <div class="loading-ring"></div>
+
+
+                    <div>
+
+                        <strong>
+                            Analyzing image...
+                        </strong>
+
+
+                        <span>
+
+                            Detecting scan type and
+                            running AI analysis
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =================================================
+                 RESULT SECTION
+            ================================================== -->
+
+            <section
+                id="result-section"
+                class="result-card hidden"
+            >
+
+
+                <div class="result-header">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            STEP 02
+                        </span>
+
+
+                        <h2>
+                            AI Analysis
+                        </h2>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         REPORT BUTTONS
+                    ================================================== -->
+
+                    <div class="result-header-actions">
+
+                        <button
+                            type="button"
+                            id="generate-report-button"
+                            class="report-button"
+                        >
+
+                            <span>
+                                ↓
+                            </span>
+
+                            Generate Report
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            id="print-report-button"
+                            class="report-button secondary-report-button"
+                        >
+
+                            <span>
+                                ⎙
+                            </span>
+
+                            Print
+
+                        </button>
+
+
+                        <div class="result-live">
+
+                            <span class="pulse-dot"></span>
+
+                            ANALYSIS COMPLETE
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     DETECTION INFO
+                ================================================== -->
+
+                <div class="detection-strip">
+
+
+                    <div class="detection-item">
+
+                        <span>
+                            IMAGE TYPE
+                        </span>
+
+
+                        <strong id="image-type">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detection-divider"></div>
+
+
+                    <div class="detection-item">
+
+                        <span>
+                            AI MODEL
+                        </span>
+
+
+                        <strong id="model-used">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="detection-divider"></div>
+
+
+                    <div class="detection-item">
+
+                        <span>
+                            DETECTION CONFIDENCE
+                        </span>
+
+
+                        <strong id="image-type-confidence">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     MAIN RESULT
+                ================================================== -->
+
+                <div class="result-main">
+
+
+                    <div class="prediction-block">
+
+                        <span class="result-label">
+                            PREDICTED CONDITION
+                        </span>
+
+
+                        <h3 id="prediction">
+                            -
+                        </h3>
+
+
+                        <p class="result-subtitle">
+                            AI-assisted classification result
+                        </p>
+
+                    </div>
+
+
+                    <!-- CONFIDENCE -->
+
+                    <div class="confidence-block">
+
+                        <span class="result-label">
+                            MODEL CONFIDENCE
+                        </span>
+
+
+                        <div class="confidence-value">
+
+                            <strong id="confidence">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="confidence-track">
+
+                            <div
+                                id="confidence-bar"
+                                class="confidence-bar"
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PROBABILITIES
+                ================================================== -->
+
+                <div class="probability-section">
+
+                    <div class="subsection-heading">
+
+                        <div>
+
+                            <span class="section-kicker">
+                                MODEL OUTPUT
+                            </span>
+
+
+                            <h3>
+                                Class probabilities
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="probabilities"
+                        class="probabilities"
+                    ></div>
+
+                </div>
+
+
+                <!-- =================================================
+                     DISEASE INFORMATION
+                ================================================== -->
+
+                <div
+                    id="disease-information"
+                    class="disease-information"
+                >
+
+                    <div class="disease-info-header">
+
+                        <div class="info-icon">
+                            ✦
+                        </div>
+
+
+                        <div>
+
+                            <span class="section-kicker">
+                                INSIGHT
+                            </span>
+
+
+                            <h3>
+                                Condition information
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="disease-info-grid">
+
+
+                        <div class="info-card">
+
+                            <span>
+                                FULL NAME
+                            </span>
+
+
+                            <strong id="disease-full-name">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="info-card">
+
+                            <span>
+                                RISK LEVEL
+                            </span>
+
+
+                            <strong id="disease-risk-level">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="info-card info-card-wide">
+
+                            <span>
+                                ABOUT
+                            </span>
+
+
+                            <p id="disease-description">
+                                -
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-card info-card-wide">
+
+                            <span>
+                                RECOMMENDATION
+                            </span>
+
+
+                            <p id="disease-recommendation">
+                                -
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="medical-disclaimer">
+
+                        <span>
+                            ⚠
+                        </span>
+
+
+                        <p>
+
+                            This AI result is intended for
+                            educational and research purposes
+                            only and should not be considered
+                            a medical diagnosis. Consult a
+                            qualified eye-care professional
+                            for medical advice.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- =================================================
+                 HISTORY
+            ================================================== -->
+
+            <section class="history-card">
+
+
+                <div class="history-header">
+
+                    <div>
+
+                        <span class="section-kicker">
+                            YOUR ACTIVITY
+                        </span>
+
+
+                        <h2>
+                            Prediction history
+                        </h2>
+
+
+                        <p>
+                            Your previous AI analyses
+                            appear here.
+                        </p>
+
+                    </div>
+
+
+                    <div class="history-count">
+
+                        <span id="history-count">
+                            0
+                        </span>
+
+                        SCANS
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="history"
+                    class="history"
+                >
+
+                    <div class="history-empty">
+
+                        <div class="history-empty-icon">
+                            ◌
+                        </div>
+
+
+                        <h3>
+                            No predictions yet
+                        </h3>
+
+
+                        <p>
+
+                            Your completed AI analyses
+                            will appear here.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+        <!-- ==================================================
+             FOOTER
+        =================================================== -->
+
+        <footer class="dashboard-footer">
+
+            <div>
+
+                <strong>
+                    EyeAI
+                </strong>
+
+                <span>
+                    Intelligent eye image analysis
+                </span>
+
+            </div>
+
+
+            <span>
+                AI-assisted • Research focused
+            </span>
+
+        </footer>
+
+
+    </div>
+
+
+    <!-- ======================================================
+         TOAST
+    ======================================================= -->
+
+    <div
+        id="toast"
+        class="toast"
+    >
+
+        <span id="toast-icon">
+            ✓
+        </span>
+
+
+        <span id="toast-message">
+            Done
+        </span>
+
+    </div>
+
+
+    <!-- ======================================================
+         JAVASCRIPT
+    ======================================================= -->
+
+    <script src="./script.js?v=999"></script>
+
+</body>
+
+</html>

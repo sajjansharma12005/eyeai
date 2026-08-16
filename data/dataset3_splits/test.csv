@@ -1,0 +1,727 @@
+image_path,label,class_name
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1122.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR142.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1106.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1129.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1010.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR973.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR725.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1422.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR661.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR724.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1037.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR252.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1116.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1412.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1455.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1220.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR461.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR594.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR437.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR317.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR885.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR203.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1369.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR841.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1389.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR409.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR759.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR612.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR893.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1302.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR653.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR505.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1234.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR123.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR621.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1125.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR536.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1156.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR95.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR900.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1442.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1104.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR144.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR196.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR299.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1204.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1033.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR540.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR226.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR744.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR10.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR618.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR634.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1296.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR318.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR877.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR979.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR921.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR851.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR818.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR18.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR793.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1194.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR576.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1327.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR563.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1484.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1003.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR466.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR129.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR430.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR170.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR998.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR966.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR821.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR925.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR63.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1209.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1019.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR660.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1461.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR615.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR492.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR739.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR332.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR339.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1115.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR74.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR988.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1293.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR798.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1280.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR120.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1085.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1166.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR55.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR58.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1253.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR910.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR297.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR365.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR716.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR419.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR718.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1483.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR633.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR98.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1453.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR993.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1487.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1261.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR475.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR825.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR359.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR560.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR849.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1390.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR209.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR686.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1388.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR112.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1492.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR369.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR210.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR987.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1420.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1100.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR227.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR902.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1402.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR667.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR909.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR82.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1496.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR329.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR481.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR13.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR995.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR624.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1313.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR810.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR763.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR113.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR835.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR90.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1490.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR876.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1385.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR284.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR311.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1299.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR301.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR811.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR465.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR965.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR96.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1184.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR983.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1145.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR162.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1418.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR86.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1082.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1126.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR939.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1352.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR704.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR296.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR780.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR8.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR17.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR658.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1143.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR327.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1228.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR629.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR476.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1078.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1486.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR753.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR263.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR291.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1177.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR33.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1169.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR992.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR25.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1395.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1285.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR970.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR256.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR408.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR927.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1292.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR101.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1510.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR726.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR457.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1404.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR402.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR990.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR933.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR838.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR960.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1365.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR675.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1047.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR75.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR571.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1427.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1400.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1170.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1053.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1057.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR407.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR729.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1159.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR645.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR888.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1187.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1255.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR141.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR145.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1505.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1044.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR1203.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Diabetic Retinopathy\DR819.jpg,0,Diabetic Retinopathy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma714.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1153.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma417.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1189.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma614.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1111.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1276.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma708.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma661.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma377.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1345.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma613.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1074.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma806.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma637.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma493.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma719.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1164.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma114.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma312.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma464.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1102.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1068.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma617.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma635.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma877.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1134.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma996.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma999.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1101.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma290.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma342.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma94.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma649.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1123.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma595.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1277.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma367.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma38.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma825.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma611.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma852.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma823.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma64.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma695.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1324.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1137.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1280.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1318.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma148.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma256.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1268.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1188.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma219.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1270.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma431.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma428.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma141.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma724.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma961.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma935.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma725.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1139.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1308.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma399.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma192.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma972.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma356.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma513.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1143.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma750.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma967.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma870.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma588.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma232.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1193.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma59.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1160.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma451.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma632.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1314.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma383.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1036.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma530.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma988.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma917.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma554.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma53.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma841.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma576.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma846.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma361.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1141.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma631.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1032.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma589.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1076.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma516.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1130.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma437.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma814.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma706.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma208.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma766.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma485.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1236.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1321.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma578.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma700.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma922.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1219.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma389.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma317.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma255.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1251.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma173.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma34.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma160.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1011.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma11.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma89.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma512.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma190.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1082.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma352.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma756.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma681.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma878.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma306.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1202.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma577.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma42.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1208.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma729.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma181.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma974.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma548.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma6.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma903.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma68.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma566.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma600.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma286.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1149.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma109.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma923.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma956.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1285.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1095.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1154.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma884.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma830.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma382.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma359.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma466.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1289.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma412.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma620.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma558.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma478.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma180.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma762.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1167.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1054.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma951.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma126.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1126.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma522.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma828.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1262.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1332.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1009.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma430.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma41.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma353.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma288.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1330.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1051.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma277.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma907.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1046.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma810.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma97.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma915.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma930.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma818.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma575.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma200.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma842.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma298.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma121.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma461.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma81.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma43.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1198.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma198.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma673.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma1283.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma176.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma72.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma85.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma119.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Glaucoma\Glaucoma432.jpg,1,Glaucoma
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy846.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy887.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy936.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy88.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy226.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy352.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy147.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy443.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy87.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy733.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy833.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy770.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy209.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy618.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy268.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy960.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy367.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy860.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy941.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy106.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy683.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy597.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy578.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy335.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy919.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy988.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy119.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy326.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy514.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy6.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy714.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy877.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy271.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy289.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy115.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy563.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy164.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy914.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy599.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy382.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy80.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy671.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy477.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy856.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy537.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy152.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy234.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy724.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy974.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy664.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy128.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy515.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy586.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy424.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy426.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy925.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy162.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy105.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy777.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy676.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy868.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy68.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy150.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy859.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy84.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy707.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy353.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy285.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy719.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy300.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy598.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy50.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy450.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy970.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy149.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy442.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy81.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy322.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy402.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy828.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy309.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy562.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy648.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy253.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy299.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy213.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy991.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy165.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy923.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy175.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy241.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy915.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy943.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy82.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy473.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy699.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy72.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy826.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy54.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy955.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy340.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy570.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy33.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy742.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy565.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy1013.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy1009.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy456.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy585.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy567.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy982.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy1012.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy526.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy685.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy521.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy918.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy645.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy938.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy691.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy665.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy646.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy131.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy420.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy497.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy542.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy278.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy1006.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy215.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy729.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy139.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy29.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy658.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy853.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy202.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy457.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy1003.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy781.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy120.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy693.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy830.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy948.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy145.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy858.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy850.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy107.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy56.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy130.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy96.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy669.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy990.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy577.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy897.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy921.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Healthy\Healthy415.jpg,2,Healthy
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia303.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia92.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia498.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia129.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia109.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia133.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia474.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia218.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia37.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia368.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia138.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia397.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia39.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia88.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia270.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia284.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia479.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia190.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia159.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia200.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia459.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia482.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia127.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia104.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia155.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia163.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia465.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia47.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia146.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia311.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia142.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia75.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia352.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia444.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia355.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia96.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia493.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia286.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia112.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia18.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia477.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia219.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia237.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia410.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia121.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia335.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia281.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia263.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia213.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia427.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia90.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia167.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia25.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia494.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia484.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia199.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia117.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia377.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia42.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia423.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia480.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia239.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia415.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia471.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia171.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia140.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia154.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia492.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia220.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia312.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia240.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia307.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia195.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia454.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Myopia\Myopia93.jpg,3,Myopia
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar362.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar48.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar7.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar277.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar77.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar23.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar140.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar416.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar444.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar218.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar174.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar258.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar260.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar353.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar37.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar317.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar180.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar304.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar373.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar324.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar270.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar21.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar112.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar412.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar156.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar392.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar282.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar331.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar312.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar269.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar225.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar190.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar423.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar265.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar121.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar309.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar113.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar213.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar125.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar191.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar188.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar179.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar111.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar361.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar340.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar59.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar161.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar285.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar332.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar426.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar242.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar129.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar172.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar64.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar336.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar124.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar78.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar271.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar337.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar49.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar322.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar440.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar287.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar79.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar197.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar302.jpg,4,Macular Scar
+E:\eye diesea pred\Dataset 3\Eye Disease Image Dataset\Original Dataset\Original Dataset\Macular Scar\Macular Scar186.jpg,4,Macular Scar

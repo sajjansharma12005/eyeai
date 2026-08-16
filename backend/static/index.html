@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Eye Disease AI</title>
+
+    <<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+        <div class="hero">
+
+            <div class="logo">
+                👁️
+            </div>
+
+            <h1>
+                Eye Disease AI
+            </h1>
+
+            <p>
+                AI-assisted eye image analysis
+                for educational and research purposes.
+            </p>
+
+            <div class="features">
+
+                <div>
+                    🔬
+                    <span>
+                        AI-powered analysis
+                    </span>
+                </div>
+
+                <div>
+                    📊
+                    <span>
+                        Prediction history
+                    </span>
+                </div>
+
+                <div>
+                    🔐
+                    <span>
+                        Secure user accounts
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="auth-box">
+
+            <!-- LOGIN -->
+            <div id="login-section">
+
+                <h2>
+                    Welcome Back
+                </h2>
+
+                <p class="subtitle">
+                    Login to continue
+                </p>
+
+                <form id="login-form">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+                <p id="login-message"
+                   class="message">
+                </p>
+
+                <p class="switch">
+                    Don't have an account?
+
+                    <button
+                        type="button"
+                        onclick="showRegister()">
+                        Register
+                    </button>
+                </p>
+
+            </div>
+
+
+            <!-- REGISTER -->
+            <div id="register-section"
+                 class="hidden">
+
+                <h2>
+                    Create Account
+                </h2>
+
+                <p class="subtitle">
+                    Create your Eye Disease AI account
+                </p>
+
+                <form id="register-form">
+
+                    <label>Name</label>
+
+                    <input
+                        type="text"
+                        id="register-name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="register-email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="register-password"
+                        placeholder="Create a password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Create Account
+                    </button>
+
+                </form>
+
+                <p id="register-message"
+                   class="message">
+                </p>
+
+                <p class="switch">
+                    Already have an account?
+
+                    <button
+                        type="button"
+                        onclick="showLogin()">
+                        Login
+                    </button>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+   <script src="/static/script.js"></script>
+
+</body>
+
+</html>

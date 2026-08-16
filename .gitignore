@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+
+# Database
+instance/*.db
+instance/*.sqlite
+instance/*.sqlite3
+
+# Uploaded images
+uploads/
+backend/uploads/
+prediction_images/
+backend/prediction_images/
+eyeai_uploads/
+backend/eyeai_uploads/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python tools
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Backend Flask instance
+backend/instance/
