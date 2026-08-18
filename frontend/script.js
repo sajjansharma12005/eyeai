@@ -3542,3 +3542,307 @@ async function loadHistory() {
     loadStatistics();
 
 }
+
+// ============================================================
+// USER PROFILE
+// ============================================================
+
+const profileButton =
+    document.getElementById("profile-button");
+
+const profilePopup =
+    document.getElementById("profile-popup");
+
+const profileAvatar =
+    document.getElementById("profile-avatar");
+
+const profileLargeAvatar =
+    document.getElementById(
+        "profile-large-avatar"
+    );
+
+const profileName =
+    document.getElementById("profile-name");
+
+const profileEmail =
+    document.getElementById("profile-email");
+
+const profilePopupName =
+    document.getElementById(
+        "profile-popup-name"
+    );
+
+const profilePopupEmail =
+    document.getElementById(
+        "profile-popup-email"
+    );
+
+const profileUserId =
+    document.getElementById(
+        "profile-user-id"
+    );
+
+const profileDetailEmail =
+    document.getElementById(
+        "profile-detail-email"
+    );
+
+const profileDetailName =
+    document.getElementById(
+        "profile-detail-name"
+    );
+
+const profileLogoutButton =
+    document.getElementById(
+        "profile-logout-button"
+    );
+
+
+// ============================================================
+// LOAD USER DETAILS
+// ============================================================
+
+function loadUserProfile() {
+
+    let currentUser = null;
+
+    try {
+
+        currentUser = JSON.parse(
+            localStorage.getItem("user")
+        );
+
+    } catch (error) {
+
+        console.error(
+            "PROFILE USER ERROR:",
+            error
+        );
+
+        return;
+    }
+
+
+    if (!currentUser) {
+        return;
+    }
+
+
+    const name =
+        currentUser.name ||
+        "User";
+
+    const email =
+        currentUser.email ||
+        "Email not available";
+
+    const id =
+        currentUser.id ||
+        currentUser.user_id ||
+        "Not available";
+
+
+    // --------------------------------------------------------
+    // Initial
+    // --------------------------------------------------------
+
+    const initial =
+        name
+            .trim()
+            .charAt(0)
+            .toUpperCase();
+
+
+    // --------------------------------------------------------
+    // Header
+    // --------------------------------------------------------
+
+    if (profileAvatar) {
+
+        profileAvatar.textContent =
+            initial;
+
+    }
+
+
+    if (profileName) {
+
+        profileName.textContent =
+            name;
+
+    }
+
+
+    if (profileEmail) {
+
+        profileEmail.textContent =
+            email;
+
+    }
+
+
+    // --------------------------------------------------------
+    // Popup
+    // --------------------------------------------------------
+
+    if (profileLargeAvatar) {
+
+        profileLargeAvatar.textContent =
+            initial;
+
+    }
+
+
+    if (profilePopupName) {
+
+        profilePopupName.textContent =
+            name;
+
+    }
+
+
+    if (profilePopupEmail) {
+
+        profilePopupEmail.textContent =
+            email;
+
+    }
+
+
+    if (profileUserId) {
+
+        profileUserId.textContent =
+            "#" + id;
+
+    }
+
+
+    if (profileDetailEmail) {
+
+        profileDetailEmail.textContent =
+            email;
+
+    }
+
+
+    if (profileDetailName) {
+
+        profileDetailName.textContent =
+            name;
+
+    }
+
+}
+
+
+loadUserProfile();
+
+
+// ============================================================
+// OPEN / CLOSE PROFILE
+// ============================================================
+
+if (profileButton) {
+
+    profileButton.addEventListener(
+        "click",
+        function (event) {
+
+            event.stopPropagation();
+
+            if (!profilePopup) {
+                return;
+            }
+
+            profilePopup.classList.toggle(
+                "hidden"
+            );
+
+            profilePopup.classList.toggle(
+                "profile-popup-open"
+            );
+
+        }
+    );
+
+}
+
+
+// ============================================================
+// CLOSE WHEN CLICKING OUTSIDE
+// ============================================================
+
+document.addEventListener(
+    "click",
+    function (event) {
+
+        if (
+            profilePopup &&
+            profileButton &&
+            !profilePopup.contains(event.target) &&
+            !profileButton.contains(event.target)
+        ) {
+
+            profilePopup.classList.add(
+                "hidden"
+            );
+
+            profilePopup.classList.remove(
+                "profile-popup-open"
+            );
+
+        }
+
+    }
+);
+
+
+// ============================================================
+// PROFILE LOGOUT
+// ============================================================
+
+if (profileLogoutButton) {
+
+    profileLogoutButton.addEventListener(
+        "click",
+        async function () {
+
+            try {
+
+                await fetch(
+                    `${API_URL}/logout`,
+                    {
+                        method: "POST"
+                    }
+                );
+
+            } catch (error) {
+
+                console.log(
+                    "Logout request failed:",
+                    error
+                );
+
+            }
+
+
+            localStorage.removeItem(
+                "user"
+            );
+
+            localStorage.removeItem(
+                "eyeDiseaseAnalysis"
+            );
+
+            localStorage.removeItem(
+                "eyeDiseaseSelectedImage"
+            );
+
+
+            window.location.href =
+                "index.html";
+
+        }
+    );
+
+}

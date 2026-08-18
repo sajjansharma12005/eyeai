@@ -2,189 +2,728 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Eye Disease AI</title>
+    <title>EyeAI — Intelligent Eye Analysis</title>
 
-    <link rel="stylesheet"
-          href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
 </head>
 
-<body>
 
-    <div class="container">
+<body class="auth-page">
 
-        <!-- LEFT SIDE -->
-        <div class="hero">
+    <!-- =========================================================
+         BACKGROUND
+    ========================================================== -->
 
-            <div class="logo">
-                👁️
-            </div>
+    <div class="auth-background">
 
-            <h1>
-                Eye Disease AI
-            </h1>
+        <div class="auth-glow auth-glow-one"></div>
 
-            <p>
-                AI-assisted eye image analysis
-                for educational and research purposes.
-            </p>
+        <div class="auth-glow auth-glow-two"></div>
 
-            <div class="features">
-
-                <div>
-                    🔬
-                    <span>
-                        AI-powered analysis
-                    </span>
-                </div>
-
-                <div>
-                    📊
-                    <span>
-                        Prediction history
-                    </span>
-                </div>
-
-                <div>
-                    🔐
-                    <span>
-                        Secure user accounts
-                    </span>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- RIGHT SIDE -->
-        <div class="auth-box">
-
-            <!-- LOGIN -->
-            <div id="login-section">
-
-                <h2>
-                    Welcome Back
-                </h2>
-
-                <p class="subtitle">
-                    Login to continue
-                </p>
-
-                <form id="login-form">
-
-                    <label>Email</label>
-
-                    <input
-                        type="email"
-                        id="login-email"
-                        placeholder="Enter your email"
-                        required
-                    >
-
-                    <label>Password</label>
-
-                    <input
-                        type="password"
-                        id="login-password"
-                        placeholder="Enter your password"
-                        required
-                    >
-
-                    <button type="submit">
-                        Login
-                    </button>
-
-                </form>
-
-                <p id="login-message"
-                   class="message">
-                </p>
-
-                <p class="switch">
-                    Don't have an account?
-
-                    <button
-                        type="button"
-                        onclick="showRegister()">
-                        Register
-                    </button>
-                </p>
-
-            </div>
-
-
-            <!-- REGISTER -->
-            <div id="register-section"
-                 class="hidden">
-
-                <h2>
-                    Create Account
-                </h2>
-
-                <p class="subtitle">
-                    Create your Eye Disease AI account
-                </p>
-
-                <form id="register-form">
-
-                    <label>Name</label>
-
-                    <input
-                        type="text"
-                        id="register-name"
-                        placeholder="Enter your name"
-                        required
-                    >
-
-                    <label>Email</label>
-
-                    <input
-                        type="email"
-                        id="register-email"
-                        placeholder="Enter your email"
-                        required
-                    >
-
-                    <label>Password</label>
-
-                    <input
-                        type="password"
-                        id="register-password"
-                        placeholder="Create a password"
-                        required
-                    >
-
-                    <button type="submit">
-                        Create Account
-                    </button>
-
-                </form>
-
-                <p id="register-message"
-                   class="message">
-                </p>
-
-                <p class="switch">
-                    Already have an account?
-
-                    <button
-                        type="button"
-                        onclick="showLogin()">
-                        Login
-                    </button>
-                </p>
-
-            </div>
-
-        </div>
+        <div class="grid-overlay"></div>
 
     </div>
 
+
+    <!-- =========================================================
+         MAIN
+    ========================================================== -->
+
+    <main class="auth-container">
+
+
+        <!-- =====================================================
+             LEFT BRAND / HERO
+        ====================================================== -->
+
+        <section class="auth-hero">
+
+
+            <!-- BRAND -->
+
+            <div class="auth-brand">
+
+                <div class="auth-brand-icon">
+
+                    <span>◉</span>
+
+                </div>
+
+                <div>
+
+                    <h1>EyeAI</h1>
+
+                    <span>
+                        Intelligent Vision Analysis
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- BADGE -->
+
+            <div class="auth-badge">
+
+                <span class="auth-badge-dot"></span>
+
+                AI-POWERED EYE ANALYSIS
+
+            </div>
+
+
+            <!-- HERO TEXT -->
+
+            <div class="auth-hero-content">
+
+                <h2>
+
+                    See beyond
+
+                    <span>
+                        what the eye can see.
+                    </span>
+
+                </h2>
+
+
+                <p>
+
+                    Upload Fundus or OCT eye images
+                    and let EyeAI analyze them using
+                    trained artificial intelligence models.
+
+                </p>
+
+            </div>
+
+
+            <!-- FEATURES -->
+
+            <div class="auth-feature-list">
+
+
+                <div class="auth-feature">
+
+                    <div class="auth-feature-icon">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Intelligent Analysis
+                        </strong>
+
+                        <span>
+                            AI-assisted eye image classification
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="auth-feature">
+
+                    <div class="auth-feature-icon">
+                        ◉
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Fundus & OCT
+                        </strong>
+
+                        <span>
+                            Automatic image-type detection
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="auth-feature">
+
+                    <div class="auth-feature-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Prediction History
+                        </strong>
+
+                        <span>
+                            Keep your previous analyses organized
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- DISCLAIMER -->
+
+            <div class="auth-disclaimer">
+
+                <span>ⓘ</span>
+
+                <p>
+                    Designed for educational and research
+                    purposes. AI predictions should not be
+                    considered a medical diagnosis.
+                </p>
+
+            </div>
+
+
+            <!-- DECORATIVE EYE -->
+
+            <div class="auth-eye">
+
+                <div class="auth-eye-ring ring-1"></div>
+
+                <div class="auth-eye-ring ring-2"></div>
+
+                <div class="auth-eye-core">
+
+                    <div class="auth-eye-pupil"></div>
+
+                </div>
+
+                <span class="auth-eye-label">
+                    EYEAI
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             AUTH CARD
+        ====================================================== -->
+
+        <section class="auth-card">
+
+
+            <!-- TOP -->
+
+            <div class="auth-card-top">
+
+                <div class="auth-security">
+
+                    <span class="security-dot"></span>
+
+                    Secure Access
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOGIN
+            ================================================== -->
+
+            <div
+                id="login-section"
+                class="auth-section"
+            >
+
+                <div class="auth-heading">
+
+                    <span class="auth-step">
+                        WELCOME BACK
+                    </span>
+
+                    <h2>
+                        Sign in to EyeAI
+                    </h2>
+
+                    <p>
+                        Continue your intelligent eye analysis.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="login-form"
+                    class="auth-form"
+                >
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-field">
+
+                        <label for="login-email">
+                            Email address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+
+                                    <rect
+                                        x="3"
+                                        y="5"
+                                        width="18"
+                                        height="14"
+                                        rx="2"
+                                    />
+
+                                    <path
+                                        d="m3 7 9 6 9-6"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+
+                            <input
+                                type="email"
+                                id="login-email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-field">
+
+                        <div class="label-row">
+
+                            <label for="login-password">
+                                Password
+                            </label>
+
+                        </div>
+
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+
+                                    <rect
+                                        x="4"
+                                        y="10"
+                                        width="16"
+                                        height="10"
+                                        rx="2"
+                                    />
+
+                                    <path
+                                        d="M8 10V7a4 4 0 0 1 8 0v3"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+
+                            <input
+                                type="password"
+                                id="login-password"
+                                placeholder="Enter your password"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LOGIN BUTTON -->
+
+                    <button
+                        type="submit"
+                        id="login-button"
+                        class="auth-submit"
+                    >
+
+                        <span>
+                            Login to EyeAI
+                        </span>
+
+                        <span class="submit-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- MESSAGE -->
+
+                    <p
+                        id="login-message"
+                        class="auth-message"
+                    ></p>
+
+
+                </form>
+
+
+                <!-- SWITCH -->
+
+                <div class="auth-switch">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <button
+                        type="button"
+                        id="show-register-button"
+                    >
+                        Create one
+                    </button>
+
+                </div>
+
+
+                <!-- BOTTOM SECURITY -->
+
+                <div class="auth-footer">
+
+                    <span>🔒</span>
+
+                    Your account information is securely handled.
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 REGISTER
+            ================================================== -->
+
+            <div
+                id="register-section"
+                class="auth-section hidden"
+            >
+
+                <div class="auth-heading">
+
+                    <span class="auth-step">
+                        GET STARTED
+                    </span>
+
+                    <h2>
+                        Create your account
+                    </h2>
+
+                    <p>
+                        Start using EyeAI for intelligent
+                        eye-image analysis.
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="register-form"
+                    class="auth-form"
+                >
+
+
+                    <!-- NAME -->
+
+                    <div class="form-field">
+
+                        <label for="register-name">
+                            Full name
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+
+                                    <circle
+                                        cx="12"
+                                        cy="8"
+                                        r="4"
+                                    />
+
+                                    <path
+                                        d="M4 21a8 8 0 0 1 16 0"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+
+                            <input
+                                type="text"
+                                id="register-name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-field">
+
+                        <label for="register-email">
+                            Email address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+
+                                    <rect
+                                        x="3"
+                                        y="5"
+                                        width="18"
+                                        height="14"
+                                        rx="2"
+                                    />
+
+                                    <path
+                                        d="m3 7 9 6 9-6"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+
+                            <input
+                                type="email"
+                                id="register-email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-field">
+
+                        <label for="register-password">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.7"
+                                >
+
+                                    <rect
+                                        x="4"
+                                        y="10"
+                                        width="16"
+                                        height="10"
+                                        rx="2"
+                                    />
+
+                                    <path
+                                        d="M8 10V7a4 4 0 0 1 8 0v3"
+                                    />
+
+                                </svg>
+
+                            </span>
+
+
+                            <input
+                                type="password"
+                                id="register-password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                minlength="6"
+                                required
+                            >
+
+                        </div>
+
+
+                        <span class="field-hint">
+                            Use at least 6 characters.
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- REGISTER BUTTON -->
+
+                    <button
+                        type="submit"
+                        id="register-button"
+                        class="auth-submit"
+                    >
+
+                        <span>
+                            Create EyeAI Account
+                        </span>
+
+                        <span class="submit-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- MESSAGE -->
+
+                    <p
+                        id="register-message"
+                        class="auth-message"
+                    ></p>
+
+
+                </form>
+
+
+                <!-- SWITCH -->
+
+                <div class="auth-switch">
+
+                    <span>
+                        Already have an account?
+                    </span>
+
+                    <button
+                        type="button"
+                        id="show-login-button"
+                    >
+                        Sign in
+                    </button>
+
+                </div>
+
+
+                <div class="auth-footer">
+
+                    <span>🔒</span>
+
+                    Secure account access for your AI analyses.
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================================
+         SCRIPT
+    ========================================================== -->
 
     <script src="script.js"></script>
 

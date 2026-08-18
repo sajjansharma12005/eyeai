@@ -92,17 +92,138 @@
                     </span>
 
                 </div>
+                <!-- USER PROFILE BUTTON -->
+<button
+    type="button"
+    id="profile-button"
+    class="profile-button"
+    aria-label="Open user profile"
+>
+    <span class="profile-avatar" id="profile-avatar">
+        U
+    </span>
+
+    <span class="profile-button-info">
+        <strong id="profile-name">
+            User
+        </strong>
+
+        <small id="profile-email">
+            user@example.com
+        </small>
+    </span>
+
+    <span class="profile-chevron">
+        ▾
+    </span>
+</button>
 
 
-                <button
-                    type="button"
-                    id="logout-button"
-                    class="logout-button"
-                >
-                    Logout
-                </button>
+<!-- USER PROFILE POPUP -->
+<div
+    id="profile-popup"
+    class="profile-popup hidden"
+>
 
-            </div>
+    <div class="profile-popup-header">
+
+        <div
+            class="profile-large-avatar"
+            id="profile-large-avatar"
+        >
+            U
+        </div>
+
+        <div>
+
+            <h3 id="profile-popup-name">
+                User
+            </h3>
+
+            <span id="profile-popup-email">
+                user@example.com
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="profile-divider"></div>
+
+
+    <div class="profile-detail">
+
+        <span class="profile-detail-icon">
+            🆔
+        </span>
+
+        <div>
+
+            <small>
+                USER ID
+            </small>
+
+            <strong id="profile-user-id">
+                —
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="profile-detail">
+
+        <span class="profile-detail-icon">
+            ✉
+        </span>
+
+        <div>
+
+            <small>
+                EMAIL
+            </small>
+
+            <strong id="profile-detail-email">
+                —
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="profile-detail">
+
+        <span class="profile-detail-icon">
+            👤
+        </span>
+
+        <div>
+
+            <small>
+                ACCOUNT NAME
+            </small>
+
+            <strong id="profile-detail-name">
+                —
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        id="profile-logout-button"
+        class="profile-logout-button"
+    >
+        Logout
+    </button>
+
+
 
         </header>
 

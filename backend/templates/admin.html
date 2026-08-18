@@ -1,192 +1,3199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Eye Disease AI - Admin Dashboard</title>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EyeAI Admin Dashboard</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
+
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 30px;
+            padding: 0;
         }
 
-        h1 {
-            margin-bottom: 25px;
+
+        body {
+
+            min-height: 100vh;
+
+            background:
+                radial-gradient(
+                    circle at 10% 0%,
+                    rgba(53, 220, 255, 0.07),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(76, 125, 255, 0.06),
+                    transparent 28%
+                ),
+                #05080d;
+
+            color: #e8eef5;
+
+            font-family:
+                "Inter",
+                sans-serif;
         }
 
-        .stats {
+
+        /* =====================================================
+           HEADER
+           ===================================================== */
+
+        .admin-header {
+
+            height: 76px;
+
             display: flex;
-            gap: 20px;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            padding:
+                0 clamp(20px, 5vw, 70px);
+
+            border-bottom:
+                1px solid rgba(255,255,255,0.07);
+
+            background:
+                rgba(5,8,13,0.86);
+
+            backdrop-filter: blur(20px);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+        }
+
+
+        .brand {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+        }
+
+
+        .brand-icon {
+
+            width: 42px;
+
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 13px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #2bd7ef,
+                    #527dff
+                );
+
+            color: #031018;
+
+            font-size: 20px;
+
+            box-shadow:
+                0 0 28px rgba(53,220,255,0.12);
+        }
+
+
+        .brand-text h1 {
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 18px;
+
+            letter-spacing: -0.5px;
+        }
+
+
+        .brand-text span {
+
+            display: block;
+
+            margin-top: 2px;
+
+            color: #647387;
+
+            font-size: 9px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+        }
+
+
+        .header-right {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 14px;
+        }
+
+
+        .admin-badge {
+
+            padding:
+                8px 13px;
+
+            border:
+                1px solid rgba(53,220,255,0.14);
+
+            border-radius: 100px;
+
+            background:
+                rgba(53,220,255,0.035);
+
+            color: #6de7fa;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        .logout-btn {
+
+            padding:
+                9px 14px;
+
+            border:
+                1px solid rgba(255,255,255,0.07);
+
+            border-radius: 10px;
+
+            background:
+                rgba(255,255,255,0.025);
+
+            color: #9ba9b9;
+
+            text-decoration: none;
+
+            font-size: 10px;
+
+            font-weight: 600;
+
+            transition: .2s ease;
+        }
+
+
+        .logout-btn:hover {
+
+            border-color:
+                rgba(255,107,122,0.25);
+
+            background:
+                rgba(255,107,122,0.05);
+
+            color: #ff8792;
+        }
+
+
+        /* =====================================================
+           MAIN
+           ===================================================== */
+
+        .container {
+
+            width:
+                min(1400px, 92%);
+
+            margin:
+                0 auto;
+
+            padding:
+                50px 0 70px;
+        }
+
+
+        .page-heading {
+
             margin-bottom: 30px;
         }
 
-        .card {
-            background: white;
-            padding: 25px;
+
+        .page-heading .eyebrow {
+
+            color: #35dcff;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 9px;
+        }
+
+
+        .page-heading h2 {
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(34px, 4vw, 50px);
+
+            letter-spacing:
+                -2px;
+        }
+
+
+        .page-heading p {
+
+            margin-top: 10px;
+
+            color: #718094;
+
+            font-size: 13px;
+
+            max-width: 650px;
+        }
+
+
+        /* =====================================================
+           STATISTICS
+           ===================================================== */
+
+        .stats-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 15px;
+
+            margin-bottom: 28px;
+        }
+
+
+        .stat-card {
+
+            padding: 22px;
+
+            border:
+                1px solid rgba(255,255,255,0.07);
+
+            border-radius: 18px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(16,25,38,0.92),
+                    rgba(7,12,19,0.92)
+                );
+
+            box-shadow:
+                0 20px 60px rgba(0,0,0,0.16);
+        }
+
+
+        .stat-top {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            margin-bottom: 18px;
+        }
+
+
+        .stat-label {
+
+            color: #718094;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+        }
+
+
+        .stat-icon {
+
+            width: 34px;
+
+            height: 34px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
             border-radius: 10px;
-            width: 220px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+            background:
+                rgba(53,220,255,0.05);
+
+            border:
+                1px solid rgba(53,220,255,0.08);
         }
 
-        .card h2 {
-            margin: 0;
-            font-size: 30px;
+
+        .stat-value {
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 32px;
+
+            font-weight: 700;
+
+            color: #f1f6fa;
         }
 
-        .card p {
-            color: #666;
+
+        .stat-description {
+
+            margin-top: 5px;
+
+            color: #58687b;
+
+            font-size: 9px;
         }
+
+
+        /* =====================================================
+           SECTION
+           ===================================================== */
 
         .section {
-            background: white;
+
+            margin-top: 25px;
+
+            border:
+                1px solid rgba(255,255,255,0.07);
+
+            border-radius: 22px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(16,25,38,0.91),
+                    rgba(7,12,19,0.91)
+                );
+
+            overflow: hidden;
+        }
+
+
+        .section-header {
+
+            min-height: 72px;
+
+            padding:
+                18px 23px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            border-bottom:
+                1px solid rgba(255,255,255,0.055);
+        }
+
+
+        .section-title h3 {
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 19px;
+        }
+
+
+        .section-title p {
+
+            margin-top: 4px;
+
+            color: #667589;
+
+            font-size: 9px;
+        }
+
+
+        .record-count {
+
+            padding:
+                7px 11px;
+
+            border-radius: 9px;
+
+            background:
+                rgba(53,220,255,0.04);
+
+            border:
+                1px solid rgba(53,220,255,0.08);
+
+            color: #62dff2;
+
+            font-size: 9px;
+
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           USERS
+           ===================================================== */
+
+        .users-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 14px;
+
             padding: 20px;
+        }
+
+
+        .user-card {
+
+            padding: 18px;
+
+            border:
+                1px solid rgba(255,255,255,0.055);
+
+            border-radius: 15px;
+
+            background:
+                rgba(255,255,255,0.015);
+
+            transition: .2s ease;
+        }
+
+
+        .user-card:hover {
+
+            transform:
+                translateY(-2px);
+
+            border-color:
+                rgba(53,220,255,0.14);
+
+            background:
+                rgba(53,220,255,0.025);
+        }
+
+
+        .user-header {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            margin-bottom: 16px;
+        }
+
+
+        .user-avatar {
+
+            width: 42px;
+
+            height: 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            flex-shrink: 0;
+
+            border-radius: 13px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #2bd7ef,
+                    #527dff
+                );
+
+            color: #031018;
+
+            font-size: 14px;
+
+            font-weight: 800;
+        }
+
+
+        .user-name {
+
+            color: #e8eef5;
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+
+        .user-email {
+
+            margin-top: 3px;
+
+            color: #617085;
+
+            font-size: 9px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+        }
+
+
+        .user-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 8px;
+        }
+
+
+        .user-stat {
+
+            padding: 11px;
+
             border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+            background:
+                rgba(255,255,255,0.018);
         }
 
-        table {
+
+        .user-stat small {
+
+            display: block;
+
+            color: #536276;
+
+            font-size: 7px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+
+        .user-stat strong {
+
+            display: block;
+
+            margin-top: 4px;
+
+            color: #b8c5d2;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           PREDICTIONS
+           ===================================================== */
+
+        .predictions-wrapper {
+
+            padding: 20px;
+
+            overflow-x: auto;
+        }
+
+
+        .prediction-table {
+
             width: 100%;
+
             border-collapse: collapse;
+
+            min-width: 950px;
         }
 
-        th, td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
+
+        .prediction-table th {
+
+            padding:
+                12px 13px;
+
             text-align: left;
+
+            color: #536276;
+
+            font-size: 8px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            border-bottom:
+                1px solid rgba(255,255,255,0.06);
         }
 
-        th {
-            background: #f0f0f0;
+
+        .prediction-table td {
+
+            padding:
+                13px;
+
+            border-bottom:
+                1px solid rgba(255,255,255,0.035);
+
+            color: #9eacbb;
+
+            font-size: 10px;
+
+            vertical-align: middle;
         }
+
+
+        .prediction-table tr:last-child td {
+            border-bottom: none;
+        }
+
+
+        .prediction-table tr:hover td {
+
+            background:
+                rgba(53,220,255,0.018);
+        }
+
+
+        /* =====================================================
+           SCAN IMAGE
+           ===================================================== */
+
+        .scan-cell {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+        }
+
+
+        .scan-image {
+
+            width: 58px;
+
+            height: 48px;
+
+            object-fit: cover;
+
+            border-radius: 9px;
+
+            border:
+                1px solid rgba(255,255,255,0.08);
+
+            background: #020509;
+
+            cursor: pointer;
+
+            transition: .2s ease;
+        }
+
+
+        .scan-image:hover {
+
+            transform: scale(1.08);
+
+            border-color:
+                rgba(53,220,255,0.35);
+        }
+
+
+        .filename {
+
+            max-width: 130px;
+
+            overflow: hidden;
+
+            text-overflow: ellipsis;
+
+            white-space: nowrap;
+
+            color: #8190a2;
+
+            font-size: 9px;
+        }
+
+
+        /* =====================================================
+           BADGES
+           ===================================================== */
+
+        .badge {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            padding:
+                5px 8px;
+
+            border-radius: 7px;
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            background:
+                rgba(255,255,255,0.035);
+
+            border:
+                1px solid rgba(255,255,255,0.06);
+        }
+
+
+        .badge-blue {
+
+            color: #6ce6fa;
+
+            background:
+                rgba(53,220,255,0.04);
+
+            border-color:
+                rgba(53,220,255,0.09);
+        }
+
+
+        .badge-green {
+
+            color: #6ee7b7;
+
+            background:
+                rgba(52,211,153,0.04);
+
+            border-color:
+                rgba(52,211,153,0.09);
+        }
+
+
+        .badge-purple {
+
+            color: #b9a6ff;
+
+            background:
+                rgba(139,92,246,0.05);
+
+            border-color:
+                rgba(139,92,246,0.10);
+        }
+
 
         .confidence {
-            font-weight: bold;
+
+            color: #d8e3ed;
+
+            font-weight: 700;
         }
+
+
+        .date {
+
+            color: #657487;
+
+            white-space: nowrap;
+        }
+
+
+        /* =====================================================
+           EMPTY STATE
+           ===================================================== */
+
+        .empty {
+
+            padding: 50px 20px;
+
+            text-align: center;
+
+            color: #59687a;
+
+            font-size: 11px;
+        }
+
+
+        .empty-icon {
+
+            font-size: 28px;
+
+            margin-bottom: 10px;
+
+            opacity: .5;
+        }
+
+
+        /* =====================================================
+           IMAGE MODAL
+           ===================================================== */
+
+        .image-modal {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 9999;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 30px;
+
+            background:
+                rgba(0,0,0,0.86);
+
+            backdrop-filter:
+                blur(12px);
+        }
+
+
+        .image-modal.active {
+            display: flex;
+        }
+
+
+        .modal-content {
+
+            position: relative;
+
+            max-width: 90vw;
+
+            max-height: 90vh;
+        }
+
+
+        .modal-content img {
+
+            display: block;
+
+            max-width: 90vw;
+
+            max-height: 85vh;
+
+            border-radius: 14px;
+
+            border:
+                1px solid rgba(255,255,255,0.12);
+
+            box-shadow:
+                0 30px 100px rgba(0,0,0,.6);
+        }
+
+
+        .modal-close {
+
+            position: absolute;
+
+            right: -12px;
+
+            top: -12px;
+
+            width: 34px;
+
+            height: 34px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #16202c;
+
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 18px;
+        }
+
+
+        /* =====================================================
+           FOOTER
+           ===================================================== */
+
+        .footer {
+
+            margin-top: 35px;
+
+            text-align: center;
+
+            color: #445264;
+
+            font-size: 8px;
+
+            letter-spacing: .5px;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+           ===================================================== */
+
+        @media (max-width: 1050px) {
+
+            .stats-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .users-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .admin-header {
+                padding:
+                    0 18px;
+            }
+
+            .brand-text span {
+                display: none;
+            }
+
+            .admin-badge {
+                display: none;
+            }
+
+            .container {
+                width: 94%;
+                padding-top: 35px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .users-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-heading h2 {
+                font-size: 36px;
+            }
+
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
-   <div style="
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-">
 
-    <h1>👁️ Eye Disease AI - Admin Dashboard</h1>
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
-    <a href="/admin/logout"
-       style="
-           background: #333;
-           color: white;
-           padding: 10px 18px;
-           text-decoration: none;
-           border-radius: 6px;
-       ">
-        Logout
-    </a>
+<header class="admin-header">
 
-</div>
+    <div class="brand">
 
-    <div class="stats">
-
-        <div class="card">
-            <h2>{{ users|length }}</h2>
-            <p>Total Users</p>
+        <div class="brand-icon">
+            👁
         </div>
 
-        <div class="card">
-            <h2>{{ predictions|length }}</h2>
-            <p>Total Predictions</p>
+        <div class="brand-text">
+
+            <h1>
+                EyeAI
+            </h1>
+
+            <span>
+                Administration
+            </span>
+
         </div>
 
     </div>
 
 
-    <div class="section">
+    <div class="header-right">
 
-        <h2>👤 Users</h2>
+        <span class="admin-badge">
+            Administrator
+        </span>
 
-        <table>
+        <a
+            href="{{ url_for('admin_login') }}"
+            class="logout-btn"
+        >
+            Logout
+        </a>
 
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Joined</th>
-            </tr>
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <!-- =====================================================
+         PAGE HEADING
+         ===================================================== -->
+
+    <section class="page-heading">
+
+        <div class="eyebrow">
+            System Overview
+        </div>
+
+        <h2>
+            Admin Dashboard
+        </h2>
+
+        <p>
+            Monitor registered users, eye scans,
+            AI predictions and analysis results.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         STATISTICS
+         ===================================================== -->
+
+    {% set total_users = users|length %}
+    {% set total_predictions = predictions|length %}
+
+
+    <section class="stats-grid">
+
+
+        <div class="stat-card">
+
+            <div class="stat-top">
+
+                <span class="stat-label">
+                    Total Users
+                </span>
+
+                <div class="stat-icon">
+                    👥
+                </div>
+
+            </div>
+
+            <div class="stat-value">
+                {{ total_users }}
+            </div>
+
+            <div class="stat-description">
+                Registered EyeAI accounts
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-top">
+
+                <span class="stat-label">
+                    Total Scans
+                </span>
+
+                <div class="stat-icon">
+                    🔬
+                </div>
+
+            </div>
+
+            <div class="stat-value">
+                {{ total_predictions }}
+            </div>
+
+            <div class="stat-description">
+                AI predictions recorded
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-top">
+
+                <span class="stat-label">
+                    Fundus / OCT
+                </span>
+
+                <div class="stat-icon">
+                    👁
+                </div>
+
+            </div>
+
+            <div class="stat-value">
+
+                {% set image_type_count = 0 %}
+
+                {% for prediction in predictions %}
+
+                    {% if prediction.image_type %}
+                        {% set image_type_count = image_type_count + 1 %}
+                    {% endif %}
+
+                {% endfor %}
+
+                {{ image_type_count }}
+
+            </div>
+
+            <div class="stat-description">
+                Scans with detected image type
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-top">
+
+                <span class="stat-label">
+                    Latest Scan
+                </span>
+
+                <div class="stat-icon">
+                    ⚡
+                </div>
+
+            </div>
+
+            <div class="stat-value">
+
+                {% if predictions %}
+                    #{{ predictions[0].id }}
+                {% else %}
+                    —
+                {% endif %}
+
+            </div>
+
+            <div class="stat-description">
+                Most recent prediction
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =====================================================
+         USERS
+         ===================================================== -->
+
+    <section class="section">
+
+
+        <div class="section-header">
+
+            <div class="section-title">
+
+                <h3>
+                    Registered Users
+                </h3>
+
+                <p>
+                    Users and their prediction activity
+                </p>
+
+            </div>
+
+            <span class="record-count">
+                {{ total_users }} USERS
+            </span>
+
+        </div>
+
+
+        {% if users %}
+
+        <div class="users-grid">
+
 
             {% for user in users %}
 
-            <tr>
-                <td>{{ user.id }}</td>
-                <td>{{ user.name }}</td>
-                <td>{{ user.email }}</td>
-                <td>{{ user.created_at }}</td>
-            </tr>
+                {% set user_predictions = [] %}
 
-            {% else %}
+                {% for prediction in predictions %}
 
-            <tr>
-                <td colspan="4">No users registered yet.</td>
-            </tr>
+                    {% if prediction.user_id == user.id %}
+
+                        {% set _ = user_predictions.append(prediction) %}
+
+                    {% endif %}
+
+                {% endfor %}
+
+
+                <div class="user-card">
+
+
+                    <div class="user-header">
+
+                        <div class="user-avatar">
+
+                            {{ user.name[0]|upper
+                               if user.name
+                               else "U" }}
+
+                        </div>
+
+
+                        <div>
+
+                            <div class="user-name">
+                                {{ user.name }}
+                            </div>
+
+                            <div class="user-email">
+                                {{ user.email }}
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="user-stats">
+
+
+                        <div class="user-stat">
+
+                            <small>
+                                User ID
+                            </small>
+
+                            <strong>
+                                #{{ user.id }}
+                            </strong>
+
+                        </div>
+
+
+                        <div class="user-stat">
+
+                            <small>
+                                Scans
+                            </small>
+
+                            <strong>
+                                {{ user_predictions|length }}
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
 
             {% endfor %}
 
-        </table>
+
+        </div>
+
+        {% else %}
+
+            <div class="empty">
+
+                <div class="empty-icon">
+                    👥
+                </div>
+
+                No registered users yet.
+
+            </div>
+
+        {% endif %}
+
+
+    </section>
+
+
+    <!-- =====================================================
+         ALL PREDICTIONS
+         ===================================================== -->
+
+    <section class="section">
+
+
+        <div class="section-header">
+
+            <div class="section-title">
+
+                <h3>
+                    User Scan Records
+                </h3>
+
+                <p>
+                    Every uploaded image and its AI prediction
+                </p>
+
+            </div>
+
+            <span class="record-count">
+                {{ total_predictions }} SCANS
+            </span>
+
+        </div>
+
+
+        {% if predictions %}
+
+
+        <div class="predictions-wrapper">
+
+
+            <table class="prediction-table">
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Scan
+                        </th>
+
+                        <th>
+                            User
+                        </th>
+
+                        <th>
+                            Image Type
+                        </th>
+
+                        <th>
+                            AI Model
+                        </th>
+
+                        <th>
+                            Prediction
+                        </th>
+
+                        <th>
+                            Confidence
+                        </th>
+
+                        <th>
+                            Detection
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                {% for prediction in predictions %}
+
+
+                    <tr>
+
+
+                        <!-- IMAGE -->
+
+                        <td>
+
+                            <div class="scan-cell">
+
+                                <img
+                                    class="scan-image"
+                                    src="{{ url_for(
+                                        'get_prediction_image',
+                                        prediction_id=prediction.id
+                                    ) }}"
+                                    alt="Eye scan"
+                                    onclick="openImage(this.src)"
+                                    onerror="this.style.display='none'"
+                                >
+
+                                <div>
+
+                                    <div>
+                                        <span class="badge badge-blue">
+                                            #{{ prediction.id }}
+                                        </span>
+                                    </div>
+
+                                    <div class="filename">
+                                        {{ prediction.image_name or "Eye Image" }}
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+
+                        <!-- USER -->
+
+                        <td>
+
+                            {% for user in users %}
+
+                                {% if user.id == prediction.user_id %}
+
+                                    <strong
+                                        style="color:#dce5ee;"
+                                    >
+                                        {{ user.name }}
+                                    </strong>
+
+                                {% endif %}
+
+                            {% endfor %}
+
+                        </td>
+
+
+                        <!-- IMAGE TYPE -->
+
+                        <td>
+
+                            {% if prediction.image_type %}
+
+                                <span class="badge badge-purple">
+                                    {{ prediction.image_type }}
+                                </span>
+
+                            {% else %}
+
+                                —
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- MODEL -->
+
+                        <td>
+
+                            <span class="badge">
+                                {{ prediction.model_type or "—" }}
+                            </span>
+
+                        </td>
+
+
+                        <!-- PREDICTION -->
+
+                        <td>
+
+                            <span class="badge badge-green">
+
+                                {{ prediction.predicted_class
+                                   or "Unknown" }}
+
+                            </span>
+
+                        </td>
+
+
+                        <!-- CONFIDENCE -->
+
+                        <td>
+
+                            {% if prediction.confidence is not none %}
+
+                                {% set confidence =
+                                    prediction.confidence|float %}
+
+                                {% if confidence <= 1 %}
+                                    {% set confidence =
+                                        confidence * 100 %}
+                                {% endif %}
+
+                                <span class="confidence">
+
+                                    {{ "%.2f"|format(confidence) }}%
+
+                                </span>
+
+                            {% else %}
+
+                                —
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- DETECTION -->
+
+                        <td>
+
+                            {% if prediction.image_type_confidence is not none %}
+
+                                {% set detection =
+                                    prediction.image_type_confidence|float %}
+
+                                {% if detection <= 1 %}
+                                    {% set detection =
+                                        detection * 100 %}
+                                {% endif %}
+
+                                {{ "%.2f"|format(detection) }}%
+
+                            {% else %}
+
+                                —
+
+                            {% endif %}
+
+                        </td>
+
+
+                        <!-- DATE -->
+
+                        <td class="date">
+
+                            {% if prediction.created_at %}
+
+                                {{ prediction.created_at.strftime(
+                                    "%d %b %Y, %I:%M %p"
+                                ) }}
+
+                            {% else %}
+
+                                —
+
+                            {% endif %}
+
+                        </td>
+
+
+                    </tr>
+
+
+                {% endfor %}
+
+
+                </tbody>
+
+
+            </table>
+
+
+        </div>
+
+
+        {% else %}
+
+
+            <div class="empty">
+
+                <div class="empty-icon">
+                    🔬
+                </div>
+
+                No predictions have been recorded yet.
+
+            </div>
+
+
+        {% endif %}
+
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <div class="footer">
+
+        EyeAI • AI-assisted eye image analysis
+        • Administration Panel
 
     </div>
 
 
-    <div class="section">
+</main>
 
-        <h2>🧪 Predictions</h2>
 
-        <table>
+<!-- =========================================================
+     IMAGE MODAL
+     ========================================================= -->
 
-            <tr>
-                <th>ID</th>
-                <th>User ID</th>
-                <th>Image</th>
-                <th>Prediction</th>
-                <th>Confidence</th>
-                <th>Date</th>
-            </tr>
+<div
+    id="imageModal"
+    class="image-modal"
+    onclick="closeImage()"
+>
 
-            {% for prediction in predictions %}
 
-            <tr>
+    <div
+        class="modal-content"
+        onclick="event.stopPropagation()"
+    >
 
-                <td>{{ prediction.id }}</td>
+        <button
+            class="modal-close"
+            onclick="closeImage()"
+        >
+            ×
+        </button>
 
-                <td>{{ prediction.user_id }}</td>
-
-                <td>{{ prediction.image_name }}</td>
-
-                <td>{{ prediction.predicted_class }}</td>
-
-                <td class="confidence">
-                    {{ "%.2f"|format(prediction.confidence) }}%
-                </td>
-
-                <td>{{ prediction.created_at }}</td>
-
-            </tr>
-
-            {% else %}
-
-            <tr>
-                <td colspan="6">No predictions yet.</td>
-            </tr>
-
-            {% endfor %}
-
-        </table>
+        <img
+            id="modalImage"
+            src=""
+            alt="Eye scan"
+        >
 
     </div>
+
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   IMAGE MODAL
+   ========================================================= */
+
+function openImage(src) {
+
+    const modal = document.getElementById("imageModal");
+    const image = document.getElementById("modalImage");
+
+    if (!modal || !image) return;
+
+    image.src = src;
+
+    modal.classList.add("active");
+}
+
+
+function closeImage() {
+
+    const modal = document.getElementById("imageModal");
+    const image = document.getElementById("modalImage");
+
+    if (!modal || !image) return;
+
+    modal.classList.remove("active");
+
+    image.src = "";
+}
+
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeImage();
+    }
+
+});
+
+
+/* =========================================================
+   ADMIN ANALYSIS
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const table =
+        document.querySelector(".prediction-table");
+
+    if (!table) return;
+
+
+    const tbody =
+        table.querySelector("tbody");
+
+    if (!tbody) return;
+
+
+    const rows =
+        Array.from(
+            tbody.querySelectorAll("tr")
+        );
+
+
+    const userCards =
+        Array.from(
+            document.querySelectorAll(".user-card")
+        );
+
+
+    /* =====================================================
+       PAGINATION
+       ===================================================== */
+
+    const rowsPerPage = 10;
+
+    let currentPage = 1;
+
+
+    const pagination =
+        document.createElement("div");
+
+    pagination.id = "pagination";
+
+    pagination.style.cssText = `
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:7px;
+        padding:22px 10px 10px;
+        flex-wrap:wrap;
+    `;
+
+
+    const tableWrapper =
+        document.querySelector(
+            ".predictions-wrapper"
+        );
+
+
+    if (tableWrapper) {
+
+        tableWrapper.appendChild(
+            pagination
+        );
+
+    }
+
+
+    function showPage(page) {
+
+        currentPage = page;
+
+        const totalPages =
+            Math.max(
+                1,
+                Math.ceil(
+                    rows.length /
+                    rowsPerPage
+                )
+            );
+
+
+        rows.forEach(function(row, index) {
+
+            const start =
+                (page - 1) *
+                rowsPerPage;
+
+            const end =
+                start +
+                rowsPerPage;
+
+
+            row.style.display =
+                index >= start &&
+                index < end
+                    ? ""
+                    : "none";
+
+        });
+
+
+        renderPagination(
+            totalPages
+        );
+
+    }
+
+
+    function renderPagination(totalPages) {
+
+        pagination.innerHTML = "";
+
+
+        const previous =
+            document.createElement("button");
+
+        previous.textContent = "‹";
+
+        previous.disabled =
+            currentPage === 1;
+
+
+        stylePageButton(
+            previous
+        );
+
+
+        previous.onclick = function() {
+
+            if (currentPage > 1) {
+
+                showPage(
+                    currentPage - 1
+                );
+
+            }
+
+        };
+
+
+        pagination.appendChild(
+            previous
+        );
+
+
+        for (
+            let i = 1;
+            i <= totalPages;
+            i++
+        ) {
+
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+
+            button.textContent = i;
+
+
+            stylePageButton(
+                button
+            );
+
+
+            if (i === currentPage) {
+
+                button.style.background =
+                    "linear-gradient(135deg,#2bd7ef,#527dff)";
+
+                button.style.color =
+                    "#031018";
+
+                button.style.borderColor =
+                    "transparent";
+
+            }
+
+
+            button.onclick =
+                function() {
+
+                    showPage(i);
+
+                    window.scrollTo({
+                        top:
+                            tableWrapper.offsetTop -
+                            100,
+                        behavior:
+                            "smooth"
+                    });
+
+                };
+
+
+            pagination.appendChild(
+                button
+            );
+
+        }
+
+
+        const next =
+            document.createElement("button");
+
+        next.textContent = "›";
+
+        next.disabled =
+            currentPage === totalPages;
+
+
+        stylePageButton(
+            next
+        );
+
+
+        next.onclick =
+            function() {
+
+                if (
+                    currentPage <
+                    totalPages
+                ) {
+
+                    showPage(
+                        currentPage + 1
+                    );
+
+                }
+
+            };
+
+
+        pagination.appendChild(
+            next
+        );
+
+
+        const info =
+            document.createElement(
+                "div"
+            );
+
+
+        info.textContent =
+            `Showing ${
+                Math.min(
+                    (currentPage - 1) *
+                    rowsPerPage + 1,
+                    rows.length
+                )
+            }–${
+                Math.min(
+                    currentPage *
+                    rowsPerPage,
+                    rows.length
+                )
+            } of ${
+                rows.length
+            } scans`;
+
+
+        info.style.cssText = `
+            width:100%;
+            text-align:center;
+            margin-top:8px;
+            color:#566679;
+            font-size:9px;
+        `;
+
+
+        pagination.appendChild(
+            info
+        );
+
+    }
+
+
+    function stylePageButton(button) {
+
+        button.style.cssText = `
+            min-width:32px;
+            height:32px;
+            padding:0 9px;
+            border-radius:8px;
+            border:1px solid rgba(255,255,255,.08);
+            background:rgba(255,255,255,.025);
+            color:#8d9bad;
+            cursor:pointer;
+            font-size:10px;
+            font-weight:600;
+        `;
+
+    }
+
+
+    showPage(1);
+
+
+    /* =====================================================
+       USER ANALYSIS PANEL
+       ===================================================== */
+
+    const usersSection =
+        document.querySelectorAll(
+            ".section"
+        )[1];
+
+
+    if (!usersSection) return;
+
+
+    const analysisPanel =
+        document.createElement("section");
+
+    analysisPanel.id =
+        "user-analysis-panel";
+
+
+    analysisPanel.style.cssText = `
+        display:none;
+        margin-top:25px;
+        border:1px solid rgba(255,255,255,.07);
+        border-radius:22px;
+        background:
+            linear-gradient(
+                145deg,
+                rgba(16,25,38,.94),
+                rgba(7,12,19,.94)
+            );
+        overflow:hidden;
+    `;
+
+
+    analysisPanel.innerHTML = `
+
+        <div style="
+            padding:22px;
+            border-bottom:1px solid rgba(255,255,255,.055);
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:15px;
+        ">
+
+            <div>
+
+                <div style="
+                    color:#35dcff;
+                    font-size:8px;
+                    font-weight:700;
+                    letter-spacing:1.7px;
+                    text-transform:uppercase;
+                    margin-bottom:6px;
+                ">
+                    User Analysis
+                </div>
+
+                <h3 id="analysis-user-name"
+                    style="
+                        font-family:'Space Grotesk',sans-serif;
+                        font-size:25px;
+                    ">
+                </h3>
+
+                <p id="analysis-user-subtitle"
+                   style="
+                       color:#647387;
+                       font-size:9px;
+                       margin-top:4px;
+                   ">
+                </p>
+
+            </div>
+
+            <button
+                id="close-analysis"
+                style="
+                    padding:9px 13px;
+                    border-radius:9px;
+                    border:1px solid rgba(255,255,255,.08);
+                    background:rgba(255,255,255,.025);
+                    color:#8291a3;
+                    cursor:pointer;
+                "
+            >
+                Close
+            </button>
+
+        </div>
+
+
+        <div id="analysis-content"
+             style="padding:20px;">
+        </div>
+
+    `;
+
+
+    usersSection.after(
+        analysisPanel
+    );
+
+
+    /* =====================================================
+       MAKE USER CARDS CLICKABLE
+       ===================================================== */
+
+    userCards.forEach(
+        function(card) {
+
+            card.style.cursor =
+                "pointer";
+
+
+            card.addEventListener(
+                "click",
+                function() {
+
+                    const nameElement =
+                        card.querySelector(
+                            ".user-name"
+                        );
+
+
+                    if (!nameElement)
+                        return;
+
+
+                    const userName =
+                        nameElement
+                            .textContent
+                            .trim();
+
+
+                    showUserAnalysis(
+                        userName
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+    document
+        .getElementById(
+            "close-analysis"
+        )
+        .addEventListener(
+            "click",
+            function() {
+
+                analysisPanel.style.display =
+                    "none";
+
+                window.scrollTo({
+                    top:
+                        usersSection.offsetTop -
+                        80,
+                    behavior:
+                        "smooth"
+                });
+
+            }
+        );
+
+
+    /* =====================================================
+       USER ANALYSIS
+       ===================================================== */
+
+    function showUserAnalysis(
+        userName
+    ) {
+
+        const name =
+            userName.trim();
+
+
+        const userRows =
+            rows.filter(
+                function(row) {
+
+                    const cells =
+                        row.querySelectorAll(
+                            "td"
+                        );
+
+
+                    if (!cells[1])
+                        return false;
+
+
+                    return (
+                        cells[1]
+                            .textContent
+                            .trim()
+                            .includes(name)
+                    );
+
+                }
+            );
+
+
+        analysisPanel.style.display =
+            "block";
+
+
+        document
+            .getElementById(
+                "analysis-user-name"
+            )
+            .textContent =
+                name;
+
+
+        document
+            .getElementById(
+                "analysis-user-subtitle"
+            )
+            .textContent =
+                `${userRows.length} recorded scans`;
+
+
+        buildAnalysis(
+            userRows,
+            name
+        );
+
+
+        analysisPanel.scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
+
+    }
+
+
+    /* =====================================================
+       BUILD USER ANALYSIS
+       ===================================================== */
+
+    function buildAnalysis(
+        userRows,
+        userName
+    ) {
+
+        const content =
+            document.getElementById(
+                "analysis-content"
+            );
+
+
+        if (!userRows.length) {
+
+            content.innerHTML = `
+                <div style="
+                    padding:50px;
+                    text-align:center;
+                    color:#657487;
+                ">
+                    No scan records found.
+                </div>
+            `;
+
+            return;
+
+        }
+
+
+        let fundus = 0;
+        let oct = 0;
+
+        let totalConfidence = 0;
+
+        let confidenceCount = 0;
+
+        const diseases = {};
+
+        const dates = {};
+
+
+        /* =================================================
+           READ TABLE DATA
+           ================================================= */
+
+        userRows.forEach(
+            function(row) {
+
+                const cells =
+                    row.querySelectorAll(
+                        "td"
+                    );
+
+
+                if (cells.length < 8)
+                    return;
+
+
+                /* Image type */
+
+                const imageType =
+                    cells[2]
+                        .textContent
+                        .trim()
+                        .toLowerCase();
+
+
+                if (
+                    imageType.includes(
+                        "fundus"
+                    )
+                ) {
+
+                    fundus++;
+
+                }
+
+
+                if (
+                    imageType.includes(
+                        "oct"
+                    )
+                ) {
+
+                    oct++;
+
+                }
+
+
+                /* Disease */
+
+                const disease =
+                    cells[4]
+                        .textContent
+                        .trim();
+
+
+                if (
+                    disease &&
+                    disease !== "—"
+                ) {
+
+                    diseases[disease] =
+                        (
+                            diseases[disease] ||
+                            0
+                        ) + 1;
+
+                }
+
+
+                /* Confidence */
+
+                const confidenceText =
+                    cells[5]
+                        .textContent
+                        .replace(
+                            "%",
+                            ""
+                        )
+                        .trim();
+
+
+                const confidence =
+                    parseFloat(
+                        confidenceText
+                    );
+
+
+                if (
+                    Number.isFinite(
+                        confidence
+                    )
+                ) {
+
+                    totalConfidence +=
+                        confidence;
+
+                    confidenceCount++;
+
+                }
+
+
+                /* Date */
+
+                const date =
+                    cells[7]
+                        .textContent
+                        .trim();
+
+
+                if (date) {
+
+                    const dateKey =
+                        date
+                            .split(",")[0]
+                            .trim();
+
+
+                    dates[dateKey] =
+                        (
+                            dates[dateKey] ||
+                            0
+                        ) + 1;
+
+                }
+
+            }
+        );
+
+
+        const averageConfidence =
+            confidenceCount
+                ? (
+                    totalConfidence /
+                    confidenceCount
+                ).toFixed(2)
+                : "0.00";
+
+
+        const diseaseEntries =
+            Object.entries(
+                diseases
+            )
+            .sort(
+                function(a,b) {
+                    return b[1] - a[1];
+                }
+            );
+
+
+        const mostTested =
+            diseaseEntries.length
+                ? diseaseEntries[0][0]
+                : "—";
+
+
+        /* =================================================
+           STAT CARDS
+           ================================================= */
+
+        content.innerHTML = `
+
+            <div style="
+                display:grid;
+                grid-template-columns:
+                    repeat(4,1fr);
+                gap:12px;
+                margin-bottom:20px;
+            ">
+
+
+                ${analysisStat(
+                    "TOTAL SCANS",
+                    userRows.length,
+                    "🔬"
+                )}
+
+
+                ${analysisStat(
+                    "FUNDUS",
+                    fundus,
+                    "👁"
+                )}
+
+
+                ${analysisStat(
+                    "OCT",
+                    oct,
+                    "🖥"
+                )}
+
+
+                ${analysisStat(
+                    "AVG CONFIDENCE",
+                    averageConfidence + "%",
+                    "📊"
+                )}
+
+            </div>
+
+
+            <div style="
+                display:grid;
+                grid-template-columns:
+                    1fr 1fr;
+                gap:15px;
+            ">
+
+
+                <div class="analysis-card">
+
+                    <h4>
+                        Disease Distribution
+                    </h4>
+
+                    <p class="analysis-muted">
+                        Predictions made for this user
+                    </p>
+
+                    <div id="disease-chart"
+                         style="margin-top:20px;">
+                    </div>
+
+                </div>
+
+
+                <div class="analysis-card">
+
+                    <h4>
+                        Scan Type
+                    </h4>
+
+                    <p class="analysis-muted">
+                        Fundus vs OCT testing activity
+                    </p>
+
+                    <div style="
+                        margin-top:22px;
+                    ">
+
+                        ${barChart(
+                            "Fundus",
+                            fundus,
+                            userRows.length
+                        )}
+
+                        ${barChart(
+                            "OCT",
+                            oct,
+                            userRows.length
+                        )}
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="analysis-card"
+                 style="margin-top:15px;">
+
+                <h4>
+                    Testing Activity
+                </h4>
+
+                <p class="analysis-muted">
+                    Number of scans recorded by date
+                </p>
+
+                <div id="activity-chart"
+                     style="
+                         margin-top:22px;
+                         display:flex;
+                         align-items:flex-end;
+                         gap:10px;
+                         min-height:170px;
+                         overflow-x:auto;
+                         padding-bottom:8px;
+                     ">
+                </div>
+
+            </div>
+
+
+            <div class="analysis-card"
+                 style="margin-top:15px;">
+
+                <div style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    margin-bottom:15px;
+                ">
+
+                    <div>
+
+                        <h4>
+                            User Summary
+                        </h4>
+
+                        <p class="analysis-muted">
+                            Quick AI testing overview
+                        </p>
+
+                    </div>
+
+                    <span style="
+                        padding:7px 10px;
+                        border-radius:8px;
+                        background:rgba(53,220,255,.04);
+                        color:#5ddff2;
+                        font-size:9px;
+                    ">
+                        Most Tested:
+                        ${escapeHtml(
+                            mostTested
+                        )}
+                    </span>
+
+                </div>
+
+
+                <div style="
+                    display:grid;
+                    grid-template-columns:
+                        repeat(3,1fr);
+                    gap:10px;
+                ">
+
+                    ${summaryBox(
+                        "Total Predictions",
+                        userRows.length
+                    )}
+
+                    ${summaryBox(
+                        "Average Confidence",
+                        averageConfidence + "%"
+                    )}
+
+                    ${summaryBox(
+                        "Most Tested Disease",
+                        mostTested
+                    )}
+
+                </div>
+
+            </div>
+
+        `;
+
+
+        /* =================================================
+           DISEASE GRAPH
+           ================================================= */
+
+        const diseaseChart =
+            document.getElementById(
+                "disease-chart"
+            );
+
+
+        diseaseEntries.forEach(
+            function(entry) {
+
+                const disease =
+                    entry[0];
+
+                const count =
+                    entry[1];
+
+
+                const percentage =
+                    (
+                        count /
+                        userRows.length *
+                        100
+                    ).toFixed(1);
+
+
+                diseaseChart.innerHTML += `
+
+                    <div style="
+                        margin-bottom:14px;
+                    ">
+
+                        <div style="
+                            display:flex;
+                            justify-content:space-between;
+                            margin-bottom:5px;
+                            color:#9caaba;
+                            font-size:9px;
+                        ">
+
+                            <span>
+                                ${escapeHtml(
+                                    disease
+                                )}
+                            </span>
+
+                            <span>
+                                ${count}
+                                (${percentage}%)
+                            </span>
+
+                        </div>
+
+
+                        <div style="
+                            height:7px;
+                            background:rgba(255,255,255,.04);
+                            border-radius:20px;
+                            overflow:hidden;
+                        ">
+
+                            <div style="
+                                width:${percentage}%;
+                                height:100%;
+                                background:
+                                    linear-gradient(
+                                        90deg,
+                                        #2bd7ef,
+                                        #527dff
+                                    );
+                                border-radius:20px;
+                            ">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+            }
+        );
+
+
+        /* =================================================
+           ACTIVITY GRAPH
+           ================================================= */
+
+        const activityChart =
+            document.getElementById(
+                "activity-chart"
+            );
+
+
+        const dateEntries =
+            Object.entries(
+                dates
+            ).reverse();
+
+
+        const maxDateCount =
+            Math.max(
+                ...dateEntries.map(
+                    function(item) {
+                        return item[1];
+                    }
+                ),
+                1
+            );
+
+
+        dateEntries.forEach(
+            function(entry) {
+
+                const date =
+                    entry[0];
+
+                const count =
+                    entry[1];
+
+
+                const height =
+                    Math.max(
+                        12,
+                        (
+                            count /
+                            maxDateCount
+                        ) * 120
+                    );
+
+
+                activityChart.innerHTML += `
+
+                    <div style="
+                        min-width:52px;
+                        height:145px;
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:flex-end;
+                        align-items:center;
+                        gap:6px;
+                    ">
+
+                        <span style="
+                            color:#91a0b0;
+                            font-size:8px;
+                        ">
+                            ${count}
+                        </span>
+
+
+                        <div style="
+                            width:25px;
+                            height:${height}px;
+                            border-radius:6px 6px 3px 3px;
+                            background:
+                                linear-gradient(
+                                    180deg,
+                                    #2bd7ef,
+                                    #527dff
+                                );
+                        ">
+                        </div>
+
+
+                        <span style="
+                            color:#566679;
+                            font-size:7px;
+                            text-align:center;
+                            max-width:52px;
+                            overflow:hidden;
+                            text-overflow:ellipsis;
+                            white-space:nowrap;
+                        ">
+                            ${escapeHtml(
+                                date
+                            )}
+                        </span>
+
+                    </div>
+
+                `;
+
+            }
+        );
+
+    }
+
+
+    /* =====================================================
+       HELPER COMPONENTS
+       ===================================================== */
+
+    function analysisStat(
+        label,
+        value,
+        icon
+    ) {
+
+        return `
+
+            <div style="
+                padding:17px;
+                border:1px solid rgba(255,255,255,.055);
+                border-radius:14px;
+                background:rgba(255,255,255,.015);
+            ">
+
+                <div style="
+                    display:flex;
+                    justify-content:space-between;
+                    color:#637286;
+                    font-size:8px;
+                    font-weight:700;
+                    letter-spacing:1px;
+                ">
+
+                    <span>
+                        ${label}
+                    </span>
+
+                    <span>
+                        ${icon}
+                    </span>
+
+                </div>
+
+
+                <div style="
+                    margin-top:12px;
+                    font-family:'Space Grotesk',sans-serif;
+                    font-size:24px;
+                    color:#edf4f8;
+                ">
+
+                    ${escapeHtml(
+                        String(value)
+                    )}
+
+                </div>
+
+            </div>
+
+        `;
+
+    }
+
+
+    function summaryBox(
+        label,
+        value
+    ) {
+
+        return `
+
+            <div style="
+                padding:14px;
+                border-radius:11px;
+                background:rgba(255,255,255,.018);
+            ">
+
+                <div style="
+                    color:#566679;
+                    font-size:7px;
+                    text-transform:uppercase;
+                    letter-spacing:1px;
+                ">
+                    ${label}
+                </div>
+
+                <div style="
+                    margin-top:7px;
+                    color:#c9d5df;
+                    font-size:12px;
+                    font-weight:700;
+                ">
+                    ${escapeHtml(
+                        String(value)
+                    )}
+                </div>
+
+            </div>
+
+        `;
+
+    }
+
+
+    function barChart(
+        label,
+        value,
+        total
+    ) {
+
+        const percentage =
+            total
+                ? (
+                    value /
+                    total *
+                    100
+                ).toFixed(1)
+                : 0;
+
+
+        return `
+
+            <div style="
+                margin-bottom:18px;
+            ">
+
+                <div style="
+                    display:flex;
+                    justify-content:space-between;
+                    color:#8998a9;
+                    font-size:9px;
+                    margin-bottom:6px;
+                ">
+
+                    <span>
+                        ${label}
+                    </span>
+
+                    <span>
+                        ${value}
+                        (${percentage}%)
+                    </span>
+
+                </div>
+
+
+                <div style="
+                    height:9px;
+                    border-radius:20px;
+                    background:rgba(255,255,255,.04);
+                    overflow:hidden;
+                ">
+
+                    <div style="
+                        width:${percentage}%;
+                        height:100%;
+                        background:
+                            linear-gradient(
+                                90deg,
+                                #2bd7ef,
+                                #527dff
+                            );
+                        border-radius:20px;
+                    ">
+                    </div>
+
+                </div>
+
+            </div>
+
+        `;
+
+    }
+
+
+    function escapeHtml(
+        text
+    ) {
+
+        return String(text)
+            .replace(
+                /&/g,
+                "&amp;"
+            )
+            .replace(
+                /</g,
+                "&lt;"
+            )
+            .replace(
+                />/g,
+                "&gt;"
+            )
+            .replace(
+                /"/g,
+                "&quot;"
+            )
+            .replace(
+                /'/g,
+                "&#039;"
+            );
+
+    }
+
+
+    /* =====================================================
+       ANALYSIS CARD CSS
+       ===================================================== */
+
+    const style =
+        document.createElement(
+            "style"
+        );
+
+
+    style.textContent = `
+
+        .analysis-card {
+
+            padding:20px;
+
+            border:
+                1px solid rgba(255,255,255,.055);
+
+            border-radius:15px;
+
+            background:
+                rgba(255,255,255,.015);
+
+        }
+
+
+        .analysis-card h4 {
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            color:#dce5ee;
+
+            font-size:15px;
+
+        }
+
+
+        .analysis-muted {
+
+            margin-top:4px;
+
+            color:#596a7d;
+
+            font-size:8px;
+
+        }
+
+
+        @media(max-width:800px) {
+
+            #analysis-content > div:first-child {
+
+                grid-template-columns:
+                    repeat(2,1fr) !important;
+
+            }
+
+
+            #analysis-content > div:nth-child(2) {
+
+                grid-template-columns:
+                    1fr !important;
+
+            }
+
+        }
+
+
+        @media(max-width:550px) {
+
+            #analysis-content > div:first-child {
+
+                grid-template-columns:
+                    1fr !important;
+
+            }
+
+        }
+
+    `;
+
+
+    document.head.appendChild(
+        style
+    );
+
+
+});
+
+
+</script>
+
 
 </body>
+
 </html>
