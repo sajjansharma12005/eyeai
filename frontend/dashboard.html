@@ -254,10 +254,10 @@
 
                     <h2>
 
-                        See beyond
+                        Your eye analysis,
 
                         <span>
-                            what the eye can see.
+                            made intelligently.
                         </span>
 
                     </h2>
@@ -265,12 +265,17 @@
 
                     <p>
 
-                        Upload a retinal or OCT image and let
-                        our AI automatically identify the
-                        image type and analyze it using the
-                        appropriate trained model.
+                        Upload a retinal or OCT image and get a fast, AI-assisted screening result with automatic scan-type detection.
 
                     </p>
+
+
+                    <div class="hero-trust-line">
+                        <span class="hero-trust-dot"></span>
+                        <span>Secure local analysis</span>
+                        <span class="hero-trust-divider"></span>
+                        <span>Instant AI results</span>
+                    </div>
 
 
                     <div class="hero-features">
@@ -451,6 +456,33 @@
                         Average model confidence
                     </span>
 
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 QUICK ACTIONS
+            ================================================== -->
+
+            <section class="quick-actions-card" aria-label="Quick actions">
+
+                <div class="quick-actions-copy">
+                    <span class="section-kicker">QUICK ACTIONS</span>
+                    <strong>Continue your eye analysis</strong>
+                    <span>Start a new scan or review your previous results.</span>
+                </div>
+
+                <div class="quick-actions-buttons">
+                    <button type="button" class="quick-action primary" onclick="document.getElementById('upload-area')?.scrollIntoView({behavior:'smooth', block:'center'});">
+                        <span>＋</span>
+                        New Analysis
+                    </button>
+
+                    <button type="button" class="quick-action" onclick="document.getElementById('history')?.scrollIntoView({behavior:'smooth', block:'center'});">
+                        <span>↗</span>
+                        View History
+                    </button>
                 </div>
 
             </section>
@@ -1032,6 +1064,58 @@
                     </div>
 
 
+                    <!-- =================================================
+                         CARE GUIDANCE
+                    ================================================== -->
+                    <div id="care-guidance" class="care-guidance">
+
+                        <div class="care-guidance-header">
+                            <div>
+                                <span class="section-kicker">NEXT STEP</span>
+                                <h3>What should I do next?</h3>
+                                <p id="care-summary">Guidance based on the AI screening result.</p>
+                            </div>
+                            <span id="care-urgency-badge" class="care-urgency-badge">—</span>
+                        </div>
+
+                        <div class="care-grid">
+                            <div class="care-card">
+                                <span class="care-card-label">WHAT THIS RESULT MEANS</span>
+                                <p id="care-meaning">—</p>
+                            </div>
+
+                            <div class="care-card">
+                                <span class="care-card-label">RECOMMENDED EXAMINATION</span>
+                                <ul id="care-examination"></ul>
+                            </div>
+
+                            <div class="care-card">
+                                <span class="care-card-label">SUGGESTED CHECKS / TESTS</span>
+                                <ul id="care-tests"></ul>
+                            </div>
+
+                            <div class="care-card">
+                                <span class="care-card-label">SUPPORTIVE HABITS</span>
+                                <ul id="care-habits"></ul>
+                            </div>
+
+                            <div class="care-card care-card-wide">
+                                <span class="care-card-label">FOLLOW-UP</span>
+                                <p id="care-followup">—</p>
+                            </div>
+
+                            <div class="care-card care-card-wide warning-card">
+                                <span class="care-card-label">WHEN TO SEEK URGENT CARE</span>
+                                <ul id="care-warning-signs"></ul>
+                            </div>
+                        </div>
+
+                        <div class="care-note">
+                            <span>ⓘ</span>
+                            <p id="care-disclaimer">This is supportive screening guidance, not a diagnosis or a treatment plan. Follow advice from a qualified eye-care professional.</p>
+                        </div>
+                    </div>
+
                     <div class="medical-disclaimer">
 
                         <span>
@@ -1075,13 +1159,12 @@
 
 
                         <h2>
-                            Prediction history
+                            Recent predictions
                         </h2>
 
 
                         <p>
-                            Your previous AI analyses
-                            appear here.
+                            Your latest AI analyses, confidence scores and results.
                         </p>
 
                     </div>

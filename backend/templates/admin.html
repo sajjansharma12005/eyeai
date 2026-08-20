@@ -5,17 +5,10 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>EyeAI Admin Dashboard</title>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet"
-    >
 
     <style>
 
@@ -25,88 +18,71 @@
             padding: 0;
         }
 
-
         body {
-
             min-height: 100vh;
-
             background:
                 radial-gradient(
                     circle at 10% 0%,
-                    rgba(53, 220, 255, 0.07),
-                    transparent 25%
+                    rgba(53,220,255,.08),
+                    transparent 28%
                 ),
                 radial-gradient(
-                    circle at 90% 20%,
-                    rgba(76, 125, 255, 0.06),
-                    transparent 28%
+                    circle at 90% 10%,
+                    rgba(82,125,255,.08),
+                    transparent 30%
                 ),
                 #05080d;
 
             color: #e8eef5;
 
             font-family:
-                "Inter",
+                Arial,
+                Helvetica,
                 sans-serif;
         }
 
 
-        /* =====================================================
+        /* ==============================
            HEADER
-           ===================================================== */
+        ============================== */
 
-        .admin-header {
+        .header {
+            height: 72px;
 
-            height: 76px;
+            padding: 0 5%;
 
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
 
-            padding:
-                0 clamp(20px, 5vw, 70px);
-
             border-bottom:
-                1px solid rgba(255,255,255,0.07);
+                1px solid rgba(255,255,255,.07);
 
             background:
-                rgba(5,8,13,0.86);
-
-            backdrop-filter: blur(20px);
+                rgba(5,8,13,.94);
 
             position: sticky;
-
             top: 0;
-
             z-index: 100;
         }
 
 
         .brand {
-
             display: flex;
-
             align-items: center;
-
             gap: 12px;
         }
 
 
         .brand-icon {
-
             width: 42px;
-
             height: 42px;
 
+            border-radius: 12px;
+
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
-            border-radius: 13px;
 
             background:
                 linear-gradient(
@@ -117,30 +93,18 @@
 
             color: #031018;
 
-            font-size: 20px;
-
-            box-shadow:
-                0 0 28px rgba(53,220,255,0.12);
+            font-size: 21px;
         }
 
 
-        .brand-text h1 {
-
-            font-family:
-                "Space Grotesk",
-                sans-serif;
-
+        .brand-title {
             font-size: 18px;
-
-            letter-spacing: -0.5px;
+            font-weight: 700;
         }
 
 
-        .brand-text span {
-
-            display: block;
-
-            margin-top: 2px;
+        .brand-subtitle {
+            margin-top: 3px;
 
             color: #647387;
 
@@ -153,152 +117,112 @@
 
 
         .header-right {
-
             display: flex;
-
             align-items: center;
-
-            gap: 14px;
+            gap: 12px;
         }
 
 
         .admin-badge {
+            padding: 8px 13px;
 
-            padding:
-                8px 13px;
+            border-radius: 30px;
 
             border:
-                1px solid rgba(53,220,255,0.14);
+                1px solid rgba(53,220,255,.15);
 
-            border-radius: 100px;
-
-            background:
-                rgba(53,220,255,0.035);
-
-            color: #6de7fa;
+            color: #65e4f7;
 
             font-size: 9px;
 
-            font-weight: 700;
-
-            letter-spacing: 1px;
+            font-weight: bold;
 
             text-transform: uppercase;
         }
 
 
-        .logout-btn {
+        .logout {
+            padding: 8px 13px;
 
-            padding:
-                9px 14px;
+            border-radius: 9px;
 
             border:
-                1px solid rgba(255,255,255,0.07);
-
-            border-radius: 10px;
-
-            background:
-                rgba(255,255,255,0.025);
+                1px solid rgba(255,255,255,.08);
 
             color: #9ba9b9;
 
             text-decoration: none;
 
             font-size: 10px;
-
-            font-weight: 600;
-
-            transition: .2s ease;
         }
 
 
-        .logout-btn:hover {
+        .logout:hover {
+            color: #ff8995;
 
             border-color:
-                rgba(255,107,122,0.25);
-
-            background:
-                rgba(255,107,122,0.05);
-
-            color: #ff8792;
+                rgba(255,100,120,.3);
         }
 
 
-        /* =====================================================
+        /* ==============================
            MAIN
-           ===================================================== */
+        ============================== */
 
         .container {
+            width: min(1400px, 92%);
 
-            width:
-                min(1400px, 92%);
-
-            margin:
-                0 auto;
+            margin: auto;
 
             padding:
-                50px 0 70px;
+                45px 0 70px;
         }
 
 
-        .page-heading {
-
+        .page-title {
             margin-bottom: 30px;
         }
 
 
-        .page-heading .eyebrow {
-
+        .page-title small {
             color: #35dcff;
 
             font-size: 9px;
-
-            font-weight: 700;
 
             text-transform: uppercase;
 
             letter-spacing: 2px;
 
-            margin-bottom: 9px;
+            font-weight: bold;
         }
 
 
-        .page-heading h2 {
-
-            font-family:
-                "Space Grotesk",
-                sans-serif;
+        .page-title h1 {
+            margin-top: 8px;
 
             font-size:
-                clamp(34px, 4vw, 50px);
-
-            letter-spacing:
-                -2px;
+                clamp(32px,4vw,48px);
         }
 
 
-        .page-heading p {
-
+        .page-title p {
             margin-top: 10px;
 
             color: #718094;
 
             font-size: 13px;
-
-            max-width: 650px;
         }
 
 
-        /* =====================================================
+        /* ==============================
            STATISTICS
-           ===================================================== */
+        ============================== */
 
-        .stats-grid {
-
+        .stats {
             display: grid;
 
             grid-template-columns:
-                repeat(4, 1fr);
+                repeat(4,1fr);
 
             gap: 15px;
 
@@ -306,117 +230,69 @@
         }
 
 
-        .stat-card {
-
-            padding: 22px;
+        .stat {
+            padding: 21px;
 
             border:
-                1px solid rgba(255,255,255,0.07);
+                1px solid rgba(255,255,255,.07);
 
-            border-radius: 18px;
+            border-radius: 17px;
 
             background:
                 linear-gradient(
                     145deg,
-                    rgba(16,25,38,0.92),
-                    rgba(7,12,19,0.92)
+                    rgba(16,25,38,.95),
+                    rgba(7,12,19,.95)
                 );
-
-            box-shadow:
-                0 20px 60px rgba(0,0,0,0.16);
-        }
-
-
-        .stat-top {
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-
-            margin-bottom: 18px;
         }
 
 
         .stat-label {
-
             color: #718094;
 
             font-size: 9px;
 
-            font-weight: 700;
-
-            letter-spacing: 1.2px;
-
             text-transform: uppercase;
-        }
 
-
-        .stat-icon {
-
-            width: 34px;
-
-            height: 34px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            border-radius: 10px;
-
-            background:
-                rgba(53,220,255,0.05);
-
-            border:
-                1px solid rgba(53,220,255,0.08);
+            letter-spacing: 1px;
         }
 
 
         .stat-value {
+            margin-top: 12px;
 
-            font-family:
-                "Space Grotesk",
-                sans-serif;
+            font-size: 30px;
 
-            font-size: 32px;
-
-            font-weight: 700;
-
-            color: #f1f6fa;
+            font-weight: bold;
         }
 
 
         .stat-description {
-
             margin-top: 5px;
 
-            color: #58687b;
+            color: #536276;
 
             font-size: 9px;
         }
 
 
-        /* =====================================================
+        /* ==============================
            SECTION
-           ===================================================== */
+        ============================== */
 
         .section {
-
             margin-top: 25px;
 
             border:
-                1px solid rgba(255,255,255,0.07);
+                1px solid rgba(255,255,255,.07);
 
-            border-radius: 22px;
+            border-radius: 20px;
 
             background:
                 linear-gradient(
                     145deg,
-                    rgba(16,25,38,0.91),
-                    rgba(7,12,19,0.91)
+                    rgba(16,25,38,.92),
+                    rgba(7,12,19,.92)
                 );
 
             overflow: hidden;
@@ -424,35 +300,27 @@
 
 
         .section-header {
+            min-height: 70px;
 
-            min-height: 72px;
-
-            padding:
-                18px 23px;
+            padding: 17px 22px;
 
             display: flex;
 
-            align-items: center;
-
             justify-content: space-between;
 
+            align-items: center;
+
             border-bottom:
-                1px solid rgba(255,255,255,0.055);
+                1px solid rgba(255,255,255,.06);
         }
 
 
-        .section-title h3 {
-
-            font-family:
-                "Space Grotesk",
-                sans-serif;
-
-            font-size: 19px;
+        .section-header h2 {
+            font-size: 18px;
         }
 
 
-        .section-title p {
-
+        .section-header p {
             margin-top: 4px;
 
             color: #667589;
@@ -461,100 +329,88 @@
         }
 
 
-        .record-count {
+        .count {
+            padding: 7px 11px;
 
-            padding:
-                7px 11px;
-
-            border-radius: 9px;
-
-            background:
-                rgba(53,220,255,0.04);
-
-            border:
-                1px solid rgba(53,220,255,0.08);
+            border-radius: 8px;
 
             color: #62dff2;
 
-            font-size: 9px;
+            background:
+                rgba(53,220,255,.04);
 
-            font-weight: 700;
+            border:
+                1px solid rgba(53,220,255,.08);
+
+            font-size: 9px;
         }
 
 
-        /* =====================================================
+        /* ==============================
            USERS
-           ===================================================== */
+        ============================== */
 
-        .users-grid {
+        .users {
+            padding: 20px;
 
             display: grid;
 
             grid-template-columns:
-                repeat(3, 1fr);
+                repeat(3,1fr);
 
             gap: 14px;
-
-            padding: 20px;
         }
 
 
         .user-card {
-
-            padding: 18px;
+            padding: 19px;
 
             border:
-                1px solid rgba(255,255,255,0.055);
+                1px solid rgba(255,255,255,.06);
 
             border-radius: 15px;
 
             background:
-                rgba(255,255,255,0.015);
+                rgba(255,255,255,.015);
+
+            cursor: pointer;
 
             transition: .2s ease;
         }
 
 
         .user-card:hover {
-
-            transform:
-                translateY(-2px);
+            transform: translateY(-3px);
 
             border-color:
-                rgba(53,220,255,0.14);
+                rgba(53,220,255,.3);
 
             background:
-                rgba(53,220,255,0.025);
+                rgba(53,220,255,.035);
         }
 
 
-        .user-header {
-
+        .user-top {
             display: flex;
 
             align-items: center;
 
             gap: 12px;
 
-            margin-bottom: 16px;
+            margin-bottom: 17px;
         }
 
 
-        .user-avatar {
+        .avatar {
+            width: 43px;
+            height: 43px;
 
-            width: 42px;
-
-            height: 42px;
+            border-radius: 12px;
 
             display: flex;
 
             align-items: center;
-
             justify-content: center;
-
-            flex-shrink: 0;
-
-            border-radius: 13px;
 
             background:
                 linear-gradient(
@@ -565,40 +421,27 @@
 
             color: #031018;
 
-            font-size: 14px;
-
-            font-weight: 800;
+            font-weight: bold;
         }
 
 
         .user-name {
-
-            color: #e8eef5;
-
             font-size: 13px;
 
-            font-weight: 700;
+            font-weight: bold;
         }
 
 
-        .user-email {
+        .user-id {
+            margin-top: 4px;
 
-            margin-top: 3px;
-
-            color: #617085;
+            color: #596a7d;
 
             font-size: 9px;
-
-            overflow: hidden;
-
-            text-overflow: ellipsis;
-
-            white-space: nowrap;
         }
 
 
         .user-stats {
-
             display: grid;
 
             grid-template-columns:
@@ -608,24 +451,46 @@
         }
 
 
-        .user-stat {
-
+        .mini {
             padding: 11px;
 
-            border-radius: 10px;
+            border-radius: 9px;
 
             background:
-                rgba(255,255,255,0.018);
+                rgba(255,255,255,.025);
         }
 
 
-        .user-stat small {
-
+        .mini span {
             display: block;
 
             color: #536276;
 
-            font-size: 7px;
+            font-size: 8px;
+
+            text-transform: uppercase;
+        }
+
+
+        .mini strong {
+            display: block;
+
+            margin-top: 5px;
+
+            font-size: 12px;
+
+            color: #c7d3df;
+        }
+
+
+        .view-report {
+            margin-top: 13px;
+
+            text-align: right;
+
+            color: #35dcff;
+
+            font-size: 8px;
 
             text-transform: uppercase;
 
@@ -633,44 +498,379 @@
         }
 
 
-        .user-stat strong {
+        /* ==============================
+           USER REPORT
+        ============================== */
 
-            display: block;
+        .report {
+            display: none;
 
-            margin-top: 4px;
+            margin-top: 25px;
 
-            color: #b8c5d2;
+            border:
+                1px solid rgba(53,220,255,.12);
 
-            font-size: 12px;
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(15,27,42,.98),
+                    rgba(5,10,17,.98)
+                );
         }
 
 
-        /* =====================================================
-           PREDICTIONS
-           ===================================================== */
+        .report-header {
+            padding: 23px;
 
-        .predictions-wrapper {
+            display: flex;
 
+            justify-content: space-between;
+
+            align-items: center;
+
+            border-bottom:
+                1px solid rgba(255,255,255,.06);
+        }
+
+
+        .report-label {
+            color: #35dcff;
+
+            font-size: 9px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-weight: bold;
+        }
+
+
+        .report-name {
+            margin-top: 7px;
+
+            font-size: 27px;
+        }
+
+
+        .report-subtitle {
+            margin-top: 5px;
+
+            color: #647387;
+
+            font-size: 10px;
+        }
+
+
+        .close-report {
+            padding: 9px 14px;
+
+            border-radius: 9px;
+
+            border:
+                1px solid rgba(255,255,255,.08);
+
+            background:
+                rgba(255,255,255,.025);
+
+            color: #9ba9b9;
+
+            cursor: pointer;
+        }
+
+
+        .report-body {
+            padding: 22px;
+        }
+
+
+        .report-stats {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 12px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .report-stat {
+            padding: 17px;
+
+            border-radius: 13px;
+
+            background:
+                rgba(255,255,255,.025);
+
+            border:
+                1px solid rgba(255,255,255,.05);
+        }
+
+
+        .report-stat span {
+            display: block;
+
+            color: #627286;
+
+            font-size: 8px;
+
+            text-transform: uppercase;
+        }
+
+
+        .report-stat strong {
+            display: block;
+
+            margin-top: 9px;
+
+            font-size: 22px;
+
+            color: #eaf3f8;
+        }
+
+
+        /* ==============================
+           CHARTS
+        ============================== */
+
+        .charts {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 15px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .chart-box {
+            padding: 20px;
+
+            border-radius: 15px;
+
+            border:
+                1px solid rgba(255,255,255,.05);
+
+            background:
+                rgba(255,255,255,.018);
+        }
+
+
+        .chart-title {
+            font-size: 13px;
+
+            font-weight: bold;
+
+            margin-bottom: 17px;
+        }
+
+
+        canvas {
+            width: 100%;
+
+            height: 240px;
+
+            display: block;
+        }
+
+
+        /* ==============================
+           DISEASE BREAKDOWN
+        ============================== */
+
+        .disease-row {
+            display: grid;
+
+            grid-template-columns:
+                150px 1fr 50px;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .disease-name {
+            color: #9aa9b8;
+
+            font-size: 10px;
+        }
+
+
+        .bar {
+            height: 8px;
+
+            border-radius: 20px;
+
+            background:
+                rgba(255,255,255,.05);
+
+            overflow: hidden;
+        }
+
+
+        .bar-fill {
+            height: 100%;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #2bd7ef,
+                    #527dff
+                );
+        }
+
+
+        .disease-count {
+            text-align: right;
+
+            color: #cbd7e1;
+
+            font-size: 9px;
+        }
+
+
+        /* ==============================
+           SCANS
+        ============================== */
+
+        .scan-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 13px;
+        }
+
+
+        .scan-card {
+            border:
+                1px solid rgba(255,255,255,.06);
+
+            border-radius: 13px;
+
+            overflow: hidden;
+
+            background:
+                rgba(255,255,255,.015);
+        }
+
+
+        .scan-card {
+            transition: .2s ease;
+            cursor: pointer;
+        }
+
+        .scan-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(53,220,255,.22);
+        }
+
+        .scan-row {
+            cursor: pointer;
+        }
+
+        .scan-row:hover td {
+            background: rgba(53,220,255,.035);
+        }
+
+        .scan-row img {
+            transition: .2s ease;
+        }
+
+        .scan-row:hover img {
+            transform: scale(1.04);
+        }
+
+        .scan-image {
+            width: 100%;
+
+            height: 160px;
+
+            object-fit: cover;
+
+            display: block;
+
+            background: #020509;
+
+            cursor: pointer;
+        }
+
+
+        .scan-info {
+            padding: 13px;
+        }
+
+
+        .scan-disease {
+            font-size: 11px;
+
+            font-weight: bold;
+        }
+
+
+        .scan-confidence {
+            margin-top: 6px;
+
+            color: #6de7fa;
+
+            font-size: 9px;
+        }
+
+
+        .scan-model {
+            margin-top: 5px;
+
+            color: #627286;
+
+            font-size: 8px;
+        }
+
+
+        .scan-date {
+            margin-top: 8px;
+
+            color: #536276;
+
+            font-size: 8px;
+        }
+
+
+        /* ==============================
+           TABLE
+        ============================== */
+
+        .table-wrapper {
             padding: 20px;
 
             overflow-x: auto;
         }
 
 
-        .prediction-table {
-
+        table {
             width: 100%;
 
-            border-collapse: collapse;
-
             min-width: 950px;
+
+            border-collapse: collapse;
         }
 
 
-        .prediction-table th {
-
-            padding:
-                12px 13px;
+        th {
+            padding: 12px;
 
             text-align: left;
 
@@ -683,184 +883,135 @@
             letter-spacing: 1px;
 
             border-bottom:
-                1px solid rgba(255,255,255,0.06);
+                1px solid rgba(255,255,255,.06);
         }
 
 
-        .prediction-table td {
-
-            padding:
-                13px;
-
-            border-bottom:
-                1px solid rgba(255,255,255,0.035);
+        td {
+            padding: 13px;
 
             color: #9eacbb;
 
             font-size: 10px;
 
-            vertical-align: middle;
+            border-bottom:
+                1px solid rgba(255,255,255,.035);
         }
 
 
-        .prediction-table tr:last-child td {
-            border-bottom: none;
-        }
-
-
-        .prediction-table tr:hover td {
-
+        tr:hover td {
             background:
-                rgba(53,220,255,0.018);
+                rgba(53,220,255,.018);
         }
 
-
-        /* =====================================================
-           SCAN IMAGE
-           ===================================================== */
-
-        .scan-cell {
-
-            display: flex;
-
-            align-items: center;
-
-            gap: 10px;
-        }
-
-
-        .scan-image {
-
-            width: 58px;
-
-            height: 48px;
-
-            object-fit: cover;
-
-            border-radius: 9px;
-
-            border:
-                1px solid rgba(255,255,255,0.08);
-
-            background: #020509;
-
-            cursor: pointer;
-
-            transition: .2s ease;
-        }
-
-
-        .scan-image:hover {
-
-            transform: scale(1.08);
-
-            border-color:
-                rgba(53,220,255,0.35);
-        }
-
-
-        .filename {
-
-            max-width: 130px;
-
-            overflow: hidden;
-
-            text-overflow: ellipsis;
-
-            white-space: nowrap;
-
-            color: #8190a2;
-
-            font-size: 9px;
-        }
-
-
-        /* =====================================================
-           BADGES
-           ===================================================== */
 
         .badge {
+            display: inline-block;
 
-            display: inline-flex;
-
-            align-items: center;
-
-            padding:
-                5px 8px;
+            padding: 5px 8px;
 
             border-radius: 7px;
 
-            font-size: 8px;
-
-            font-weight: 700;
-
             background:
-                rgba(255,255,255,0.035);
+                rgba(255,255,255,.035);
 
             border:
-                1px solid rgba(255,255,255,0.06);
+                1px solid rgba(255,255,255,.06);
+
+            font-size: 8px;
         }
 
 
-        .badge-blue {
-
+        .blue {
             color: #6ce6fa;
-
-            background:
-                rgba(53,220,255,0.04);
-
-            border-color:
-                rgba(53,220,255,0.09);
         }
 
 
-        .badge-green {
-
+        .green {
             color: #6ee7b7;
-
-            background:
-                rgba(52,211,153,0.04);
-
-            border-color:
-                rgba(52,211,153,0.09);
         }
 
 
-        .badge-purple {
-
+        .purple {
             color: #b9a6ff;
-
-            background:
-                rgba(139,92,246,0.05);
-
-            border-color:
-                rgba(139,92,246,0.10);
         }
 
 
         .confidence {
-
             color: #d8e3ed;
 
-            font-weight: 700;
+            font-weight: bold;
         }
 
 
-        .date {
+        /* ==============================
+           MODAL
+        ============================== */
 
-            color: #657487;
+        .modal {
+            display: none;
 
-            white-space: nowrap;
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 9999;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 30px;
+
+            background:
+                rgba(0,0,0,.9);
         }
 
 
-        /* =====================================================
-           EMPTY STATE
-           ===================================================== */
+        .modal.active {
+            display: flex;
+        }
+
+
+        .modal img {
+            max-width: 90vw;
+
+            max-height: 85vh;
+
+            border-radius: 14px;
+
+            border:
+                1px solid rgba(255,255,255,.15);
+        }
+
+
+        .modal-close {
+            position: absolute;
+
+            top: 25px;
+
+            right: 30px;
+
+            width: 40px;
+
+            height: 40px;
+
+            border: none;
+
+            border-radius: 50%;
+
+            background: #17212d;
+
+            color: white;
+
+            font-size: 20px;
+
+            cursor: pointer;
+        }
+
 
         .empty {
-
-            padding: 50px 20px;
+            padding: 45px;
 
             text-align: center;
 
@@ -870,173 +1021,646 @@
         }
 
 
-        .empty-icon {
+        /* ==============================
+           DASHBOARD RULES
+        ============================== */
 
-            font-size: 28px;
-
-            margin-bottom: 10px;
-
-            opacity: .5;
+        .dashboard-rules {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 7px 10px;
+            border: 1px solid rgba(53,220,255,.13);
+            border-radius: 8px;
+            background: rgba(53,220,255,.035);
+            color: #62dff2;
+            font-size: 8px;
+            font-weight: bold;
+            letter-spacing: .7px;
         }
 
+        /* ==============================
+           INDIVIDUAL SCAN REPORT
+        ============================== */
 
-        /* =====================================================
-           IMAGE MODAL
-           ===================================================== */
-
-        .image-modal {
-
-            position: fixed;
-
-            inset: 0;
-
-            z-index: 9999;
-
-            display: none;
-
-            align-items: center;
-
-            justify-content: center;
-
-            padding: 30px;
-
-            background:
-                rgba(0,0,0,0.86);
-
-            backdrop-filter:
-                blur(12px);
+        .scan-detail-report {
+            border-color: rgba(53,220,255,.18);
         }
 
+        .scan-report-layout {
+            display: grid;
+            grid-template-columns: 380px 1fr;
+            gap: 20px;
+            align-items: start;
+        }
 
-        .image-modal.active {
+        .scan-report-image-box {
+            min-height: 330px;
+            padding: 15px;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,.06);
+            background: #020509;
         }
 
-
-        .modal-content {
-
-            position: relative;
-
-            max-width: 90vw;
-
-            max-height: 90vh;
-        }
-
-
-        .modal-content img {
-
+        .scan-report-image-box img {
+            max-width: 100%;
+            max-height: 430px;
             display: block;
-
-            max-width: 90vw;
-
-            max-height: 85vh;
-
-            border-radius: 14px;
-
-            border:
-                1px solid rgba(255,255,255,0.12);
-
-            box-shadow:
-                0 30px 100px rgba(0,0,0,.6);
+            object-fit: contain;
+            border-radius: 10px;
         }
 
+        .scan-report-details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
 
-        .modal-close {
+        .report-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 9px;
+        }
 
-            position: absolute;
+        .report-detail {
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,.05);
+            background: rgba(255,255,255,.018);
+        }
 
-            right: -12px;
+        .report-detail span,
+        .scan-result-box span {
+            display: block;
+            color: #627286;
+            font-size: 8px;
+            text-transform: uppercase;
+            letter-spacing: .7px;
+        }
 
-            top: -12px;
+        .report-detail strong {
+            display: block;
+            margin-top: 6px;
+            color: #e4edf4;
+            font-size: 10px;
+            word-break: break-word;
+        }
 
-            width: 34px;
+        .scan-result-box {
+            padding: 14px;
+            border-radius: 11px;
+            border: 1px solid rgba(53,220,255,.08);
+            background: rgba(53,220,255,.025);
+        }
 
-            height: 34px;
-
-            border: none;
-
-            border-radius: 50%;
-
-            background: #16202c;
-
-            color: white;
-
-            cursor: pointer;
-
+        .scan-result-box strong {
+            display: block;
+            margin-top: 7px;
+            color: #6de7fa;
             font-size: 18px;
         }
 
+        .probability-box {
+            padding: 14px;
+            border-radius: 11px;
+            border: 1px solid rgba(255,255,255,.05);
+            background: rgba(255,255,255,.018);
+        }
 
-        /* =====================================================
-           FOOTER
-           ===================================================== */
+        .probability-row {
+            display: grid;
+            grid-template-columns: 145px 1fr 55px;
+            gap: 9px;
+            align-items: center;
+            margin-top: 10px;
+        }
 
-        .footer {
+        .probability-name {
+            color: #9aa9b8;
+            font-size: 9px;
+        }
 
-            margin-top: 35px;
+        .probability-bar {
+            height: 7px;
+            overflow: hidden;
+            border-radius: 20px;
+            background: rgba(255,255,255,.05);
+        }
 
-            text-align: center;
+        .probability-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg,#2bd7ef,#527dff);
+        }
 
-            color: #445264;
+        .probability-value {
+            color: #dce5ee;
+            text-align: right;
+            font-size: 9px;
+        }
 
+        .download-report {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            padding: 10px 15px;
+            border-radius: 9px;
+            background: linear-gradient(135deg,#2bd7ef,#527dff);
+            color: #031018;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .scan-report-disclaimer {
+            margin-top: 17px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(231,184,75,.2);
+            background: rgba(231,184,75,.05);
+            color: #b9a982;
+            font-size: 9px;
+            line-height: 1.5;
+        }
+
+        .scan-image-click {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scan-open-label {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,.65);
+            color: #35dcff;
+            font-size: 9px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            opacity: 0;
+            transition: .2s ease;
+        }
+
+        .scan-card:hover .scan-open-label {
+            opacity: 1;
+        }
+
+        .scan-report-button {
+            width: 100%;
+            margin-top: 9px;
+            padding: 8px;
+            border: 1px solid rgba(53,220,255,.14);
+            border-radius: 8px;
+            background: rgba(53,220,255,.04);
+            color: #35dcff;
             font-size: 8px;
-
-            letter-spacing: .5px;
+            font-weight: bold;
+            cursor: pointer;
         }
 
+        .scan-report-button:hover {
+            background: rgba(53,220,255,.1);
+        }
 
-        /* =====================================================
+/* ==============================
            RESPONSIVE
-           ===================================================== */
+        ============================== */
 
-        @media (max-width: 1050px) {
+        /* ==============================
+           CONFIDENCE STATUS
+        ============================== */
 
-            .stats-grid {
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            padding: 5px 9px;
+            border-radius: 999px;
+            font-size: 8px;
+            font-weight: 800;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255,255,255,.08);
+        }
+
+        .large-status {
+            margin-top: 7px;
+            padding: 7px 11px;
+            font-size: 9px;
+        }
+
+        .status-high {
+            color: #71f0bd;
+            background: rgba(65,220,153,.10);
+            border-color: rgba(65,220,153,.24);
+        }
+
+        .status-medium {
+            color: #ffd36b;
+            background: rgba(255,195,71,.09);
+            border-color: rgba(255,195,71,.24);
+        }
+
+        .status-low {
+            color: #ff8e9d;
+            background: rgba(255,94,119,.09);
+            border-color: rgba(255,94,119,.24);
+        }
+
+        .status-result-box {
+            border-color: rgba(255,255,255,.07);
+        }
+
+        /* ==============================
+           CONFIDENCE TREND SUMMARY
+        ============================== */
+
+        .trend-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .trend-stat {
+            padding: 9px 10px;
+            border-radius: 9px;
+            background: rgba(255,255,255,.025);
+            border: 1px solid rgba(255,255,255,.05);
+        }
+
+        .trend-stat span {
+            display: block;
+            color: #536276;
+            font-size: 7px;
+            text-transform: uppercase;
+            letter-spacing: .7px;
+        }
+
+        .trend-stat strong {
+            display: block;
+            margin-top: 5px;
+            color: #dce7ef;
+            font-size: 12px;
+        }
+
+        .scan-history-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 14px;
+        }
+
+        .scan-history-subtitle {
+            color: #5d6d80;
+            font-size: 8px;
+        }
+
+        .compare-floating-bar {
+            position: fixed;
+            left: 50%;
+            bottom: 22px;
+            transform: translateX(-50%);
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 12px 10px 15px;
+            border: 1px solid rgba(53,220,255,.28);
+            border-radius: 12px;
+            background: rgba(5,12,20,.96);
+            box-shadow: 0 12px 40px rgba(0,0,0,.45);
+            backdrop-filter: blur(12px);
+        }
+
+        .compare-floating-bar.visible {
+            display: flex;
+        }
+
+        .compare-floating-text {
+            color: #dce5ee;
+            font-size: 10px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .compare-floating-action {
+            border: 0;
+            border-radius: 8px;
+            padding: 9px 14px;
+            background: linear-gradient(135deg,#35dcff,#527dff);
+            color: #031018;
+            font-size: 9px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .compare-floating-action:disabled {
+            opacity: .45;
+            cursor: not-allowed;
+        }
+
+        .compare-floating-clear {
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 8px;
+            padding: 8px 10px;
+            background: transparent;
+            color: #8b9aaa;
+            font-size: 8px;
+            cursor: pointer;
+        }
+
+        .compare-selected-button {
+            border: 1px solid rgba(53,220,255,.22);
+            border-radius: 9px;
+            padding: 9px 12px;
+            background: rgba(53,220,255,.06);
+            color: #35dcff;
+            font-size: 8px;
+            font-weight: 800;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .compare-selected-button:disabled {
+            opacity: .35;
+            cursor: not-allowed;
+        }
+
+        .scan-compare-control {
+            position: absolute;
+            top: 9px;
+            right: 9px;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 7px;
+            border-radius: 8px;
+            background: rgba(2,5,9,.78);
+            border: 1px solid rgba(255,255,255,.10);
+            color: #dce7ef;
+            font-size: 7px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .scan-compare-control input {
+            accent-color: #35dcff;
+            cursor: pointer;
+        }
+
+        .scan-card.compare-selected {
+            border-color: rgba(53,220,255,.65);
+            box-shadow: 0 0 0 1px rgba(53,220,255,.15), 0 10px 28px rgba(0,0,0,.22);
+        }
+
+        .table-compare-button {
+            margin-top: 6px;
+            padding: 5px 7px;
+            border-radius: 7px;
+            border: 1px solid rgba(53,220,255,.14);
+            background: rgba(53,220,255,.04);
+            color: #35dcff;
+            font-size: 7px;
+            cursor: pointer;
+        }
+
+        .table-compare-button.selected {
+            background: rgba(53,220,255,.12);
+            border-color: rgba(53,220,255,.4);
+        }
+
+        /* ==============================
+           COMPARISON MODAL
+        ============================== */
+
+        .compare-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 12000;
+            padding: 25px;
+            overflow-y: auto;
+            background: rgba(0,0,0,.88);
+        }
+
+        .compare-modal.active {
+            display: block;
+        }
+
+        .compare-box {
+            width: min(1250px, 96%);
+            margin: 20px auto;
+            overflow: hidden;
+            border: 1px solid rgba(53,220,255,.16);
+            border-radius: 20px;
+            background: linear-gradient(145deg,#101923,#050a11);
+            box-shadow: 0 30px 80px rgba(0,0,0,.55);
+        }
+
+        .compare-header {
+            padding: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255,255,255,.06);
+        }
+
+        .compare-title {
+            margin-top: 6px;
+            font-size: 25px;
+            font-weight: 800;
+        }
+
+        .compare-content {
+            padding: 22px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .compare-card {
+            overflow: hidden;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,.06);
+            background: rgba(255,255,255,.018);
+        }
+
+        .compare-card-header {
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            border-bottom: 1px solid rgba(255,255,255,.05);
+        }
+
+        .compare-card-header strong {
+            color: #e8f1f7;
+            font-size: 12px;
+        }
+
+        .compare-image {
+            width: 100%;
+            height: 290px;
+            object-fit: contain;
+            display: block;
+            background: #020509;
+        }
+
+        .compare-data {
+            padding: 15px;
+        }
+
+        .compare-data-row {
+            display: grid;
+            grid-template-columns: 42% 58%;
+            gap: 8px;
+            padding: 9px 0;
+            border-bottom: 1px solid rgba(255,255,255,.035);
+        }
+
+        .compare-data-row span {
+            color: #5d6d80;
+            font-size: 8px;
+            text-transform: uppercase;
+        }
+
+        .compare-data-row strong {
+            color: #dce7ef;
+            font-size: 9px;
+            word-break: break-word;
+        }
+
+        .compare-conclusion {
+            grid-column: 1 / -1;
+            padding: 15px;
+            border-radius: 13px;
+            border: 1px solid rgba(53,220,255,.10);
+            background: rgba(53,220,255,.025);
+            color: #8494a7;
+            font-size: 9px;
+            line-height: 1.6;
+        }
+
+        @media(max-width:1050px) {
+
+            .stats {
                 grid-template-columns:
-                    repeat(2, 1fr);
+                    repeat(2,1fr);
             }
 
-            .users-grid {
+            .users {
                 grid-template-columns:
-                    repeat(2, 1fr);
+                    repeat(2,1fr);
+            }
+
+            .report-stats {
+                grid-template-columns:
+                    repeat(2,1fr);
             }
 
         }
 
 
-        @media (max-width: 650px) {
+        @media(max-width:700px) {
 
-            .admin-header {
-                padding:
-                    0 18px;
-            }
-
-            .brand-text span {
-                display: none;
-            }
-
-            .admin-badge {
-                display: none;
-            }
-
-            .container {
-                width: 94%;
-                padding-top: 35px;
-            }
-
-            .stats-grid {
+            .stats,
+            .users,
+            .scan-grid,
+            .charts {
                 grid-template-columns: 1fr;
             }
 
-            .users-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .page-heading h2 {
-                font-size: 36px;
+            .report-stats {
+                grid-template-columns:
+                    1fr 1fr;
             }
 
         }
+
+
+        /* ==============================
+   PAGINATION
+============================== */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.pagination button {
+    padding: 8px 13px;
+    border-radius: 8px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: rgba(255,255,255,.025);
+
+    color: #9ba9b9;
+
+    cursor: pointer;
+
+    font-size: 9px;
+}
+
+.pagination button:hover {
+    border-color: rgba(53,220,255,.35);
+    color: #35dcff;
+}
+
+.pagination button.active {
+    background: rgba(53,220,255,.12);
+    border-color: rgba(53,220,255,.3);
+    color: #35dcff;
+}
+
+.pagination button:disabled {
+    opacity: .35;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    color: #536276;
+    font-size: 9px;
+    margin: 0 8px;
+}
+
+
+/* ==============================
+   CLICKABLE SCAN ROW
+============================== */
+
+.scan-row {
+    cursor: pointer;
+}
+
+.scan-row.table-page-hidden {
+    display: none !important;
+}
+
+.scan-row:hover td {
+    background: rgba(53,220,255,.035);
+}
+
+.scan-row img {
+    transition: .2s ease;
+}
+
+.scan-row:hover img {
+    transform: scale(1.04);
+}
 
     </style>
 
@@ -1046,11 +1670,11 @@
 <body>
 
 
-<!-- =========================================================
+<!-- ==============================
      HEADER
-     ========================================================= -->
+============================== -->
 
-<header class="admin-header">
+<header class="header">
 
     <div class="brand">
 
@@ -1058,15 +1682,15 @@
             👁
         </div>
 
-        <div class="brand-text">
+        <div>
 
-            <h1>
+            <div class="brand-title">
                 EyeAI
-            </h1>
+            </div>
 
-            <span>
+            <div class="brand-subtitle">
                 Administration
-            </span>
+            </div>
 
         </div>
 
@@ -1075,13 +1699,13 @@
 
     <div class="header-right">
 
-        <span class="admin-badge">
+        <div class="admin-badge">
             Administrator
-        </span>
+        </div>
 
         <a
             href="{{ url_for('admin_login') }}"
-            class="logout-btn"
+            class="logout"
         >
             Logout
         </a>
@@ -1091,141 +1715,81 @@
 </header>
 
 
+
 <main class="container">
 
 
-    <!-- =====================================================
-         PAGE HEADING
-         ===================================================== -->
+    <!-- ==============================
+         TITLE
+    ============================== -->
 
-    <section class="page-heading">
+    <div class="page-title">
 
-        <div class="eyebrow">
+        <small>
             System Overview
-        </div>
+        </small>
 
-        <h2>
+        <h1>
             Admin Dashboard
-        </h2>
+        </h1>
 
         <p>
-            Monitor registered users, eye scans,
-            AI predictions and analysis results.
+            Monitor users, scans and AI prediction results.
         </p>
 
-    </section>
+        <div class="dashboard-rules">
+            12 USERS / PAGE &nbsp; • &nbsp; 12 SCANS / PAGE &nbsp; • &nbsp; 10 RECORDS / PAGE
+        </div>
+
+    </div>
 
 
-    <!-- =====================================================
+
+    <!-- ==============================
          STATISTICS
-         ===================================================== -->
+    ============================== -->
 
-    {% set total_users = users|length %}
-    {% set total_predictions = predictions|length %}
-
-
-    <section class="stats-grid">
+    <section class="stats">
 
 
-        <div class="stat-card">
+        <div class="stat">
 
-            <div class="stat-top">
-
-                <span class="stat-label">
-                    Total Users
-                </span>
-
-                <div class="stat-icon">
-                    👥
-                </div>
-
+            <div class="stat-label">
+                Total Users
             </div>
 
             <div class="stat-value">
-                {{ total_users }}
+                {{ users|length }}
             </div>
 
             <div class="stat-description">
-                Registered EyeAI accounts
+                Registered accounts
             </div>
 
         </div>
 
 
-        <div class="stat-card">
+        <div class="stat">
 
-            <div class="stat-top">
-
-                <span class="stat-label">
-                    Total Scans
-                </span>
-
-                <div class="stat-icon">
-                    🔬
-                </div>
-
+            <div class="stat-label">
+                Total Scans
             </div>
 
             <div class="stat-value">
-                {{ total_predictions }}
+                {{ predictions|length }}
             </div>
 
             <div class="stat-description">
-                AI predictions recorded
+                AI predictions
             </div>
 
         </div>
 
 
-        <div class="stat-card">
+        <div class="stat">
 
-            <div class="stat-top">
-
-                <span class="stat-label">
-                    Fundus / OCT
-                </span>
-
-                <div class="stat-icon">
-                    👁
-                </div>
-
-            </div>
-
-            <div class="stat-value">
-
-                {% set image_type_count = 0 %}
-
-                {% for prediction in predictions %}
-
-                    {% if prediction.image_type %}
-                        {% set image_type_count = image_type_count + 1 %}
-                    {% endif %}
-
-                {% endfor %}
-
-                {{ image_type_count }}
-
-            </div>
-
-            <div class="stat-description">
-                Scans with detected image type
-            </div>
-
-        </div>
-
-
-        <div class="stat-card">
-
-            <div class="stat-top">
-
-                <span class="stat-label">
-                    Latest Scan
-                </span>
-
-                <div class="stat-icon">
-                    ⚡
-                </div>
-
+            <div class="stat-label">
+                Latest Scan
             </div>
 
             <div class="stat-value">
@@ -1233,7 +1797,7 @@
                 {% if predictions %}
                     #{{ predictions[0].id }}
                 {% else %}
-                    —
+                    0
                 {% endif %}
 
             </div>
@@ -1245,432 +1809,157 @@
         </div>
 
 
+        <div class="stat">
+
+            <div class="stat-label">
+                System
+            </div>
+
+            <div class="stat-value"
+                 style="font-size:20px;">
+                ONLINE
+            </div>
+
+            <div class="stat-description">
+                AI prediction service
+            </div>
+
+        </div>
+
+
     </section>
 
 
-    <!-- =====================================================
+
+    <!-- ==============================
          USERS
-         ===================================================== -->
+    ============================== -->
 
     <section class="section">
 
-
         <div class="section-header">
 
-            <div class="section-title">
+            <div>
 
-                <h3>
+                <h2>
                     Registered Users
-                </h3>
+                </h2>
 
                 <p>
-                    Users and their prediction activity
+                    Click a user to see detailed analysis
                 </p>
 
             </div>
 
-            <span class="record-count">
-                {{ total_users }} USERS
-            </span>
+            <div class="count">
+                {{ users|length }} USERS
+            </div>
 
         </div>
+
 
 
         {% if users %}
 
-        <div class="users-grid">
+            <div id="userGrid" class="users">
 
 
-            {% for user in users %}
+                {% for user in users %}
 
-                {% set user_predictions = [] %}
-
-                {% for prediction in predictions %}
-
-                    {% if prediction.user_id == user.id %}
-
-                        {% set _ = user_predictions.append(prediction) %}
-
-                    {% endif %}
-
-                {% endfor %}
+                    <div
+                        class="user-card"
+                        data-user-id="{{ user.id }}"
+                        data-user-name="{{ user.name }}"
+                    >
 
 
-                <div class="user-card">
+                        <div class="user-top">
 
+                            <div class="avatar">
 
-                    <div class="user-header">
+                                {% if user.name %}
+                                    {{ user.name[0]|upper }}
+                                {% else %}
+                                    U
+                                {% endif %}
 
-                        <div class="user-avatar">
-
-                            {{ user.name[0]|upper
-                               if user.name
-                               else "U" }}
-
-                        </div>
-
-
-                        <div>
-
-                            <div class="user-name">
-                                {{ user.name }}
                             </div>
 
-                            <div class="user-email">
-                                {{ user.email }}
-                            </div>
 
-                        </div>
+                            <div>
 
-                    </div>
+                                <div class="user-name">
+                                    {{ user.name }}
+                                </div>
 
-
-                    <div class="user-stats">
-
-
-                        <div class="user-stat">
-
-                            <small>
-                                User ID
-                            </small>
-
-                            <strong>
-                                #{{ user.id }}
-                            </strong>
-
-                        </div>
-
-
-                        <div class="user-stat">
-
-                            <small>
-                                Scans
-                            </small>
-
-                            <strong>
-                                {{ user_predictions|length }}
-                            </strong>
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-            {% endfor %}
-
-
-        </div>
-
-        {% else %}
-
-            <div class="empty">
-
-                <div class="empty-icon">
-                    👥
-                </div>
-
-                No registered users yet.
-
-            </div>
-
-        {% endif %}
-
-
-    </section>
-
-
-    <!-- =====================================================
-         ALL PREDICTIONS
-         ===================================================== -->
-
-    <section class="section">
-
-
-        <div class="section-header">
-
-            <div class="section-title">
-
-                <h3>
-                    User Scan Records
-                </h3>
-
-                <p>
-                    Every uploaded image and its AI prediction
-                </p>
-
-            </div>
-
-            <span class="record-count">
-                {{ total_predictions }} SCANS
-            </span>
-
-        </div>
-
-
-        {% if predictions %}
-
-
-        <div class="predictions-wrapper">
-
-
-            <table class="prediction-table">
-
-
-                <thead>
-
-                    <tr>
-
-                        <th>
-                            Scan
-                        </th>
-
-                        <th>
-                            User
-                        </th>
-
-                        <th>
-                            Image Type
-                        </th>
-
-                        <th>
-                            AI Model
-                        </th>
-
-                        <th>
-                            Prediction
-                        </th>
-
-                        <th>
-                            Confidence
-                        </th>
-
-                        <th>
-                            Detection
-                        </th>
-
-                        <th>
-                            Date
-                        </th>
-
-                    </tr>
-
-                </thead>
-
-
-                <tbody>
-
-
-                {% for prediction in predictions %}
-
-
-                    <tr>
-
-
-                        <!-- IMAGE -->
-
-                        <td>
-
-                            <div class="scan-cell">
-
-                                <img
-                                    class="scan-image"
-                                    src="{{ url_for(
-                                        'get_prediction_image',
-                                        prediction_id=prediction.id
-                                    ) }}"
-                                    alt="Eye scan"
-                                    onclick="openImage(this.src)"
-                                    onerror="this.style.display='none'"
-                                >
-
-                                <div>
-
-                                    <div>
-                                        <span class="badge badge-blue">
-                                            #{{ prediction.id }}
-                                        </span>
-                                    </div>
-
-                                    <div class="filename">
-                                        {{ prediction.image_name or "Eye Image" }}
-                                    </div>
-
+                                <div class="user-id">
+                                    User ID #{{ user.id }}
                                 </div>
 
                             </div>
 
-                        </td>
+                        </div>
 
 
-                        <!-- USER -->
 
-                        <td>
-
-                            {% for user in users %}
-
-                                {% if user.id == prediction.user_id %}
-
-                                    <strong
-                                        style="color:#dce5ee;"
-                                    >
-                                        {{ user.name }}
-                                    </strong>
-
-                                {% endif %}
-
-                            {% endfor %}
-
-                        </td>
+                        <div class="user-stats">
 
 
-                        <!-- IMAGE TYPE -->
+                            <div class="mini">
 
-                        <td>
-
-                            {% if prediction.image_type %}
-
-                                <span class="badge badge-purple">
-                                    {{ prediction.image_type }}
+                                <span>
+                                    Total Scans
                                 </span>
 
-                            {% else %}
+                                <strong>
 
-                                —
+                                    {{ predictions
+                                        | selectattr("user_id", "equalto", user.id)
+                                        | list
+                                        | length
+                                    }}
 
-                            {% endif %}
+                                </strong>
 
-                        </td>
-
-
-                        <!-- MODEL -->
-
-                        <td>
-
-                            <span class="badge">
-                                {{ prediction.model_type or "—" }}
-                            </span>
-
-                        </td>
+                            </div>
 
 
-                        <!-- PREDICTION -->
+                            <div class="mini">
 
-                        <td>
-
-                            <span class="badge badge-green">
-
-                                {{ prediction.predicted_class
-                                   or "Unknown" }}
-
-                            </span>
-
-                        </td>
-
-
-                        <!-- CONFIDENCE -->
-
-                        <td>
-
-                            {% if prediction.confidence is not none %}
-
-                                {% set confidence =
-                                    prediction.confidence|float %}
-
-                                {% if confidence <= 1 %}
-                                    {% set confidence =
-                                        confidence * 100 %}
-                                {% endif %}
-
-                                <span class="confidence">
-
-                                    {{ "%.2f"|format(confidence) }}%
-
+                                <span>
+                                    Account
                                 </span>
 
-                            {% else %}
+                                <strong>
+                                    Active
+                                </strong>
 
-                                —
-
-                            {% endif %}
-
-                        </td>
+                            </div>
 
 
-                        <!-- DETECTION -->
-
-                        <td>
-
-                            {% if prediction.image_type_confidence is not none %}
-
-                                {% set detection =
-                                    prediction.image_type_confidence|float %}
-
-                                {% if detection <= 1 %}
-                                    {% set detection =
-                                        detection * 100 %}
-                                {% endif %}
-
-                                {{ "%.2f"|format(detection) }}%
-
-                            {% else %}
-
-                                —
-
-                            {% endif %}
-
-                        </td>
+                        </div>
 
 
-                        <!-- DATE -->
-
-                        <td class="date">
-
-                            {% if prediction.created_at %}
-
-                                {{ prediction.created_at.strftime(
-                                    "%d %b %Y, %I:%M %p"
-                                ) }}
-
-                            {% else %}
-
-                                —
-
-                            {% endif %}
-
-                        </td>
+                        <div class="view-report">
+                            View User Report →
+                        </div>
 
 
-                    </tr>
-
+                    </div>
 
                 {% endfor %}
 
 
-                </tbody>
+            </div>
 
-
-            </table>
-
-
-        </div>
+            <div id="userPagination" class="pagination"></div>
 
 
         {% else %}
 
-
             <div class="empty">
-
-                <div class="empty-icon">
-                    🔬
-                </div>
-
-                No predictions have been recorded yet.
-
+                No registered users found.
             </div>
-
 
         {% endif %}
 
@@ -1678,484 +1967,161 @@
     </section>
 
 
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
 
-    <div class="footer">
 
-        EyeAI • AI-assisted eye image analysis
-        • Administration Panel
+    <!-- ==============================
+         INDIVIDUAL SCAN REPORT
+    ============================== -->
+    <section
+        id="scanReport"
+        class="report scan-detail-report"
+        style="display:none;"
+    >
+        <div class="report-header">
+            <div>
+                <div class="report-label">Individual Scan Report</div>
+                <div id="scanReportTitle" class="report-name">Scan Report</div>
+                <div id="scanReportSubtitle" class="report-subtitle">Loading...</div>
+            </div>
 
+            <button id="closeScanReport" class="close-report" type="button">
+                Close
+            </button>
+        </div>
+
+        <div class="report-body">
+            <div class="scan-report-layout">
+
+                <div class="scan-report-image-box">
+                    <img id="scanReportImage" src="" alt="Eye scan">
+                </div>
+
+                <div class="scan-report-details">
+
+                    <div class="report-detail-grid">
+                        <div class="report-detail">
+                            <span>Report ID</span>
+                            <strong id="detailReportId">-</strong>
+                        </div>
+
+                        <div class="report-detail">
+                            <span>User</span>
+                            <strong id="detailUserName">-</strong>
+                        </div>
+
+                        <div class="report-detail">
+                            <span>Email</span>
+                            <strong id="detailUserEmail">-</strong>
+                        </div>
+
+                        <div class="report-detail">
+                            <span>User ID</span>
+                            <strong id="detailUserId">-</strong>
+                        </div>
+
+                        <div class="report-detail">
+                            <span>Image Type</span>
+                            <strong id="detailImageType">-</strong>
+                        </div>
+
+                        <div class="report-detail">
+                            <span>AI Model</span>
+                            <strong id="detailModel">-</strong>
+                        </div>
+
+                        <div class="report-detail">
+                            <span>Detection Confidence</span>
+                            <strong id="detailDetection">-</strong>
+                        </div>
+
+                        <div class="report-detail">
+                            <span>Date</span>
+                            <strong id="detailDate">-</strong>
+                        </div>
+                    </div>
+
+                    <div class="scan-result-box">
+                        <span>Predicted Condition</span>
+                        <strong id="detailPrediction">-</strong>
+                    </div>
+
+                    <div class="scan-result-box">
+                        <span>AI Confidence</span>
+                        <strong id="detailConfidence">-</strong>
+                    </div>
+
+                    <div class="scan-result-box status-result-box">
+                        <span>Confidence Status</span>
+                        <strong id="detailStatus" class="status-badge large-status">-</strong>
+                    </div>
+
+                    <div class="probability-box">
+                        <div class="chart-title">Disease Probabilities</div>
+                        <div id="detailProbabilities"></div>
+                    </div>
+
+                    <a
+                        id="downloadScanReport"
+                        class="download-report"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Download PDF Report
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="scan-report-disclaimer">
+                <b>Important:</b> This is an AI-generated screening result and
+                is not a medical diagnosis.
+            </div>
+        </div>
+    </section>
+
+    <div id="compareFloatingBar" class="compare-floating-bar" aria-live="polite">
+        <span id="compareFloatingText" class="compare-floating-text">Select 2 scans</span>
+        <button id="compareFloatingAction" class="compare-floating-action" type="button" disabled>Compare</button>
+        <button id="compareFloatingClear" class="compare-floating-clear" type="button">Clear</button>
     </div>
 
+    <!-- ==============================
+         USER REPORT
+    ============================== -->
 
-</main>
-
-
-<!-- =========================================================
-     IMAGE MODAL
-     ========================================================= -->
-
-<div
-    id="imageModal"
-    class="image-modal"
-    onclick="closeImage()"
->
-
-
-    <div
-        class="modal-content"
-        onclick="event.stopPropagation()"
+    <section
+        id="userReport"
+        class="report"
     >
 
-        <button
-            class="modal-close"
-            onclick="closeImage()"
-        >
-            ×
-        </button>
 
-        <img
-            id="modalImage"
-            src=""
-            alt="Eye scan"
-        >
-
-    </div>
-
-
-</div>
-
-
-<script>
-
-/* =========================================================
-   IMAGE MODAL
-   ========================================================= */
-
-function openImage(src) {
-
-    const modal = document.getElementById("imageModal");
-    const image = document.getElementById("modalImage");
-
-    if (!modal || !image) return;
-
-    image.src = src;
-
-    modal.classList.add("active");
-}
-
-
-function closeImage() {
-
-    const modal = document.getElementById("imageModal");
-    const image = document.getElementById("modalImage");
-
-    if (!modal || !image) return;
-
-    modal.classList.remove("active");
-
-    image.src = "";
-}
-
-
-document.addEventListener("keydown", function(event) {
-
-    if (event.key === "Escape") {
-        closeImage();
-    }
-
-});
-
-
-/* =========================================================
-   ADMIN ANALYSIS
-   ========================================================= */
-
-document.addEventListener("DOMContentLoaded", function() {
-
-    const table =
-        document.querySelector(".prediction-table");
-
-    if (!table) return;
-
-
-    const tbody =
-        table.querySelector("tbody");
-
-    if (!tbody) return;
-
-
-    const rows =
-        Array.from(
-            tbody.querySelectorAll("tr")
-        );
-
-
-    const userCards =
-        Array.from(
-            document.querySelectorAll(".user-card")
-        );
-
-
-    /* =====================================================
-       PAGINATION
-       ===================================================== */
-
-    const rowsPerPage = 10;
-
-    let currentPage = 1;
-
-
-    const pagination =
-        document.createElement("div");
-
-    pagination.id = "pagination";
-
-    pagination.style.cssText = `
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        gap:7px;
-        padding:22px 10px 10px;
-        flex-wrap:wrap;
-    `;
-
-
-    const tableWrapper =
-        document.querySelector(
-            ".predictions-wrapper"
-        );
-
-
-    if (tableWrapper) {
-
-        tableWrapper.appendChild(
-            pagination
-        );
-
-    }
-
-
-    function showPage(page) {
-
-        currentPage = page;
-
-        const totalPages =
-            Math.max(
-                1,
-                Math.ceil(
-                    rows.length /
-                    rowsPerPage
-                )
-            );
-
-
-        rows.forEach(function(row, index) {
-
-            const start =
-                (page - 1) *
-                rowsPerPage;
-
-            const end =
-                start +
-                rowsPerPage;
-
-
-            row.style.display =
-                index >= start &&
-                index < end
-                    ? ""
-                    : "none";
-
-        });
-
-
-        renderPagination(
-            totalPages
-        );
-
-    }
-
-
-    function renderPagination(totalPages) {
-
-        pagination.innerHTML = "";
-
-
-        const previous =
-            document.createElement("button");
-
-        previous.textContent = "‹";
-
-        previous.disabled =
-            currentPage === 1;
-
-
-        stylePageButton(
-            previous
-        );
-
-
-        previous.onclick = function() {
-
-            if (currentPage > 1) {
-
-                showPage(
-                    currentPage - 1
-                );
-
-            }
-
-        };
-
-
-        pagination.appendChild(
-            previous
-        );
-
-
-        for (
-            let i = 1;
-            i <= totalPages;
-            i++
-        ) {
-
-            const button =
-                document.createElement(
-                    "button"
-                );
-
-
-            button.textContent = i;
-
-
-            stylePageButton(
-                button
-            );
-
-
-            if (i === currentPage) {
-
-                button.style.background =
-                    "linear-gradient(135deg,#2bd7ef,#527dff)";
-
-                button.style.color =
-                    "#031018";
-
-                button.style.borderColor =
-                    "transparent";
-
-            }
-
-
-            button.onclick =
-                function() {
-
-                    showPage(i);
-
-                    window.scrollTo({
-                        top:
-                            tableWrapper.offsetTop -
-                            100,
-                        behavior:
-                            "smooth"
-                    });
-
-                };
-
-
-            pagination.appendChild(
-                button
-            );
-
-        }
-
-
-        const next =
-            document.createElement("button");
-
-        next.textContent = "›";
-
-        next.disabled =
-            currentPage === totalPages;
-
-
-        stylePageButton(
-            next
-        );
-
-
-        next.onclick =
-            function() {
-
-                if (
-                    currentPage <
-                    totalPages
-                ) {
-
-                    showPage(
-                        currentPage + 1
-                    );
-
-                }
-
-            };
-
-
-        pagination.appendChild(
-            next
-        );
-
-
-        const info =
-            document.createElement(
-                "div"
-            );
-
-
-        info.textContent =
-            `Showing ${
-                Math.min(
-                    (currentPage - 1) *
-                    rowsPerPage + 1,
-                    rows.length
-                )
-            }–${
-                Math.min(
-                    currentPage *
-                    rowsPerPage,
-                    rows.length
-                )
-            } of ${
-                rows.length
-            } scans`;
-
-
-        info.style.cssText = `
-            width:100%;
-            text-align:center;
-            margin-top:8px;
-            color:#566679;
-            font-size:9px;
-        `;
-
-
-        pagination.appendChild(
-            info
-        );
-
-    }
-
-
-    function stylePageButton(button) {
-
-        button.style.cssText = `
-            min-width:32px;
-            height:32px;
-            padding:0 9px;
-            border-radius:8px;
-            border:1px solid rgba(255,255,255,.08);
-            background:rgba(255,255,255,.025);
-            color:#8d9bad;
-            cursor:pointer;
-            font-size:10px;
-            font-weight:600;
-        `;
-
-    }
-
-
-    showPage(1);
-
-
-    /* =====================================================
-       USER ANALYSIS PANEL
-       ===================================================== */
-
-    const usersSection =
-        document.querySelectorAll(
-            ".section"
-        )[1];
-
-
-    if (!usersSection) return;
-
-
-    const analysisPanel =
-        document.createElement("section");
-
-    analysisPanel.id =
-        "user-analysis-panel";
-
-
-    analysisPanel.style.cssText = `
-        display:none;
-        margin-top:25px;
-        border:1px solid rgba(255,255,255,.07);
-        border-radius:22px;
-        background:
-            linear-gradient(
-                145deg,
-                rgba(16,25,38,.94),
-                rgba(7,12,19,.94)
-            );
-        overflow:hidden;
-    `;
-
-
-    analysisPanel.innerHTML = `
-
-        <div style="
-            padding:22px;
-            border-bottom:1px solid rgba(255,255,255,.055);
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            gap:15px;
-        ">
+        <div class="report-header">
 
             <div>
 
-                <div style="
-                    color:#35dcff;
-                    font-size:8px;
-                    font-weight:700;
-                    letter-spacing:1.7px;
-                    text-transform:uppercase;
-                    margin-bottom:6px;
-                ">
-                    User Analysis
+                <div class="report-label">
+                    User Analysis Report
                 </div>
 
-                <h3 id="analysis-user-name"
-                    style="
-                        font-family:'Space Grotesk',sans-serif;
-                        font-size:25px;
-                    ">
-                </h3>
+                <div
+                    id="reportName"
+                    class="report-name"
+                >
+                </div>
 
-                <p id="analysis-user-subtitle"
-                   style="
-                       color:#647387;
-                       font-size:9px;
-                       margin-top:4px;
-                   ">
-                </p>
+                <div
+                    id="reportSubtitle"
+                    class="report-subtitle"
+                >
+                </div>
 
             </div>
 
+
             <button
-                id="close-analysis"
-                style="
-                    padding:9px 13px;
-                    border-radius:9px;
-                    border:1px solid rgba(255,255,255,.08);
-                    background:rgba(255,255,255,.025);
-                    color:#8291a3;
-                    cursor:pointer;
-                "
+                id="closeReport"
+                class="close-report"
             >
                 Close
             </button>
@@ -2163,1032 +2129,2628 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
 
 
-        <div id="analysis-content"
-             style="padding:20px;">
+
+        <div class="report-body">
+
+
+            <!-- REPORT STATS -->
+
+            <div class="report-stats">
+
+
+                <div class="report-stat">
+
+                    <span>
+                        Total Scans
+                    </span>
+
+                    <strong id="reportScans">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="report-stat">
+
+                    <span>
+                        Major Disease
+                    </span>
+
+                    <strong
+                        id="reportDisease"
+                        style="font-size:17px;"
+                    >
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="report-stat">
+
+                    <span>
+                        Average Confidence
+                    </span>
+
+                    <strong id="reportConfidence">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div class="report-stat">
+
+                    <span>
+                        Different Diseases
+                    </span>
+
+                    <strong id="reportDifferent">
+                        0
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CHARTS -->
+
+            <div class="charts">
+
+
+                <div class="chart-box">
+
+                    <div class="chart-title">
+                        Disease Distribution
+                    </div>
+
+                    <canvas
+                        id="diseaseChart"
+                        width="600"
+                        height="250"
+                    ></canvas>
+
+                </div>
+
+
+                <div class="chart-box">
+
+                    <div class="chart-title">
+                        Confidence Trend
+                    </div>
+
+                    <canvas
+                        id="confidenceChart"
+                        width="600"
+                        height="250"
+                    ></canvas>
+
+                    <div id="confidenceTrendStats" class="trend-stats"></div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- DISEASE BREAKDOWN -->
+
+            <div class="chart-box">
+
+                <div class="chart-title">
+                    Disease Breakdown
+                </div>
+
+                <div id="diseaseBreakdown">
+                </div>
+
+            </div>
+
+
+
+            <!-- SCAN HISTORY -->
+
+            <div
+                class="chart-box"
+                style="margin-top:15px;"
+            >
+
+                <div class="scan-history-head">
+                    <div>
+                        <div class="chart-title">
+                            User Scan History
+                        </div>
+                        <div class="scan-history-subtitle">
+                            Select up to two scans to compare them side by side.
+                        </div>
+                    </div>
+                    <button
+                        id="compareSelectedButton"
+                        class="compare-selected-button"
+                        type="button"
+                        disabled
+                    >
+                        Compare Selected (0/2)
+                    </button>
+                </div>
+
+                <div
+                id="scanGrid"
+                class="scan-grid"
+                >
+                </div>
+
+<div
+    id="scanPagination"
+    class="pagination"
+>
+</div>
+
+            </div>
+
+
         </div>
 
-    `;
+    </section>
 
 
-    usersSection.after(
-        analysisPanel
-    );
+
+    <!-- ==============================
+         ALL SCANS
+    ============================== -->
+
+    <section class="section">
 
 
-    /* =====================================================
-       MAKE USER CARDS CLICKABLE
-       ===================================================== */
+        <div class="section-header">
 
-    userCards.forEach(
-        function(card) {
+            <div>
 
-            card.style.cursor =
-                "pointer";
+                <h2>
+                    User Scan Records
+                </h2>
 
+                <p>
+                    Every uploaded image and AI prediction
+                </p>
 
-            card.addEventListener(
-                "click",
-                function() {
-
-                    const nameElement =
-                        card.querySelector(
-                            ".user-name"
-                        );
+            </div>
 
 
-                    if (!nameElement)
-                        return;
+            <div class="count">
+                {{ predictions|length }} SCANS
+            </div>
+
+        </div>
 
 
-                    const userName =
-                        nameElement
-                            .textContent
-                            .trim();
+
+        {% if predictions %}
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Scan
+                            </th>
+
+                            <th>
+                                User
+                            </th>
+
+                            <th>
+                                Image Type
+                            </th>
+
+                            <th>
+                                AI Model
+                            </th>
+
+                            <th>
+                                Prediction
+                            </th>
+
+                            <th>
+                                Confidence
+                            </th>
+
+                            <th>
+                                Detection
+                            </th>
+
+                            <th>
+                                Date
+                            </th>
+
+                        </tr>
+
+                    </thead>
 
 
-                    showUserAnalysis(
-                        userName
-                    );
+                    <tbody>
 
-                }
-            );
 
+                        {% for prediction in predictions %}
+
+                            <tr
+                                class="scan-row"
+                                data-prediction-id="{{ prediction.id }}"
+                                data-user-id="{{ prediction.user_id }}"
+                                onclick="window.openScanReport('{{ prediction.id }}')"
+
+                                {% for user in users %}
+                                    {% if user.id == prediction.user_id %}
+                                        data-user-name="{{ user.name }}"
+                                    {% endif %}
+                                {% endfor %}
+
+                            >
+
+
+                                <!-- IMAGE -->
+
+                                <td>
+
+                                    <img
+                                        class="table-image"
+                                        src="{{ url_for('get_prediction_image', prediction_id=prediction.id) }}"
+                                        alt="Eye scan"
+                                        style="
+                                            width:58px;
+                                            height:48px;
+                                            object-fit:cover;
+                                            border-radius:9px;
+                                            cursor:pointer;
+                                        "
+                                        onerror="this.style.opacity='0.2'"
+                                    >
+
+                                    <span class="badge blue">
+                                        #{{ prediction.id }}
+                                    </span>
+
+                                </td>
+
+
+
+                                <!-- USER -->
+
+                                <td>
+
+                                    {% for user in users %}
+
+                                        {% if user.id == prediction.user_id %}
+
+                                            {{ user.name }}
+
+                                        {% endif %}
+
+                                    {% endfor %}
+
+                                </td>
+
+
+
+                                <!-- IMAGE TYPE -->
+
+                                <td>
+
+                                    {% if prediction.image_type %}
+
+                                        <span class="badge purple">
+                                            {{ prediction.image_type }}
+                                        </span>
+
+                                    {% else %}
+
+                                        —
+
+                                    {% endif %}
+
+                                </td>
+
+
+
+                                <!-- MODEL -->
+
+                                <td>
+
+                                    <span class="badge">
+                                        {{ prediction.model_type or "—" }}
+                                    </span>
+
+                                </td>
+
+
+
+                                <!-- PREDICTION -->
+
+                                <td>
+
+                                    <span class="badge green">
+                                        {{ prediction.predicted_class or "Unknown" }}
+                                    </span>
+
+                                </td>
+
+
+
+                                <!-- CONFIDENCE -->
+
+                                <td>
+
+                                    {% if prediction.confidence is not none %}
+
+                                        {% set c = prediction.confidence|float %}
+
+                                        {% if c <= 1 %}
+                                            {% set c = c * 100 %}
+                                        {% endif %}
+
+                                        <span class="confidence">
+                                            {{ "%.2f"|format(c) }}%
+                                        </span>
+
+                                    {% else %}
+
+                                        —
+
+                                    {% endif %}
+
+                                </td>
+
+
+
+                                <!-- DETECTION -->
+
+                                <td>
+
+                                    {% if prediction.image_type_confidence is not none %}
+
+                                        {% set d = prediction.image_type_confidence|float %}
+
+                                        {% if d <= 1 %}
+                                            {% set d = d * 100 %}
+                                        {% endif %}
+
+                                        {{ "%.2f"|format(d) }}%
+
+                                    {% else %}
+
+                                        —
+
+                                    {% endif %}
+
+                                </td>
+
+
+
+                                <!-- DATE -->
+
+                                <td>
+
+                                    {% if prediction.created_at %}
+
+                                        {{ prediction.created_at.strftime("%d %b %Y, %I:%M %p") }}
+
+                                    {% else %}
+
+                                        —
+
+                                    {% endif %}
+
+                                </td>
+
+
+                            </tr>
+
+                        {% endfor %}
+
+
+                    </tbody>
+
+                </table>
+
+                     <div
+                    id="tablePagination"
+                    class="pagination"
+                >
+</div>
+
+            </div>
+
+        {% else %}
+
+            <div class="empty">
+                No scan records found.
+            </div>
+
+        {% endif %}
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ==============================
+     SCAN COMPARISON MODAL
+============================== -->
+
+<div
+    id="compareModal"
+    class="compare-modal"
+    onclick="closeCompareModal(event)"
+>
+    <div
+        class="compare-box"
+        onclick="event.stopPropagation()"
+    >
+        <div class="compare-header">
+            <div>
+                <div class="report-label">Scan Comparison</div>
+                <div class="compare-title">Compare Two AI Results</div>
+                <div class="report-subtitle">
+                    Side-by-side comparison of the selected scans.
+                </div>
+            </div>
+            <button
+                class="close-report"
+                type="button"
+                onclick="closeCompareModal()"
+            >
+                Close
+            </button>
+        </div>
+
+        <div id="compareContent" class="compare-content">
+            <div class="empty">Select two scans to compare.</div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ==============================
+     IMAGE MODAL
+============================== -->
+
+<div
+    id="imageModal"
+    class="modal"
+    onclick="closeImage()"
+>
+
+    <button
+        class="modal-close"
+        onclick="event.stopPropagation(); closeImage();"
+    >
+        ×
+    </button>
+
+
+    <img
+        id="modalImage"
+        src=""
+        alt="Eye scan"
+        onclick="event.stopPropagation();"
+    >
+
+</div>
+
+
+
+<script>
+
+
+/* =====================================
+   IMAGE MODAL
+===================================== */
+
+function openImage(src) {
+
+    if (!src) {
+        return;
+    }
+
+    document.getElementById(
+        "modalImage"
+    ).src = src;
+
+    document.getElementById(
+        "imageModal"
+    ).classList.add("active");
+
+}
+
+
+function closeImage() {
+
+    document.getElementById(
+        "imageModal"
+    ).classList.remove("active");
+
+    document.getElementById(
+        "modalImage"
+    ).src = "";
+
+}
+
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (event.key === "Escape") {
+            closeImage();
+            closeCompareModal();
         }
+
+    }
+);
+
+
+
+/* =====================================
+   USER CARD CLICK
+===================================== */
+
+const userCards =
+    document.querySelectorAll(
+        ".user-card"
     );
 
 
-    document
-        .getElementById(
-            "close-analysis"
-        )
-        .addEventListener(
+userCards.forEach(
+    function(card) {
+
+        card.addEventListener(
             "click",
             function() {
 
-                analysisPanel.style.display =
-                    "none";
+                const userId =
+                    card.dataset.userId;
 
-                window.scrollTo({
-                    top:
-                        usersSection.offsetTop -
-                        80,
-                    behavior:
-                        "smooth"
-                });
+                const userName =
+                    card.dataset.userName;
+
+                loadUserReport(
+                    userId,
+                    userName
+                );
 
             }
         );
 
-
-    /* =====================================================
-       USER ANALYSIS
-       ===================================================== */
-
-    function showUserAnalysis(
-        userName
-    ) {
-
-        const name =
-            userName.trim();
+    }
+);
 
 
-        const userRows =
-            rows.filter(
-                function(row) {
 
-                    const cells =
-                        row.querySelectorAll(
-                            "td"
-                        );
+/* =====================================
+   LOAD USER REPORT
+===================================== */
 
-
-                    if (!cells[1])
-                        return false;
+async function loadUserReport(
+    userId,
+    userName
+) {
 
 
-                    return (
-                        cells[1]
-                            .textContent
-                            .trim()
-                            .includes(name)
-                    );
-
-                }
-            );
-
-
-        analysisPanel.style.display =
-            "block";
-
-
-        document
-            .getElementById(
-                "analysis-user-name"
-            )
-            .textContent =
-                name;
-
-
-        document
-            .getElementById(
-                "analysis-user-subtitle"
-            )
-            .textContent =
-                `${userRows.length} recorded scans`;
-
-
-        buildAnalysis(
-            userRows,
-            name
+    const report =
+        document.getElementById(
+            "userReport"
         );
 
 
-        analysisPanel.scrollIntoView({
-            behavior:"smooth",
-            block:"start"
-        });
-
-    }
+    report.style.display =
+        "block";
 
 
-    /* =====================================================
-       BUILD USER ANALYSIS
-       ===================================================== */
+    document.getElementById(
+        "reportName"
+    ).textContent =
+        userName;
 
-    function buildAnalysis(
-        userRows,
-        userName
-    ) {
 
-        const content =
-            document.getElementById(
-                "analysis-content"
+    document.getElementById(
+        "reportSubtitle"
+    ).textContent =
+        "Loading scan history...";
+
+
+    report.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+
+    try {
+
+
+        const response =
+            await fetch(
+                "/history/" + userId
             );
 
 
-        if (!userRows.length) {
+        if (!response.ok) {
 
-            content.innerHTML = `
-                <div style="
-                    padding:50px;
-                    text-align:center;
-                    color:#657487;
-                ">
-                    No scan records found.
+            throw new Error(
+                "Server returned " +
+                response.status
+            );
+
+        }
+
+
+        const data =
+            await response.json();
+
+
+        if (!data.success) {
+
+            throw new Error(
+                data.error ||
+                "Unable to load history"
+            );
+
+        }
+
+
+        const history =
+            data.history || [];
+
+
+        document.getElementById(
+            "reportSubtitle"
+        ).textContent =
+            "User ID #" +
+            userId +
+            " • " +
+            history.length +
+            " scan(s)";
+
+
+        buildReport(
+            history
+        );
+
+
+    }
+    catch(error) {
+
+
+        console.error(error);
+
+
+        document.getElementById(
+            "reportSubtitle"
+        ).textContent =
+            "Could not load scan history";
+
+
+        document.getElementById(
+            "scanGrid"
+        ).innerHTML =
+            `
+                <div class="empty">
+                    ${escapeHtml(error.message)}
                 </div>
             `;
 
-            return;
+    }
 
+}
+
+
+
+/* =====================================
+   USER SCAN PAGINATION
+===================================== */
+
+window.currentUserHistory = [];
+window.currentUserScanPage = 1;
+
+function renderUserScanPage(page) {
+
+    const grid = document.getElementById("scanGrid");
+    const pagination = document.getElementById("scanPagination");
+
+    if (!grid) return;
+
+    const history = window.currentUserHistory || [];
+    const perPage = 12;
+    const totalPages = Math.max(1, Math.ceil(history.length / perPage));
+
+    page = Math.max(1, Math.min(page, totalPages));
+    window.currentUserScanPage = page;
+
+    const start = (page - 1) * perPage;
+    const items = history.slice(start, start + perPage);
+
+    grid.innerHTML = "";
+
+    if (!items.length) {
+        grid.innerHTML = '<div class="empty">No scans found.</div>';
+        if (pagination) pagination.innerHTML = "";
+        return;
+    }
+
+    items.forEach(function(item) {
+
+        const card = document.createElement("div");
+        card.className = "scan-card";
+        card.dataset.predictionId = item.id;
+        card.title = "Click to open the full scan report";
+
+        let confidence = parseFloat(item.confidence);
+        if (isNaN(confidence)) confidence = 0;
+        if (confidence <= 1) confidence *= 100;
+
+        card.innerHTML = `
+            <div class="scan-image-click">
+                <img
+                    class="scan-image"
+                    src="${escapeAttribute(item.image_url || "")}"
+                    alt="Eye scan"
+                    onerror="this.style.opacity='0.2'"
+                >
+                <div class="scan-open-label">VIEW REPORT</div>
+            </div>
+
+            <div
+                class="scan-info"
+                onclick="openScanReport(${Number(item.id)})"
+            >
+                <div class="scan-disease">
+                    ${escapeHtml(item.predicted_class || "Unknown")}
+                </div>
+
+                <div class="scan-confidence">
+                    Confidence: ${confidence.toFixed(1)}%
+                </div>
+
+                <span class="status-badge ${getConfidenceStatus(confidence).className}">
+                    ${getConfidenceStatus(confidence).label}
+                </span>
+
+                <div class="scan-model">
+                    Model: ${escapeHtml(item.model_type || "-")}
+                </div>
+
+                <div class="scan-model">
+                    Image: ${escapeHtml(item.image_type || "-")}
+                </div>
+
+                <div class="scan-date">
+                    ${escapeHtml(item.created_at || "-")}
+                </div>
+
+                <button
+                    type="button"
+                    class="scan-report-button"
+                    onclick="event.stopPropagation(); openScanReport(${Number(item.id)})"
+                >
+                    View Full Report →
+                </button>
+            </div>
+        `;
+
+        card.addEventListener("click", function() {
+            openScanReport(item.id);
+        });
+
+        grid.appendChild(card);
+    });
+
+    renderPagination(
+        pagination,
+        page,
+        totalPages,
+        renderUserScanPage,
+        start + 1,
+        Math.min(start + perPage, history.length),
+        history.length
+    );
+
+    addCompareControlsToCards();
+}
+
+function renderPagination(
+    container,
+    current,
+    total,
+    callback,
+    firstItem,
+    lastItem,
+    totalItems
+) {
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    if (totalItems == null) totalItems = total;
+
+    const previous = document.createElement("button");
+    previous.type = "button";
+    previous.textContent = "← Previous";
+    previous.disabled = current === 1;
+    previous.onclick = function() {
+        callback(current - 1);
+    };
+    container.appendChild(previous);
+
+    const maxButtons = 7;
+
+    let firstPage = 1;
+    let lastPage = total;
+
+    if (total > maxButtons) {
+        firstPage = Math.max(1, current - 3);
+        lastPage = Math.min(total, current + 3);
+
+        if (current <= 4) {
+            firstPage = 1;
+            lastPage = 7;
         }
 
+        if (current >= total - 3) {
+            firstPage = total - 6;
+            lastPage = total;
+        }
+    }
 
-        let fundus = 0;
-        let oct = 0;
+    for (let i = firstPage; i <= lastPage; i++) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = i;
 
-        let totalConfidence = 0;
+        if (i === current) {
+            button.classList.add("active");
+        }
 
-        let confidenceCount = 0;
+        button.onclick = function() {
+            callback(i);
+        };
 
-        const diseases = {};
+        container.appendChild(button);
+    }
 
-        const dates = {};
+    const info = document.createElement("span");
+    info.className = "pagination-info";
 
+    if (totalItems > 0) {
+        info.textContent =
+            "Showing " +
+            firstItem +
+            "–" +
+            lastItem +
+            " of " +
+            totalItems;
+    } else {
+        info.textContent = "0 scans";
+    }
 
-        /* =================================================
-           READ TABLE DATA
-           ================================================= */
+    container.appendChild(info);
 
-        userRows.forEach(
-            function(row) {
+    const next = document.createElement("button");
+    next.type = "button";
+    next.textContent = "Next →";
+    next.disabled = current === total;
+    next.onclick = function() {
+        callback(current + 1);
+    };
 
-                const cells =
-                    row.querySelectorAll(
-                        "td"
-                    );
+    container.appendChild(next);
+}
 
+function setupTablePagination() {
 
-                if (cells.length < 8)
+    const table = document.querySelector(".table-wrapper table");
+    const pagination = document.getElementById("tablePagination");
+
+    if (!table || !pagination) return;
+
+    const tbody = table.querySelector("tbody");
+    if (!tbody) return;
+
+    const rows = Array.from(
+        tbody.querySelectorAll("tr.scan-row")
+    );
+
+    const perPage = 10;
+    const totalPages = Math.max(
+        1,
+        Math.ceil(rows.length / perPage)
+    );
+
+    function showPage(page) {
+
+        page = Math.max(
+            1,
+            Math.min(page, totalPages)
+        );
+
+        const start = (page - 1) * perPage;
+        const end = start + perPage;
+
+        rows.forEach(function(row, index) {
+
+            const visible =
+                index >= start &&
+                index < end;
+
+            row.style.display =
+                visible
+                    ? "table-row"
+                    : "none";
+
+        });
+
+        renderPagination(
+            pagination,
+            page,
+            totalPages,
+            showPage,
+            rows.length ? start + 1 : 0,
+            Math.min(end, rows.length),
+            rows.length
+        );
+    }
+
+    showPage(1);
+
+    addCompareControlsToTable();
+
+    rows.forEach(function(row) {
+
+        row.addEventListener(
+            "click",
+            function(event) {
+
+                if (
+                    event.target.closest("a") ||
+                    event.target.closest("button")
+                ) {
                     return;
-
-
-                /* Image type */
-
-                const imageType =
-                    cells[2]
-                        .textContent
-                        .trim()
-                        .toLowerCase();
-
-
-                if (
-                    imageType.includes(
-                        "fundus"
-                    )
-                ) {
-
-                    fundus++;
-
                 }
 
+                const predictionId =
+                    row.dataset.predictionId;
 
-                if (
-                    imageType.includes(
-                        "oct"
-                    )
-                ) {
-
-                    oct++;
-
+                if (predictionId) {
+                    openScanReport(predictionId);
                 }
-
-
-                /* Disease */
-
-                const disease =
-                    cells[4]
-                        .textContent
-                        .trim();
-
-
-                if (
-                    disease &&
-                    disease !== "—"
-                ) {
-
-                    diseases[disease] =
-                        (
-                            diseases[disease] ||
-                            0
-                        ) + 1;
-
-                }
-
-
-                /* Confidence */
-
-                const confidenceText =
-                    cells[5]
-                        .textContent
-                        .replace(
-                            "%",
-                            ""
-                        )
-                        .trim();
-
-
-                const confidence =
-                    parseFloat(
-                        confidenceText
-                    );
-
-
-                if (
-                    Number.isFinite(
-                        confidence
-                    )
-                ) {
-
-                    totalConfidence +=
-                        confidence;
-
-                    confidenceCount++;
-
-                }
-
-
-                /* Date */
-
-                const date =
-                    cells[7]
-                        .textContent
-                        .trim();
-
-
-                if (date) {
-
-                    const dateKey =
-                        date
-                            .split(",")[0]
-                            .trim();
-
-
-                    dates[dateKey] =
-                        (
-                            dates[dateKey] ||
-                            0
-                        ) + 1;
-
-                }
-
             }
         );
+    });
+}
 
 
-        const averageConfidence =
-            confidenceCount
-                ? (
-                    totalConfidence /
-                    confidenceCount
-                ).toFixed(2)
-                : "0.00";
+/* =====================================
+   USER LIST PAGINATION - 12 PER PAGE
+===================================== */
 
+function setupUserPagination() {
 
-        const diseaseEntries =
-            Object.entries(
-                diseases
-            )
-            .sort(
-                function(a,b) {
-                    return b[1] - a[1];
-                }
-            );
+    const grid = document.getElementById("userGrid");
+    const pagination = document.getElementById("userPagination");
 
+    if (!grid || !pagination) return;
 
-        const mostTested =
-            diseaseEntries.length
-                ? diseaseEntries[0][0]
-                : "—";
+    const cards = Array.from(
+        grid.querySelectorAll(".user-card")
+    );
 
+    const perPage = 12;
 
-        /* =================================================
-           STAT CARDS
-           ================================================= */
+    const totalPages = Math.max(
+        1,
+        Math.ceil(cards.length / perPage)
+    );
 
-        content.innerHTML = `
+    function showUserPage(page) {
 
-            <div style="
-                display:grid;
-                grid-template-columns:
-                    repeat(4,1fr);
-                gap:12px;
-                margin-bottom:20px;
-            ">
-
-
-                ${analysisStat(
-                    "TOTAL SCANS",
-                    userRows.length,
-                    "🔬"
-                )}
-
-
-                ${analysisStat(
-                    "FUNDUS",
-                    fundus,
-                    "👁"
-                )}
-
-
-                ${analysisStat(
-                    "OCT",
-                    oct,
-                    "🖥"
-                )}
-
-
-                ${analysisStat(
-                    "AVG CONFIDENCE",
-                    averageConfidence + "%",
-                    "📊"
-                )}
-
-            </div>
-
-
-            <div style="
-                display:grid;
-                grid-template-columns:
-                    1fr 1fr;
-                gap:15px;
-            ">
-
-
-                <div class="analysis-card">
-
-                    <h4>
-                        Disease Distribution
-                    </h4>
-
-                    <p class="analysis-muted">
-                        Predictions made for this user
-                    </p>
-
-                    <div id="disease-chart"
-                         style="margin-top:20px;">
-                    </div>
-
-                </div>
-
-
-                <div class="analysis-card">
-
-                    <h4>
-                        Scan Type
-                    </h4>
-
-                    <p class="analysis-muted">
-                        Fundus vs OCT testing activity
-                    </p>
-
-                    <div style="
-                        margin-top:22px;
-                    ">
-
-                        ${barChart(
-                            "Fundus",
-                            fundus,
-                            userRows.length
-                        )}
-
-                        ${barChart(
-                            "OCT",
-                            oct,
-                            userRows.length
-                        )}
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="analysis-card"
-                 style="margin-top:15px;">
-
-                <h4>
-                    Testing Activity
-                </h4>
-
-                <p class="analysis-muted">
-                    Number of scans recorded by date
-                </p>
-
-                <div id="activity-chart"
-                     style="
-                         margin-top:22px;
-                         display:flex;
-                         align-items:flex-end;
-                         gap:10px;
-                         min-height:170px;
-                         overflow-x:auto;
-                         padding-bottom:8px;
-                     ">
-                </div>
-
-            </div>
-
-
-            <div class="analysis-card"
-                 style="margin-top:15px;">
-
-                <div style="
-                    display:flex;
-                    justify-content:space-between;
-                    align-items:center;
-                    margin-bottom:15px;
-                ">
-
-                    <div>
-
-                        <h4>
-                            User Summary
-                        </h4>
-
-                        <p class="analysis-muted">
-                            Quick AI testing overview
-                        </p>
-
-                    </div>
-
-                    <span style="
-                        padding:7px 10px;
-                        border-radius:8px;
-                        background:rgba(53,220,255,.04);
-                        color:#5ddff2;
-                        font-size:9px;
-                    ">
-                        Most Tested:
-                        ${escapeHtml(
-                            mostTested
-                        )}
-                    </span>
-
-                </div>
-
-
-                <div style="
-                    display:grid;
-                    grid-template-columns:
-                        repeat(3,1fr);
-                    gap:10px;
-                ">
-
-                    ${summaryBox(
-                        "Total Predictions",
-                        userRows.length
-                    )}
-
-                    ${summaryBox(
-                        "Average Confidence",
-                        averageConfidence + "%"
-                    )}
-
-                    ${summaryBox(
-                        "Most Tested Disease",
-                        mostTested
-                    )}
-
-                </div>
-
-            </div>
-
-        `;
-
-
-        /* =================================================
-           DISEASE GRAPH
-           ================================================= */
-
-        const diseaseChart =
-            document.getElementById(
-                "disease-chart"
-            );
-
-
-        diseaseEntries.forEach(
-            function(entry) {
-
-                const disease =
-                    entry[0];
-
-                const count =
-                    entry[1];
-
-
-                const percentage =
-                    (
-                        count /
-                        userRows.length *
-                        100
-                    ).toFixed(1);
-
-
-                diseaseChart.innerHTML += `
-
-                    <div style="
-                        margin-bottom:14px;
-                    ">
-
-                        <div style="
-                            display:flex;
-                            justify-content:space-between;
-                            margin-bottom:5px;
-                            color:#9caaba;
-                            font-size:9px;
-                        ">
-
-                            <span>
-                                ${escapeHtml(
-                                    disease
-                                )}
-                            </span>
-
-                            <span>
-                                ${count}
-                                (${percentage}%)
-                            </span>
-
-                        </div>
-
-
-                        <div style="
-                            height:7px;
-                            background:rgba(255,255,255,.04);
-                            border-radius:20px;
-                            overflow:hidden;
-                        ">
-
-                            <div style="
-                                width:${percentage}%;
-                                height:100%;
-                                background:
-                                    linear-gradient(
-                                        90deg,
-                                        #2bd7ef,
-                                        #527dff
-                                    );
-                                border-radius:20px;
-                            ">
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                `;
-
-            }
+        page = Math.max(
+            1,
+            Math.min(page, totalPages)
         );
 
+        const start = (page - 1) * perPage;
+        const end = start + perPage;
 
-        /* =================================================
-           ACTIVITY GRAPH
-           ================================================= */
+        cards.forEach(function(card, index) {
 
-        const activityChart =
-            document.getElementById(
-                "activity-chart"
-            );
+            card.style.display =
+                index >= start && index < end
+                    ? "block"
+                    : "none";
 
+        });
 
-        const dateEntries =
-            Object.entries(
-                dates
-            ).reverse();
+        renderPagination(
+            pagination,
+            page,
+            totalPages,
+            showUserPage,
+            cards.length ? start + 1 : 0,
+            Math.min(end, cards.length),
+            cards.length
+        );
+    }
 
-
-        const maxDateCount =
-            Math.max(
-                ...dateEntries.map(
-                    function(item) {
-                        return item[1];
-                    }
-                ),
-                1
-            );
-
-
-        dateEntries.forEach(
-            function(entry) {
-
-                const date =
-                    entry[0];
-
-                const count =
-                    entry[1];
+    showUserPage(1);
+}
 
 
-                const height =
-                    Math.max(
-                        12,
-                        (
-                            count /
-                            maxDateCount
-                        ) * 120
-                    );
+/* =====================================
+   START PAGINATION
+===================================== */
+
+function startAdminPagination() {
+    setupUserPagination();
+    setupTablePagination();
+}
+
+if (document.readyState === "loading") {
+    document.addEventListener(
+        "DOMContentLoaded",
+        startAdminPagination
+    );
+} else {
+    startAdminPagination();
+}
 
 
-                activityChart.innerHTML += `
+/* =====================================
+   BUILD REPORT
+===================================== */
 
-                    <div style="
-                        min-width:52px;
-                        height:145px;
-                        display:flex;
-                        flex-direction:column;
-                        justify-content:flex-end;
-                        align-items:center;
-                        gap:6px;
-                    ">
-
-                        <span style="
-                            color:#91a0b0;
-                            font-size:8px;
-                        ">
-                            ${count}
-                        </span>
+function buildReport(
+    history
+) {
 
 
-                        <div style="
-                            width:25px;
-                            height:${height}px;
-                            border-radius:6px 6px 3px 3px;
-                            background:
-                                linear-gradient(
-                                    180deg,
-                                    #2bd7ef,
-                                    #527dff
-                                );
-                        ">
-                        </div>
+    const total =
+        history.length;
 
 
-                        <span style="
-                            color:#566679;
-                            font-size:7px;
-                            text-align:center;
-                            max-width:52px;
-                            overflow:hidden;
-                            text-overflow:ellipsis;
-                            white-space:nowrap;
-                        ">
-                            ${escapeHtml(
-                                date
-                            )}
-                        </span>
+    document.getElementById(
+        "reportScans"
+    ).textContent =
+        total;
 
-                    </div>
 
-                `;
+    if (!total) {
 
-            }
+        document.getElementById(
+            "reportDisease"
+        ).textContent =
+            "No scans";
+
+        document.getElementById(
+            "reportConfidence"
+        ).textContent =
+            "0%";
+
+        document.getElementById(
+            "reportDifferent"
+        ).textContent =
+            "0";
+
+        document.getElementById(
+            "diseaseBreakdown"
+        ).innerHTML =
+            `
+                <div class="empty">
+                    No scan records available.
+                </div>
+            `;
+
+        document.getElementById(
+            "scanGrid"
+        ).innerHTML =
+            `
+                <div class="empty">
+                    No scans found.
+                </div>
+            `;
+
+        clearCanvas(
+            "diseaseChart"
         );
 
-    }
-
-
-    /* =====================================================
-       HELPER COMPONENTS
-       ===================================================== */
-
-    function analysisStat(
-        label,
-        value,
-        icon
-    ) {
-
-        return `
-
-            <div style="
-                padding:17px;
-                border:1px solid rgba(255,255,255,.055);
-                border-radius:14px;
-                background:rgba(255,255,255,.015);
-            ">
-
-                <div style="
-                    display:flex;
-                    justify-content:space-between;
-                    color:#637286;
-                    font-size:8px;
-                    font-weight:700;
-                    letter-spacing:1px;
-                ">
-
-                    <span>
-                        ${label}
-                    </span>
-
-                    <span>
-                        ${icon}
-                    </span>
-
-                </div>
-
-
-                <div style="
-                    margin-top:12px;
-                    font-family:'Space Grotesk',sans-serif;
-                    font-size:24px;
-                    color:#edf4f8;
-                ">
-
-                    ${escapeHtml(
-                        String(value)
-                    )}
-
-                </div>
-
-            </div>
-
-        `;
-
-    }
-
-
-    function summaryBox(
-        label,
-        value
-    ) {
-
-        return `
-
-            <div style="
-                padding:14px;
-                border-radius:11px;
-                background:rgba(255,255,255,.018);
-            ">
-
-                <div style="
-                    color:#566679;
-                    font-size:7px;
-                    text-transform:uppercase;
-                    letter-spacing:1px;
-                ">
-                    ${label}
-                </div>
-
-                <div style="
-                    margin-top:7px;
-                    color:#c9d5df;
-                    font-size:12px;
-                    font-weight:700;
-                ">
-                    ${escapeHtml(
-                        String(value)
-                    )}
-                </div>
-
-            </div>
-
-        `;
-
-    }
-
-
-    function barChart(
-        label,
-        value,
-        total
-    ) {
-
-        const percentage =
-            total
-                ? (
-                    value /
-                    total *
-                    100
-                ).toFixed(1)
-                : 0;
-
-
-        return `
-
-            <div style="
-                margin-bottom:18px;
-            ">
-
-                <div style="
-                    display:flex;
-                    justify-content:space-between;
-                    color:#8998a9;
-                    font-size:9px;
-                    margin-bottom:6px;
-                ">
-
-                    <span>
-                        ${label}
-                    </span>
-
-                    <span>
-                        ${value}
-                        (${percentage}%)
-                    </span>
-
-                </div>
-
-
-                <div style="
-                    height:9px;
-                    border-radius:20px;
-                    background:rgba(255,255,255,.04);
-                    overflow:hidden;
-                ">
-
-                    <div style="
-                        width:${percentage}%;
-                        height:100%;
-                        background:
-                            linear-gradient(
-                                90deg,
-                                #2bd7ef,
-                                #527dff
-                            );
-                        border-radius:20px;
-                    ">
-                    </div>
-
-                </div>
-
-            </div>
-
-        `;
-
-    }
-
-
-    function escapeHtml(
-        text
-    ) {
-
-        return String(text)
-            .replace(
-                /&/g,
-                "&amp;"
-            )
-            .replace(
-                /</g,
-                "&lt;"
-            )
-            .replace(
-                />/g,
-                "&gt;"
-            )
-            .replace(
-                /"/g,
-                "&quot;"
-            )
-            .replace(
-                /'/g,
-                "&#039;"
-            );
-
-    }
-
-
-    /* =====================================================
-       ANALYSIS CARD CSS
-       ===================================================== */
-
-    const style =
-        document.createElement(
-            "style"
+        clearCanvas(
+            "confidenceChart"
         );
 
+        return;
 
-    style.textContent = `
-
-        .analysis-card {
-
-            padding:20px;
-
-            border:
-                1px solid rgba(255,255,255,.055);
-
-            border-radius:15px;
-
-            background:
-                rgba(255,255,255,.015);
-
-        }
+    }
 
 
-        .analysis-card h4 {
 
-            font-family:
-                "Space Grotesk",
-                sans-serif;
+    /* =================================
+       DISEASE COUNTS
+    ================================= */
 
-            color:#dce5ee;
-
-            font-size:15px;
-
-        }
+    const diseaseCounts = {};
 
 
-        .analysis-muted {
+    history.forEach(
+        function(item) {
 
-            margin-top:4px;
-
-            color:#596a7d;
-
-            font-size:8px;
-
-        }
+            const disease =
+                item.predicted_class ||
+                "Unknown";
 
 
-        @media(max-width:800px) {
+            if (!diseaseCounts[disease]) {
 
-            #analysis-content > div:first-child {
-
-                grid-template-columns:
-                    repeat(2,1fr) !important;
+                diseaseCounts[disease] =
+                    0;
 
             }
 
 
-            #analysis-content > div:nth-child(2) {
-
-                grid-template-columns:
-                    1fr !important;
-
-            }
+            diseaseCounts[disease]++;
 
         }
-
-
-        @media(max-width:550px) {
-
-            #analysis-content > div:first-child {
-
-                grid-template-columns:
-                    1fr !important;
-
-            }
-
-        }
-
-    `;
-
-
-    document.head.appendChild(
-        style
     );
 
 
-});
+
+    const diseases =
+        Object.keys(
+            diseaseCounts
+        );
+
+
+    let majorDisease =
+        diseases[0] || "Unknown";
+
+
+    diseases.forEach(
+        function(disease) {
+
+            if (
+                diseaseCounts[disease] >
+                diseaseCounts[majorDisease]
+            ) {
+
+                majorDisease =
+                    disease;
+
+            }
+
+        }
+    );
+
+
+    document.getElementById(
+        "reportDisease"
+    ).textContent =
+        majorDisease;
+
+
+    document.getElementById(
+        "reportDifferent"
+    ).textContent =
+        diseases.length;
+
+
+
+    /* =================================
+       AVERAGE CONFIDENCE
+    ================================= */
+
+    let totalConfidence = 0;
+
+    let confidenceCount = 0;
+
+
+    history.forEach(
+        function(item) {
+
+            let value =
+                parseFloat(
+                    item.confidence
+                );
+
+
+            if (
+                !isNaN(value)
+            ) {
+
+                if (value <= 1) {
+                    value *= 100;
+                }
+
+                totalConfidence += value;
+
+                confidenceCount++;
+
+            }
+
+        }
+    );
+
+
+    const average =
+        confidenceCount
+            ? totalConfidence /
+              confidenceCount
+            : 0;
+
+
+    document.getElementById(
+        "reportConfidence"
+    ).textContent =
+        average.toFixed(1) +
+        "%";
+
+    updateTrendStats(history);
+
+
+
+    /* =================================
+       DISEASE BREAKDOWN
+    ================================= */
+
+    const breakdown =
+        document.getElementById(
+            "diseaseBreakdown"
+        );
+
+
+    breakdown.innerHTML = "";
+
+
+    const sorted =
+        Object.entries(
+            diseaseCounts
+        ).sort(
+            function(a,b) {
+                return b[1] - a[1];
+            }
+        );
+
+
+    sorted.forEach(
+        function(item) {
+
+            const disease =
+                item[0];
+
+            const count =
+                item[1];
+
+
+            const percentage =
+                (
+                    count /
+                    total *
+                    100
+                );
+
+
+            const row =
+                document.createElement(
+                    "div"
+                );
+
+
+            row.className =
+                "disease-row";
+
+
+            row.innerHTML =
+                `
+                    <div class="disease-name">
+                        ${escapeHtml(disease)}
+                    </div>
+
+                    <div class="bar">
+                        <div
+                            class="bar-fill"
+                            style="width:${percentage}%"
+                        ></div>
+                    </div>
+
+                    <div class="disease-count">
+                        ${count}
+                    </div>
+                `;
+
+
+            breakdown.appendChild(
+                row
+            );
+
+        }
+    );
+
+
+
+    /* =================================
+       CHARTS
+    ================================= */
+
+    drawDiseaseChart(
+        diseaseCounts
+    );
+
+
+    drawConfidenceChart(
+        history
+    );
+
+
+
+    /* =================================
+       SCAN CARDS - 10 PER PAGE
+    ================================= */
+
+    window.currentUserHistory = history || [];
+    renderUserScanPage(1);
+
+}
+
+
+
+/* =====================================
+   DISEASE CHART
+===================================== */
+
+function drawDiseaseChart(
+    counts
+) {
+
+
+    const canvas =
+        document.getElementById(
+            "diseaseChart"
+        );
+
+
+    const ctx =
+        canvas.getContext("2d");
+
+
+    clearCanvas(
+        "diseaseChart"
+    );
+
+
+    const entries =
+        Object.entries(counts);
+
+
+    if (!entries.length) {
+        return;
+    }
+
+
+    const width =
+        canvas.width;
+
+    const height =
+        canvas.height;
+
+
+    const baseY =
+        height - 40;
+
+
+    const max =
+        Math.max(
+            ...entries.map(
+                function(item) {
+                    return item[1];
+                }
+            )
+        );
+
+
+    const availableWidth =
+        width - 80;
+
+
+    const barWidth =
+        Math.min(
+            70,
+            availableWidth /
+            entries.length -
+            12
+        );
+
+
+    entries.forEach(
+        function(item,index) {
+
+            const disease =
+                item[0];
+
+            const value =
+                item[1];
+
+
+            const x =
+                50 +
+                index *
+                (
+                    barWidth + 15
+                );
+
+
+            const barHeight =
+                (
+                    value /
+                    max
+                ) *
+                160;
+
+
+            const y =
+                baseY -
+                barHeight;
+
+
+            const gradient =
+                ctx.createLinearGradient(
+                    0,
+                    y,
+                    0,
+                    baseY
+                );
+
+
+            gradient.addColorStop(
+                0,
+                "#35dcff"
+            );
+
+
+            gradient.addColorStop(
+                1,
+                "#527dff"
+            );
+
+
+            ctx.fillStyle =
+                gradient;
+
+
+            ctx.beginPath();
+
+            ctx.roundRect(
+                x,
+                y,
+                barWidth,
+                barHeight,
+                6
+            );
+
+            ctx.fill();
+
+
+            ctx.fillStyle =
+                "#dce5ee";
+
+            ctx.font =
+                "bold 11px Arial";
+
+            ctx.textAlign =
+                "center";
+
+
+            ctx.fillText(
+                value,
+                x + barWidth / 2,
+                y - 7
+            );
+
+
+            ctx.fillStyle =
+                "#657487";
+
+            ctx.font =
+                "9px Arial";
+
+
+            let label =
+                disease;
+
+
+            if (
+                label.length > 10
+            ) {
+
+                label =
+                    label.substring(
+                        0,
+                        9
+                    ) + "…";
+
+            }
+
+
+            ctx.fillText(
+                label,
+                x + barWidth / 2,
+                baseY + 18
+            );
+
+        }
+    );
+
+}
+
+
+
+/* =====================================
+   CONFIDENCE CHART
+===================================== */
+
+function drawConfidenceChart(
+    history
+) {
+
+
+    const canvas =
+        document.getElementById(
+            "confidenceChart"
+        );
+
+
+    const ctx =
+        canvas.getContext("2d");
+
+
+    clearCanvas(
+        "confidenceChart"
+    );
+
+
+    if (!history.length) {
+        return;
+    }
+
+
+    const width =
+        canvas.width;
+
+    const height =
+        canvas.height;
+
+
+    const left =
+        45;
+
+    const bottom =
+        35;
+
+    const graphWidth =
+        width - left - 20;
+
+    const graphHeight =
+        height - bottom - 20;
+
+
+
+    /* axes */
+
+    ctx.strokeStyle =
+        "rgba(255,255,255,.12)";
+
+    ctx.lineWidth = 1;
+
+
+    ctx.beginPath();
+
+    ctx.moveTo(
+        left,
+        20
+    );
+
+    ctx.lineTo(
+        left,
+        height - bottom
+    );
+
+    ctx.lineTo(
+        width - 20,
+        height - bottom
+    );
+
+    ctx.stroke();
+
+
+
+    /* 0 / 25 / 50 / 75 / 100 */
+
+    ctx.font =
+        "9px Arial";
+
+    ctx.fillStyle =
+        "#59687a";
+
+    ctx.textAlign =
+        "right";
+
+
+    for (
+        let i = 0;
+        i <= 4;
+        i++
+    ) {
+
+        const percent =
+            i * 25;
+
+
+        const y =
+            height -
+            bottom -
+            (
+                percent /
+                100
+            ) *
+            graphHeight;
+
+
+        ctx.fillText(
+            percent + "%",
+            left - 6,
+            y + 3
+        );
+
+    }
+
+
+
+    const values =
+        history
+            .slice()
+            .reverse()
+            .map(
+                function(item) {
+
+                    let value =
+                        parseFloat(
+                            item.confidence
+                        );
+
+
+                    if (
+                        isNaN(value)
+                    ) {
+                        value = 0;
+                    }
+
+
+                    if (
+                        value <= 1
+                    ) {
+                        value *= 100;
+                    }
+
+
+                    return Math.max(
+                        0,
+                        Math.min(
+                            100,
+                            value
+                        )
+                    );
+
+                }
+            );
+
+
+    const step =
+        values.length > 1
+            ? graphWidth /
+              (values.length - 1)
+            : 0;
+
+
+    ctx.beginPath();
+
+
+    values.forEach(
+        function(value,index) {
+
+            const x =
+                left +
+                index * step;
+
+
+            const y =
+                height -
+                bottom -
+                (
+                    value /
+                    100
+                ) *
+                graphHeight;
+
+
+            if (
+                index === 0
+            ) {
+
+                ctx.moveTo(
+                    x,
+                    y
+                );
+
+            } else {
+
+                ctx.lineTo(
+                    x,
+                    y
+                );
+
+            }
+
+        }
+    );
+
+
+    ctx.strokeStyle =
+        "#35dcff";
+
+    ctx.lineWidth =
+        3;
+
+    ctx.stroke();
+
+
+
+    /* points */
+
+    values.forEach(
+        function(value,index) {
+
+            const x =
+                left +
+                index * step;
+
+
+            const y =
+                height -
+                bottom -
+                (
+                    value /
+                    100
+                ) *
+                graphHeight;
+
+
+            ctx.beginPath();
+
+            ctx.arc(
+                x,
+                y,
+                4,
+                0,
+                Math.PI * 2
+            );
+
+
+            ctx.fillStyle =
+                "#527dff";
+
+            ctx.fill();
+
+        }
+    );
+
+}
+
+
+
+/* =====================================
+   CLEAR CANVAS
+===================================== */
+
+function clearCanvas(
+    id
+) {
+
+    const canvas =
+        document.getElementById(id);
+
+
+    if (!canvas) {
+        return;
+    }
+
+
+    const ctx =
+        canvas.getContext("2d");
+
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+}
+
+
+
+/* =====================================
+   GUARANTEED SCAN CLICK HANDLER
+===================================== */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        const row =
+            event.target.closest(
+                "tr.scan-row"
+            );
+
+        if (row) {
+
+            const predictionId =
+                row.dataset.predictionId;
+
+            if (predictionId) {
+                window.openScanReport(
+                    predictionId
+                );
+            }
+
+            return;
+        }
+
+        const card =
+            event.target.closest(
+                ".scan-card"
+            );
+
+        if (card) {
+
+            const button =
+                event.target.closest(
+                    ".pagination, button"
+                );
+
+            if (!button) {
+
+                const id =
+                    card.dataset.predictionId;
+
+                if (id) {
+                    window.openScanReport(
+                        id
+                    );
+                }
+            }
+        }
+    }
+);
+
+
+/* =====================================
+   INDIVIDUAL SCAN REPORT
+===================================== */
+
+window.openScanReport = async function openScanReport(predictionId) {
+
+    if (!predictionId) return;
+
+    const report =
+        document.getElementById("scanReport");
+
+    if (!report) return;
+
+    report.style.display = "block";
+
+    document.getElementById(
+        "scanReportTitle"
+    ).textContent =
+        "Scan #" + predictionId;
+
+    document.getElementById(
+        "scanReportSubtitle"
+    ).textContent =
+        "Loading scan details...";
+
+    report.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+
+    try {
+
+        const response =
+            await fetch(
+                "/history/detail/" +
+                encodeURIComponent(predictionId)
+            );
+
+        if (!response.ok) {
+            throw new Error(
+                "Server returned " +
+                response.status
+            );
+        }
+
+        const data =
+            await response.json();
+
+        if (
+            !data.success ||
+            !data.prediction
+        ) {
+            throw new Error(
+                data.error ||
+                "Could not load scan report."
+            );
+        }
+
+        const p = data.prediction;
+
+        let confidence =
+            parseFloat(p.confidence);
+
+        if (isNaN(confidence)) {
+            confidence = 0;
+        }
+
+        if (confidence <= 1) {
+            confidence *= 100;
+        }
+
+        let detection =
+            parseFloat(
+                p.image_type_confidence
+            );
+
+        if (isNaN(detection)) {
+            detection = 0;
+        }
+
+        if (detection <= 1) {
+            detection *= 100;
+        }
+
+        document.getElementById(
+            "scanReportTitle"
+        ).textContent =
+            p.report_id ||
+            "Scan #" + predictionId;
+
+        document.getElementById(
+            "scanReportSubtitle"
+        ).textContent =
+            (p.created_at || "-") +
+            " • User ID #" +
+            (p.user_id || "-");
+
+        document.getElementById(
+            "scanReportImage"
+        ).src =
+            p.image_url ||
+            "/history/image/" +
+            predictionId;
+
+        document.getElementById(
+            "detailReportId"
+        ).textContent =
+            p.report_id ||
+            "EYAI-" +
+            String(predictionId)
+                .padStart(6, "0");
+
+        document.getElementById(
+            "detailUserName"
+        ).textContent =
+            p.user_name || "-";
+
+        document.getElementById(
+            "detailUserEmail"
+        ).textContent =
+            p.user_email || "-";
+
+        document.getElementById(
+            "detailUserId"
+        ).textContent =
+            p.user_id || "-";
+
+        document.getElementById(
+            "detailImageType"
+        ).textContent =
+            p.image_type || "-";
+
+        document.getElementById(
+            "detailModel"
+        ).textContent =
+            p.model_type || "-";
+
+        document.getElementById(
+            "detailDetection"
+        ).textContent =
+            detection.toFixed(2) + "%";
+
+        document.getElementById(
+            "detailDate"
+        ).textContent =
+            p.created_at || "-";
+
+        document.getElementById(
+            "detailPrediction"
+        ).textContent =
+            p.predicted_class ||
+            "Unknown";
+
+        document.getElementById(
+            "detailConfidence"
+        ).textContent =
+            confidence.toFixed(2) + "%";
+
+        renderDetailProbabilities(
+            p.probabilities || {}
+        );
+
+        document.getElementById(
+            "downloadScanReport"
+        ).href =
+            "/report/" +
+            encodeURIComponent(predictionId);
+
+    }
+    catch (error) {
+
+        console.error(
+            "INDIVIDUAL SCAN REPORT ERROR:",
+            error
+        );
+
+        document.getElementById(
+            "scanReportSubtitle"
+        ).textContent =
+            "Could not load scan report.";
+
+        document.getElementById(
+            "detailProbabilities"
+        ).innerHTML =
+            '<div class="empty">' +
+            escapeHtml(error.message) +
+            '</div>';
+    }
+}
+
+
+function renderDetailProbabilities(
+    probabilities
+) {
+
+    const container =
+        document.getElementById(
+            "detailProbabilities"
+        );
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    const entries =
+        Object.entries(
+            probabilities || {}
+        )
+        .map(function(entry) {
+
+            let value =
+                parseFloat(entry[1]);
+
+            if (isNaN(value)) {
+                value = 0;
+            }
+
+            if (value <= 1) {
+                value *= 100;
+            }
+
+            return [
+                entry[0],
+                Math.max(
+                    0,
+                    Math.min(
+                        100,
+                        value
+                    )
+                )
+            ];
+        })
+        .sort(function(a,b) {
+            return b[1] - a[1];
+        });
+
+    if (!entries.length) {
+
+        container.innerHTML =
+            '<div class="empty">' +
+            'No probability data available.' +
+            '</div>';
+
+        return;
+    }
+
+    entries.forEach(function(entry) {
+
+        const row =
+            document.createElement("div");
+
+        row.className =
+            "probability-row";
+
+        row.innerHTML = `
+            <div class="probability-name">
+                ${escapeHtml(entry[0])}
+            </div>
+
+            <div class="probability-bar">
+                <div
+                    class="probability-fill"
+                    style="width:${entry[1]}%"
+                ></div>
+            </div>
+
+            <div class="probability-value">
+                ${entry[1].toFixed(2)}%
+            </div>
+        `;
+
+        container.appendChild(row);
+    });
+}
+
+
+document.getElementById(
+    "closeScanReport"
+)?.addEventListener(
+    "click",
+    function() {
+
+        document.getElementById(
+            "scanReport"
+        ).style.display = "none";
+
+    }
+);
+
+
+/* =====================================
+   CLOSE REPORT
+===================================== */
+
+document.getElementById(
+    "closeReport"
+).addEventListener(
+    "click",
+    function() {
+
+        document.getElementById(
+            "userReport"
+        ).style.display =
+            "none";
+
+    }
+);
+
+
+
+/* =====================================
+   STATUS + CONFIDENCE TREND + COMPARE
+===================================== */
+
+window.compareSelection = new Map();
+
+function normalizeConfidence(value) {
+    let n = parseFloat(value);
+    if (isNaN(n)) return 0;
+    if (n <= 1) n *= 100;
+    return Math.max(0, Math.min(100, n));
+}
+
+function getConfidenceStatus(value) {
+    const n = normalizeConfidence(value);
+    if (n >= 85) {
+        return { label: "High Confidence", className: "status-high" };
+    }
+    if (n >= 70) {
+        return { label: "Moderate Confidence", className: "status-medium" };
+    }
+    return { label: "Low Confidence", className: "status-low" };
+}
+
+function setStatusElement(element, confidence) {
+    if (!element) return;
+    const status = getConfidenceStatus(confidence);
+    element.textContent = status.label;
+    element.classList.remove("status-high", "status-medium", "status-low");
+    element.classList.add(status.className);
+}
+
+function updateTrendStats(history) {
+    const container = document.getElementById("confidenceTrendStats");
+    if (!container) return;
+
+    const values = (history || [])
+        .map(item => normalizeConfidence(item.confidence))
+        .filter(value => value > 0);
+
+    if (!values.length) {
+        container.innerHTML = "";
+        return;
+    }
+
+    const average = values.reduce((a,b) => a + b, 0) / values.length;
+    const highest = Math.max(...values);
+    const lowest = Math.min(...values);
+    const latest = values[0];
+
+    container.innerHTML = `
+        <div class="trend-stat"><span>Average</span><strong>${average.toFixed(1)}%</strong></div>
+        <div class="trend-stat"><span>Highest</span><strong>${highest.toFixed(1)}%</strong></div>
+        <div class="trend-stat"><span>Lowest</span><strong>${lowest.toFixed(1)}%</strong></div>
+        <div class="trend-stat"><span>Latest</span><strong>${latest.toFixed(1)}%</strong></div>
+    `;
+}
+
+function updateCompareButton() {
+    const count = window.compareSelection.size;
+
+    const button = document.getElementById("compareSelectedButton");
+    if (button) {
+        button.textContent = `Compare Selected (${count}/2)`;
+        button.disabled = count !== 2;
+    }
+
+    const floating = document.getElementById("compareFloatingBar");
+    const floatingText = document.getElementById("compareFloatingText");
+    const floatingAction = document.getElementById("compareFloatingAction");
+
+    if (floating) {
+        floating.classList.toggle("visible", count > 0);
+    }
+
+    if (floatingText) {
+        if (count === 0) {
+            floatingText.textContent = "Select 2 scans to compare";
+        } else if (count === 1) {
+            floatingText.textContent = "1 scan selected — select one more";
+        } else {
+            floatingText.textContent = "2 scans selected";
+        }
+    }
+
+    if (floatingAction) {
+        floatingAction.textContent = count === 2 ? "Compare Now" : "Select 2 Scans";
+        floatingAction.disabled = count !== 2;
+    }
+}
+
+function toggleCompareScan(predictionId, checked, sourceElement) {
+    const id = String(predictionId);
+
+    if (checked) {
+        if (window.compareSelection.size >= 2) {
+            if (sourceElement) sourceElement.checked = false;
+            alert("You can compare only two scans at a time.");
+            return;
+        }
+        window.compareSelection.set(id, true);
+    } else {
+        window.compareSelection.delete(id);
+    }
+
+    document.querySelectorAll(
+        `[data-compare-id="${CSS.escape(id)}"]`
+    ).forEach(function(el) {
+        if (el.tagName === "INPUT") el.checked = window.compareSelection.has(id);
+    });
+
+    document.querySelectorAll(
+        `.scan-card[data-prediction-id="${CSS.escape(id)}"]`
+    ).forEach(function(card) {
+        card.classList.toggle("compare-selected", window.compareSelection.has(id));
+    });
+
+    document.querySelectorAll(
+        `.table-compare-button[data-compare-id="${CSS.escape(id)}"]`
+    ).forEach(function(btn) {
+        btn.classList.toggle("selected", window.compareSelection.has(id));
+        btn.textContent = window.compareSelection.has(id) ? "Selected" : "Compare";
+    });
+
+    updateCompareButton();
+}
+
+function clearCompareSelection() {
+    window.compareSelection.clear();
+    document.querySelectorAll("[data-compare-id]").forEach(function(el) {
+        if (el.tagName === "INPUT") el.checked = false;
+    });
+    document.querySelectorAll(".scan-card").forEach(function(card) {
+        card.classList.remove("compare-selected");
+    });
+    document.querySelectorAll(".table-compare-button").forEach(function(btn) {
+        btn.classList.remove("selected");
+        btn.textContent = "Compare";
+    });
+    updateCompareButton();
+}
+
+async function fetchScanDetailForCompare(id) {
+    /* First use the history data already loaded on the page.
+       This makes comparison work even if the detail endpoint is slow. */
+    const history = window.currentUserHistory || [];
+    const local = history.find(function(item) {
+        return String(item.id) === String(id);
+    });
+
+    if (local) {
+        try {
+            const response = await fetch(
+                "/history/detail/" + encodeURIComponent(id)
+            );
+
+            if (response.ok) {
+                const data = await response.json();
+                if (data.success && data.prediction) {
+                    return Object.assign({}, local, data.prediction);
+                }
+            }
+        } catch (e) {
+            console.warn("Detail request failed; using history data", e);
+        }
+
+        return local;
+    }
+
+    const response = await fetch(
+        "/history/detail/" + encodeURIComponent(id)
+    );
+
+    if (!response.ok) {
+        throw new Error("Unable to load scan #" + id);
+    }
+
+    const data = await response.json();
+
+    if (!data.success || !data.prediction) {
+        throw new Error(data.error || "Scan report unavailable");
+    }
+
+    return data.prediction;
+}
+
+async function openCompareModal() {
+    const ids = Array.from(window.compareSelection.keys());
+
+    if (ids.length !== 2) {
+        alert("Please select exactly two scans first.");
+        return;
+    }
+
+    const modal = document.getElementById("compareModal");
+    const content = document.getElementById("compareContent");
+
+    if (!modal || !content) {
+        alert("Comparison window is missing from admin.html.");
+        return;
+    }
+
+    modal.classList.add("active");
+    content.innerHTML = '<div class="empty">Loading comparison...</div>';
+
+    try {
+        const scans = await Promise.all(
+            ids.map(fetchScanDetailForCompare)
+        );
+
+        content.innerHTML = scans.map(function(p) {
+            const confidence = normalizeConfidence(p.confidence);
+            const status = getConfidenceStatus(confidence);
+            return `
+                <div class="compare-card">
+                    <div class="compare-card-header">
+                        <strong>${escapeHtml(p.report_id || ("Scan #" + p.id))}</strong>
+                        <span class="status-badge ${status.className}">${status.label}</span>
+                    </div>
+                    <img class="compare-image" src="${escapeAttribute(p.image_url || ("/history/image/" + p.id))}" alt="Eye scan">
+                    <div class="compare-data">
+                        <div class="compare-data-row"><span>Prediction</span><strong>${escapeHtml(p.predicted_class || "Unknown")}</strong></div>
+                        <div class="compare-data-row"><span>Confidence</span><strong>${confidence.toFixed(2)}%</strong></div>
+                        <div class="compare-data-row"><span>Image Type</span><strong>${escapeHtml(p.image_type || "-")}</strong></div>
+                        <div class="compare-data-row"><span>AI Model</span><strong>${escapeHtml(p.model_type || "-")}</strong></div>
+                        <div class="compare-data-row"><span>Detection</span><strong>${normalizeConfidence(p.image_type_confidence).toFixed(2)}%</strong></div>
+                        <div class="compare-data-row"><span>Date</span><strong>${escapeHtml(p.created_at || "-")}</strong></div>
+                    </div>
+                </div>
+            `;
+        }).join("");
+
+        const a = scans[0], b = scans[1];
+        const ca = normalizeConfidence(a.confidence);
+        const cb = normalizeConfidence(b.confidence);
+        const diff = Math.abs(ca - cb);
+        const sameDisease = String(a.predicted_class || "") === String(b.predicted_class || "");
+
+        const conclusion = document.createElement("div");
+        conclusion.className = "compare-conclusion";
+        conclusion.innerHTML = `
+            <b>Comparison summary:</b> The confidence difference is ${diff.toFixed(2)} percentage points.
+            ${sameDisease ? "Both scans have the same predicted condition." : "The scans have different predicted conditions."}
+            The higher-confidence scan is <b>#${ca >= cb ? a.id : b.id}</b>.
+            This comparison is for AI screening analysis and is not a medical diagnosis.
+        `;
+        content.appendChild(conclusion);
+    } catch (error) {
+        content.innerHTML = '<div class="empty">' + escapeHtml(error.message) + '</div>';
+    }
+}
+
+function closeCompareModal(event) {
+    if (event && event.target && event.target.id !== "compareModal") return;
+    document.getElementById("compareModal").classList.remove("active");
+}
+
+const compareButton = document.getElementById(
+    "compareSelectedButton"
+);
+
+if (compareButton) {
+    compareButton.addEventListener(
+        "click",
+        function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            openCompareModal();
+        }
+    );
+}
+
+const compareFloatingAction = document.getElementById("compareFloatingAction");
+if (compareFloatingAction) {
+    compareFloatingAction.addEventListener("click", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        openCompareModal();
+    });
+}
+
+const compareFloatingClear = document.getElementById("compareFloatingClear");
+if (compareFloatingClear) {
+    compareFloatingClear.addEventListener("click", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        clearCompareSelection();
+    });
+}
+
+// Add compare controls to the 12 scan cards.
+function addCompareControlsToCards() {
+    document.querySelectorAll(".scan-card").forEach(function(card) {
+        const id = card.dataset.predictionId;
+        if (!id || card.querySelector(".scan-compare-control")) return;
+
+        const imageWrap = card.querySelector(".scan-image-click");
+        if (!imageWrap) return;
+
+        const label = document.createElement("label");
+        label.className = "scan-compare-control";
+        label.title = "Select this scan for comparison";
+        label.innerHTML = `
+            <input type="checkbox" data-compare-id="${escapeAttribute(id)}">
+            Compare
+        `;
+
+        const checkbox = label.querySelector("input");
+        checkbox.addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+        checkbox.addEventListener("change", function() {
+            toggleCompareScan(id, checkbox.checked, checkbox);
+        });
+
+        imageWrap.appendChild(label);
+    });
+}
+
+// Add compare controls to the 10-row scan table.
+function addCompareControlsToTable() {
+    document.querySelectorAll("tr.scan-row").forEach(function(row) {
+        const id = row.dataset.predictionId;
+        const cell = row.querySelector("td:first-child");
+        if (!id || !cell || cell.querySelector(".table-compare-button")) return;
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "table-compare-button";
+        button.dataset.compareId = id;
+        button.textContent = "Compare";
+        button.addEventListener("click", function(event) {
+            event.stopPropagation();
+            const selected = window.compareSelection.has(String(id));
+            toggleCompareScan(id, !selected, null);
+        });
+
+        cell.appendChild(button);
+    });
+}
+
+/* =====================================
+   ESCAPE HTML
+===================================== */
+
+function escapeHtml(
+    value
+) {
+
+    const div =
+        document.createElement(
+            "div"
+        );
+
+
+    div.textContent =
+        value == null
+            ? ""
+            : value;
+
+
+    return div.innerHTML;
+
+}
+
+
+function escapeAttribute(
+    value
+) {
+
+    return String(
+        value || ""
+    )
+    .replace(
+        /&/g,
+        "&amp;"
+    )
+    .replace(
+        /"/g,
+        "&quot;"
+    )
+    .replace(
+        /</g,
+        "&lt;"
+    )
+    .replace(
+        />/g,
+        "&gt;"
+    );
+
+}
 
 
 </script>

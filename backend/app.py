@@ -207,6 +207,31 @@ ALLOWED_EXTENSIONS = {
 }
 
 
+# ============================================================
+# CARE GUIDANCE
+# ============================================================
+COMMON_WARNING_SIGNS = [
+    "Sudden vision loss",
+    "A sudden increase in floaters",
+    "Flashes of light",
+    "A dark curtain or shadow across your vision",
+    "Severe eye pain with sudden blurred vision or redness"
+]
+
+CARE_GUIDANCE = {
+    "Healthy": {"name":"Healthy","risk":"Low risk","summary":"No abnormality was detected by this model within its trained classes.","about":"The fundus model classified the uploaded image as healthy within the classes it was trained on.","recommendation":"Continue routine eye care and arrange an examination if you develop new or persistent vision changes.","examination":["Routine comprehensive eye examination based on age and personal risk"],"tests":["No additional test is automatically required from this AI result"],"habits":["Maintain a balanced diet and regular physical activity","Do not smoke","Protect your eyes from excessive UV exposure"],"followup":"Follow your normal eye-care schedule. A normal AI result does not rule out every eye condition.","warnings":COMMON_WARNING_SIGNS},
+    "NORMAL": {"name":"Normal","risk":"Low risk","summary":"The OCT model classified the scan as normal within its trained classes.","about":"The OCT model classified the uploaded scan as normal.","recommendation":"Continue routine eye care and seek professional evaluation if symptoms develop.","examination":["Routine comprehensive eye examination based on age and risk"],"tests":["No additional test is automatically required from this AI result"],"habits":["Maintain healthy lifestyle habits","Do not smoke","Protect eyes from excessive UV exposure"],"followup":"Continue routine monitoring. A normal OCT prediction does not rule out every eye condition.","warnings":COMMON_WARNING_SIGNS},
+    "Myopia": {"name":"Myopia","risk":"Needs attention","summary":"The model identified a pattern associated with nearsightedness.","about":"Myopia, or nearsightedness, causes distant objects to appear blurry because light is focused in front of the retina.","recommendation":"Arrange a professional eye examination for refraction and an appropriate vision prescription.","examination":["Comprehensive eye examination","Refraction / visual-acuity assessment"],"tests":["Visual acuity testing","Refraction testing","Dilated examination when clinically appropriate"],"habits":["Use the vision correction prescribed by your eye-care professional","Take regular breaks during prolonged near work","Spend appropriate time outdoors"],"followup":"Follow the eye-care professional's recommended schedule, especially if vision is changing.","warnings":COMMON_WARNING_SIGNS},
+    "Glaucoma": {"name":"Glaucoma","risk":"Needs attention","summary":"The model identified a pattern associated with glaucoma in its trained classes.","about":"Glaucoma is associated with damage to the optic nerve and can cause progressive vision loss.","recommendation":"Arrange a comprehensive eye evaluation. Treatment decisions should be made by an eye-care professional.","examination":["Comprehensive dilated eye examination","Optic-nerve evaluation"],"tests":["Eye-pressure measurement (tonometry)","Visual-field testing","Optic-nerve / retinal imaging when recommended"],"habits":["Take prescribed treatment exactly as directed","Keep scheduled follow-up appointments","Do not stop prescribed eye drops without professional advice"],"followup":"Glaucoma requires professional monitoring. The appropriate interval depends on the clinical findings.","warnings":["Severe eye pain with a red eye","Sudden blurred vision","Nausea or vomiting with sudden eye symptoms"] + COMMON_WARNING_SIGNS},
+    "Diabetic Retinopathy": {"name":"Diabetic Retinopathy","risk":"Needs attention","summary":"The model identified a retinal pattern associated with diabetic retinopathy.","about":"Diabetic retinopathy is retinal damage associated with diabetes and can threaten vision when it progresses.","recommendation":"Arrange professional retinal evaluation and discuss diabetes, blood-pressure and cholesterol management with your healthcare team.","examination":["Dilated retinal examination","Professional retinal evaluation"],"tests":["Blood glucose / HbA1c assessment with your healthcare team","Blood-pressure assessment","OCT or other retinal imaging when recommended"],"habits":["Keep blood glucose within your clinician's recommended range","Manage blood pressure and cholesterol","Stay physically active and eat a balanced diet","Do not smoke"],"followup":"Follow the eye-care professional's recommended retinal monitoring schedule.","warnings":COMMON_WARNING_SIGNS},
+    "DR": {"name":"Diabetic Retinopathy","risk":"Needs attention","summary":"The model identified a retinal pattern associated with diabetic retinopathy.","about":"Diabetic retinopathy is retinal damage associated with diabetes and can threaten vision when it progresses.","recommendation":"Arrange professional retinal evaluation and discuss diabetes, blood-pressure and cholesterol management with your healthcare team.","examination":["Dilated retinal examination","Professional retinal evaluation"],"tests":["Blood glucose / HbA1c assessment with your healthcare team","Blood-pressure assessment","OCT or other retinal imaging when recommended"],"habits":["Keep blood glucose within your clinician's recommended range","Manage blood pressure and cholesterol","Stay physically active and eat a balanced diet","Do not smoke"],"followup":"Follow the eye-care professional's recommended retinal monitoring schedule.","warnings":COMMON_WARNING_SIGNS},
+    "DME": {"name":"Diabetic Macular Edema","risk":"Prompt evaluation","summary":"The OCT model identified a pattern associated with diabetic macular edema.","about":"Diabetic macular edema involves swelling or fluid accumulation in the macular region and is associated with diabetes.","recommendation":"Arrange prompt eye-care evaluation, particularly if you have diabetes or notice changes in vision.","examination":["Dilated retinal examination","Retina specialist / ophthalmology evaluation when indicated"],"tests":["OCT","Blood glucose / HbA1c assessment with your healthcare team","Blood-pressure assessment"],"habits":["Manage diabetes as advised by your healthcare team","Manage blood pressure and cholesterol","Follow prescribed eye treatment and appointments","Do not smoke"],"followup":"Follow the retina specialist's recommended monitoring schedule. Treatment depends on clinical findings and severity.","warnings":COMMON_WARNING_SIGNS},
+    "CNV": {"name":"Choroidal Neovascularization (CNV)","risk":"Prompt evaluation","summary":"The OCT model identified a pattern associated with abnormal blood-vessel growth beneath the retina.","about":"CNV describes abnormal blood-vessel growth beneath the retina and can occur in conditions such as neovascular or wet AMD.","recommendation":"Arrange prompt ophthalmology / retina evaluation. The underlying cause must be confirmed clinically.","examination":["Dilated retinal examination","Retina specialist evaluation"],"tests":["OCT","Additional retinal imaging when recommended"],"habits":["Do not smoke","Maintain healthy blood pressure and cholesterol","Follow the monitoring plan given by your eye-care professional"],"followup":"Prompt specialist review is appropriate because CNV can affect central vision and treatment depends on the underlying cause.","warnings":COMMON_WARNING_SIGNS},
+    "DRUSEN": {"name":"Drusen","risk":"Needs attention","summary":"The OCT model identified drusen within its trained classes.","about":"Drusen are deposits beneath the retina and can be associated with age-related macular changes.","recommendation":"Arrange an eye examination so a clinician can determine the significance of the finding and whether monitoring is needed.","examination":["Comprehensive eye examination","Macular / retinal evaluation"],"tests":["OCT when recommended","Additional retinal imaging when clinically appropriate"],"habits":["Do not smoke","Maintain healthy blood pressure and cholesterol","Eat a balanced diet rich in vegetables and other nutrient-dense foods","Stay physically active"],"followup":"Follow the monitoring schedule recommended by your eye-care professional. Supplements should not be started solely from this AI result.","warnings":COMMON_WARNING_SIGNS},
+    "Macular Scar": {"name":"Macular Scar","risk":"Needs attention","summary":"The fundus model identified a pattern associated with a macular scar.","about":"A scar affecting the macular region can influence central vision. The cause and clinical significance vary between people.","recommendation":"Arrange professional retinal evaluation to determine the cause, location and effect on vision.","examination":["Ophthalmologist / retina evaluation","Macular and retinal examination"],"tests":["OCT when recommended","Additional retinal imaging when clinically appropriate"],"habits":["Follow the eye-care professional's monitoring plan","Protect overall eye health","Do not attempt home treatment for a retinal scar"],"followup":"Follow-up depends on the underlying cause, scar location and effect on vision.","warnings":COMMON_WARNING_SIGNS}
+}
+
+
 def allowed_file(
     filename
 ):
@@ -1023,7 +1048,24 @@ def predict():
             + str(saved_prediction_id),
 
         "probabilities":
-            probabilities
+            probabilities,
+
+        "care_guidance":
+            CARE_GUIDANCE.get(
+                predicted_class,
+                {
+                    "name": predicted_class or "Unknown",
+                    "risk": "Needs review",
+                    "summary": "The model returned a class for which detailed guidance is not configured.",
+                    "about": "This is an AI classification result and requires professional interpretation.",
+                    "recommendation": "Consider a qualified eye-care professional evaluation.",
+                    "examination": ["Professional eye-care evaluation"],
+                    "tests": ["Additional tests as clinically indicated"],
+                    "habits": ["Follow general eye-health practices"],
+                    "followup": "Follow the schedule recommended by your eye-care professional.",
+                    "warnings": COMMON_WARNING_SIGNS
+                }
+            )
 
     })
 
@@ -1624,12 +1666,30 @@ def get_prediction_detail(prediction_id):
 
             created_at = "-"
 
+        detail_user = User.query.get(
+            prediction.user_id
+        )
+
         return jsonify({
             "success": True,
 
             "prediction": {
 
                 "id": prediction.id,
+
+                "report_id":
+                    "EYAI-" +
+                    str(prediction.id).zfill(6),
+
+                "user_name":
+                    detail_user.name
+                    if detail_user
+                    else "-",
+
+                "user_email":
+                    detail_user.email
+                    if detail_user
+                    else "-",
 
                 "user_id": prediction.user_id,
 
@@ -1643,11 +1703,14 @@ def get_prediction_detail(prediction_id):
 
                 "image_type": prediction.image_type,
 
-                "image_type_confidence": prediction.image_type_confidence,
+                "image_type_confidence":
+                    prediction.image_type_confidence,
 
-                "predicted_class": prediction.predicted_class,
+                "predicted_class":
+                    prediction.predicted_class,
 
-                "confidence": prediction.confidence,
+                "confidence":
+                    prediction.confidence,
 
                 "probabilities": (
                     json.loads(
@@ -1694,7 +1757,14 @@ def generate_report(prediction_id):
 
         current_user_id = session.get("user_id")
 
-        if not current_user_id:
+        admin_logged_in = (
+            session.get("admin_logged_in") is True
+        )
+
+        if (
+            not current_user_id
+            and not admin_logged_in
+        ):
             return jsonify({
                 "success": False,
                 "error": "Please login again."
@@ -1710,7 +1780,10 @@ def generate_report(prediction_id):
                 "error": "Prediction not found"
             }), 404
 
-        if int(current_user_id) != int(prediction.user_id):
+        if (
+            not admin_logged_in
+            and int(current_user_id) != int(prediction.user_id)
+        ):
             return jsonify({
                 "success": False,
                 "error": "You are not allowed to access this report."
@@ -2019,21 +2092,50 @@ def generate_report(prediction_id):
 
         story.append(Paragraph("CONDITION INFORMATION", heading_style))
 
+        care = CARE_GUIDANCE.get(
+            prediction.predicted_class,
+            {
+                "name": prediction.predicted_class or "Unknown",
+                "risk": "Needs review",
+                "about": "This is an AI classification result and requires professional interpretation.",
+                "examination": ["Professional eye-care evaluation"],
+                "tests": ["Additional tests as clinically indicated"],
+                "habits": ["Follow general eye-health practices"],
+                "followup": "Follow the schedule recommended by your eye-care professional.",
+                "warnings": COMMON_WARNING_SIGNS
+            }
+        )
+
         condition_info = (
-            "<b>Condition:</b> "
-            + str(prediction.predicted_class or "-")
-            + "<br/><br/>"
-            + "This report contains the classification generated "
-              "by the EyeAI model for the uploaded image."
+            "<b>Condition:</b> " + str(care["name"]) + "<br/>"
+            + "<b>Screening status:</b> " + str(care["risk"]) + "<br/><br/>"
+            + "<b>What this result means:</b> " + str(care["about"]) + "<br/><br/>"
+            + "<b>Recommended examination:</b><br/>"
+            + "<br/>".join("✓ " + str(x) for x in care["examination"])
+            + "<br/><br/><b>Suggested checks / tests:</b><br/>"
+            + "<br/>".join("✓ " + str(x) for x in care["tests"])
+            + "<br/><br/><b>Supportive habits:</b><br/>"
+            + "<br/>".join("✓ " + str(x) for x in care["habits"])
+            + "<br/><br/><b>Follow-up:</b> " + str(care["followup"])
         )
 
-        story.append(
-            Paragraph(
-                condition_info,
-                normal_style
-            )
-        )
+        story.append(Paragraph(condition_info, normal_style))
+        story.append(Spacer(1, 4 * mm))
 
+        warning_text = (
+            "<b>WHEN TO SEEK URGENT CARE</b><br/>"
+            + "<br/>".join("⚠ " + str(x) for x in care["warnings"])
+        )
+        warning_box = Table([[Paragraph(warning_text, normal_style)]], colWidths=[174 * mm])
+        warning_box.setStyle(TableStyle([
+            ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#FFF8E7")),
+            ("BOX", (0, 0), (-1, -1), 0.5, colors.HexColor("#E7B84B")),
+            ("TOPPADDING", (0, 0), (-1, -1), 8),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+            ("LEFTPADDING", (0, 0), (-1, -1), 8),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 8)
+        ]))
+        story.append(warning_box)
         story.append(Spacer(1, 4 * mm))
 
         disclaimer = Table(

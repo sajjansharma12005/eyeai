@@ -449,6 +449,30 @@
                 </div>
 
 
+                <!-- ADMIN ACCESS -->
+
+                <div class="admin-access-card">
+
+                    <div class="admin-access-icon">⚙</div>
+
+                    <div class="admin-access-content">
+                        <span class="admin-access-label">ADMINISTRATOR</span>
+                        <strong>Manage EyeAI</strong>
+                        <small>Access the admin dashboard separately</small>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="admin-login-button"
+                        id="admin-login-button"
+                    >
+                        Admin Login
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
                 <!-- BOTTOM SECURITY -->
 
                 <div class="auth-footer">
@@ -726,6 +750,19 @@
     ========================================================== -->
 
     <script src="script.js"></script>
+
+    <script>
+        // Admin login is handled by the Flask backend.
+        // The frontend is served by Live Server on port 5500.
+        const adminLoginButton = document.getElementById("admin-login-button");
+
+        if (adminLoginButton) {
+            adminLoginButton.addEventListener("click", function () {
+                const host = window.location.hostname || "127.0.0.1";
+                window.location.href = `${window.location.protocol}//${host}:5000/admin/login`;
+            });
+        }
+    </script>
 
 </body>
 
