@@ -1688,9 +1688,28 @@ function showResult(data) {
     }
 
 
-    const predicted =
+    let predicted =
         data.prediction ||
         data.predicted_class ||
+        "Unknown";
+
+    /* Safely handle either a string or an object. */
+    if (
+        typeof predicted === "object" &&
+        predicted !== null
+    ) {
+
+        predicted =
+            predicted.predicted_class ||
+            predicted.prediction ||
+            predicted.class_name ||
+            predicted.label ||
+            predicted.name ||
+            "Unknown";
+    }
+
+    predicted =
+        String(predicted).trim() ||
         "Unknown";
 
 
@@ -1774,6 +1793,8 @@ function showResult(data) {
     showDiseaseInformation(
         predicted
     );
+
+    showCareGuidance(predicted);
 
 
     if (resultSection) {
@@ -2005,6 +2026,49 @@ const diseaseInfo = {
             "Consider an eye examination."
     },
 
+    "ODC": {
+    name: "Optic Disc Condition",
+    risk: "Needs attention",
+    urgency: "prompt",
+
+    summary:
+        "The AI model classified the uploaded image as ODC. This is an AI screening result and should be clinically assessed rather than treated as a confirmed diagnosis.",
+
+    about:
+        "ODC refers to an optic-disc-related classification produced by the model. The actual cause and clinical significance cannot be determined from the AI result alone.",
+
+    recommendation:
+        "Arrange a comprehensive eye examination and discuss the result with a qualified eye-care professional.",
+
+    examination: [
+        "Comprehensive eye examination",
+        "Optic-nerve / optic-disc evaluation",
+        "Dilated eye examination when clinically appropriate"
+    ],
+
+    tests: [
+        "Eye-pressure measurement (tonometry) when clinically appropriate",
+        "Visual-field testing when recommended",
+        "Optic-nerve / retinal imaging when recommended"
+    ],
+
+    habits: [
+        "Follow the examination and monitoring plan recommended by your eye-care professional",
+        "Do not start or stop eye medication without professional advice",
+        "Monitor for new or worsening vision changes"
+    ],
+
+    followup:
+        "Arrange professional eye-care assessment to confirm the finding and determine whether further monitoring or testing is needed.",
+
+    warnings: [
+        "Sudden vision loss",
+        "Severe eye pain",
+        "Sudden major change in vision",
+        "Sudden blurred vision with a red eye"
+    ]
+},
+
     "Macular Scar": {
         name: "Macular Scar",
         risk: "Needs attention",
@@ -2125,6 +2189,1093 @@ function showDiseaseInformation(name) {
 }
 
 
+// ========================================================
+// CARE / NEXT-STEP GUIDANCE
+// ========================================================
+
+const careGuidance = {
+
+
+        // ====================================================
+        // ODC
+        // ====================================================
+
+        "ODC": {
+
+            meaning:
+                "The AI model classified this image as ODC. This is an AI screening classification and should not be treated as a confirmed diagnosis. Clinical examination is required to understand the finding.",
+
+            examination: [
+                "Comprehensive eye examination.",
+                "Optic-disc and optic-nerve assessment.",
+                "Eye-pressure measurement when clinically appropriate.",
+                "Visual-field testing may be recommended by the eye-care professional."
+            ],
+
+            tests: [
+                "Optic-nerve or retinal imaging.",
+                "Intraocular-pressure measurement when appropriate.",
+                "Visual-field examination when recommended.",
+                "Additional tests may be selected based on the clinical examination."
+            ],
+
+            habits: [
+                "Attend regular eye examinations.",
+                "Do not start, stop, or change eye medication without professional advice.",
+                "Monitor for new or worsening vision changes.",
+                "Maintain general eye health and follow your clinician's recommendations."
+            ],
+
+            followup:
+                "Arrange an eye-care appointment so the AI finding can be clinically evaluated and an appropriate follow-up interval can be decided.",
+
+            urgent: [
+                "Sudden loss of vision.",
+                "Severe or sudden eye pain.",
+                "Sudden major change in vision.",
+                "Sudden flashes or a large increase in floaters."
+            ],
+
+            urgency:
+                "MODERATE"
+        },
+
+
+        // ====================================================
+        // DIABETIC RETINOPATHY
+        // ====================================================
+
+        "DR": {
+
+            meaning:
+                "The AI model classified the retinal image as Diabetic Retinopathy. Diabetic retinopathy is associated with retinal changes related to diabetes. An AI screening result should be confirmed clinically.",
+
+            examination: [
+                "Comprehensive dilated retinal examination.",
+                "Retinal assessment by an eye-care professional.",
+                "Assessment of diabetes control and relevant medical history."
+            ],
+
+            tests: [
+                "Retinal photography or examination.",
+                "OCT when clinically indicated.",
+                "Additional retinal imaging if recommended."
+            ],
+
+            habits: [
+                "Keep diabetes-management appointments.",
+                "Follow your prescribed diabetes-management plan.",
+                "Monitor blood pressure and other cardiovascular risk factors with your healthcare team.",
+                "Attend scheduled eye examinations."
+            ],
+
+            followup:
+                "Arrange a professional retinal examination. The appropriate follow-up interval depends on the clinical findings and diabetes status.",
+
+            urgent: [
+                "Sudden loss or major reduction of vision.",
+                "Sudden increase in floaters.",
+                "Flashes of light.",
+                "A dark curtain or shadow across vision."
+            ],
+
+            urgency:
+                "MODERATE"
+        },
+
+
+        "Diabetic Retinopathy": {
+
+            meaning:
+                "The AI model classified the retinal image as Diabetic Retinopathy. This is a screening result and should be clinically evaluated.",
+
+            examination: [
+                "Comprehensive dilated retinal examination.",
+                "Retinal assessment by an eye-care professional."
+            ],
+
+            tests: [
+                "Retinal examination or photography.",
+                "OCT when clinically indicated."
+            ],
+
+            habits: [
+                "Follow your prescribed diabetes-management plan.",
+                "Attend regular eye examinations.",
+                "Monitor general health factors with your healthcare team."
+            ],
+
+            followup:
+                "Arrange professional retinal evaluation and follow the schedule recommended by the eye-care professional.",
+
+            urgent: [
+                "Sudden vision loss.",
+                "Sudden increase in floaters.",
+                "Flashes of light.",
+                "A dark curtain or shadow in your vision."
+            ],
+
+            urgency:
+                "MODERATE"
+        },
+
+
+        // ====================================================
+        // DME
+        // ====================================================
+
+        "DME": {
+
+            meaning:
+                "The OCT model classified the scan as Diabetic Macular Edema. This classification may indicate retinal fluid or swelling involving the macular region and requires professional interpretation.",
+
+            examination: [
+                "Comprehensive retinal examination.",
+                "OCT assessment by an eye-care professional.",
+                "Review of diabetes history when relevant."
+            ],
+
+            tests: [
+                "OCT imaging.",
+                "Dilated retinal examination.",
+                "Additional retinal imaging if clinically required."
+            ],
+
+            habits: [
+                "Follow your prescribed diabetes-management plan.",
+                "Attend scheduled eye appointments.",
+                "Do not use eye medication without professional advice."
+            ],
+
+            followup:
+                "Arrange a retinal evaluation to determine whether the OCT finding represents clinically significant disease and what follow-up is appropriate.",
+
+            urgent: [
+                "Sudden loss of vision.",
+                "Rapid worsening of vision.",
+                "New distortion or major visual change."
+            ],
+
+            urgency:
+                "MODERATE"
+        },
+
+
+        // ====================================================
+        // CNV
+        // ====================================================
+
+        "CNV": {
+
+            meaning:
+                "The OCT model classified the scan as CNV, or choroidal neovascularization. This is a significant retinal finding that requires professional assessment and should not be treated as a confirmed diagnosis from AI alone.",
+
+            examination: [
+                "Comprehensive retinal examination.",
+                "Retina-specialist assessment may be appropriate.",
+                "Detailed OCT review."
+            ],
+
+            tests: [
+                "OCT imaging.",
+                "Dilated retinal examination.",
+                "Additional retinal imaging when clinically indicated."
+            ],
+
+            habits: [
+                "Attend retinal follow-up appointments.",
+                "Report new distortion or vision changes promptly.",
+                "Do not delay professional assessment because the image is only an AI screening result."
+            ],
+
+            followup:
+                "Arrange professional retinal assessment promptly so the finding can be confirmed and an appropriate management plan can be determined.",
+
+            urgent: [
+                "Sudden or rapidly worsening vision.",
+                "New distortion of straight lines.",
+                "Sudden central vision changes.",
+                "New dark or missing area in central vision."
+            ],
+
+            urgency:
+                "HIGH"
+        },
+
+
+        // ====================================================
+        // DRUSEN
+        // ====================================================
+
+        "DRUSEN": {
+
+            meaning:
+                "The OCT model classified the scan as Drusen. Drusen are deposits that can occur beneath the retina. Their significance depends on their number, size, location, and clinical context.",
+
+            examination: [
+                "Comprehensive retinal examination.",
+                "OCT review by an eye-care professional.",
+                "Dilated eye examination when appropriate."
+            ],
+
+            tests: [
+                "OCT imaging.",
+                "Retinal photography.",
+                "Additional retinal imaging when clinically indicated."
+            ],
+
+            habits: [
+                "Attend routine eye examinations.",
+                "Monitor for new distortion or changes in central vision.",
+                "Avoid smoking and discuss general eye-health measures with your clinician."
+            ],
+
+            followup:
+                "Arrange an eye examination to determine the significance of the finding and the appropriate monitoring interval.",
+
+            urgent: [
+                "New distortion of straight lines.",
+                "Sudden central vision change.",
+                "New dark or missing area in central vision."
+            ],
+
+            urgency:
+                "MODERATE"
+        },
+
+
+        // ====================================================
+        // NORMAL
+        // ====================================================
+
+        "NORMAL": {
+
+            meaning:
+                "The OCT model classified the scan as normal within the classes it was trained to recognize. A normal AI result does not rule out every possible eye condition.",
+
+            examination: [
+                "Continue routine eye examinations based on your age, risk factors, and professional advice."
+            ],
+
+            tests: [
+                "No additional test is automatically recommended from this AI result alone.",
+                "Additional testing may be appropriate if symptoms or risk factors are present."
+            ],
+
+            habits: [
+                "Attend routine eye examinations.",
+                "Protect your eyes from injury and excessive UV exposure.",
+                "Seek professional assessment if new vision symptoms develop."
+            ],
+
+            followup:
+                "Continue routine eye care unless an eye-care professional recommends a different schedule.",
+
+            urgent: [
+                "Sudden vision loss.",
+                "Severe eye pain.",
+                "Sudden major visual changes.",
+                "Sudden flashes or a large increase in floaters."
+            ],
+
+            urgency:
+                "LOW"
+        },
+
+
+        // ====================================================
+        // HEALTHY
+        // ====================================================
+
+        "Healthy": {
+
+            meaning:
+                "The AI model classified the image as Healthy within its trained classes. This is a screening result and does not guarantee that every eye condition has been excluded.",
+
+            examination: [
+                "Continue routine eye examinations."
+            ],
+
+            tests: [
+                "No additional test is automatically recommended from this result alone."
+            ],
+
+            habits: [
+                "Maintain regular eye examinations.",
+                "Protect your eyes from injury and excessive UV exposure.",
+                "Seek professional advice if vision changes occur."
+            ],
+
+            followup:
+                "Continue routine eye care according to your normal examination schedule.",
+
+            urgent: [
+                "Sudden vision loss.",
+                "Severe eye pain.",
+                "Sudden major change in vision."
+            ],
+
+            urgency:
+                "LOW"
+        },
+
+
+        // ====================================================
+        // GLAUCOMA
+        // ====================================================
+
+        "Glaucoma": {
+
+            meaning:
+                "The AI model classified the image as Glaucoma. Glaucoma can involve damage to the optic nerve, but an AI image classification alone cannot confirm the condition.",
+
+            examination: [
+                "Comprehensive eye examination.",
+                "Optic-nerve assessment.",
+                "Eye-pressure measurement.",
+                "Visual-field assessment when clinically appropriate."
+            ],
+
+            tests: [
+                "Intraocular-pressure measurement.",
+                "Optic-nerve imaging.",
+                "Visual-field testing.",
+                "Additional glaucoma assessment when recommended."
+            ],
+
+            habits: [
+                "Attend recommended eye appointments.",
+                "Use prescribed eye medication exactly as directed if medication has been prescribed.",
+                "Do not stop glaucoma medication without professional advice."
+            ],
+
+            followup:
+                "Arrange a comprehensive eye examination to confirm the finding and determine an appropriate monitoring schedule.",
+
+            urgent: [
+                "Sudden severe eye pain.",
+                "Sudden blurred vision.",
+                "Severe headache with eye symptoms.",
+                "Sudden vision loss."
+            ],
+
+            urgency:
+                "MODERATE"
+        },
+
+
+        // ====================================================
+        // MYOPIA
+        // ====================================================
+
+        "Myopia": {
+
+            meaning:
+                "The AI model classified the image as Myopia within its trained classes. Myopia affects distance vision and should be assessed through a professional eye examination.",
+
+            examination: [
+                "Comprehensive eye examination.",
+                "Visual-acuity assessment.",
+                "Refraction assessment."
+            ],
+
+            tests: [
+                "Visual-acuity testing.",
+                "Refraction.",
+                "Additional retinal examination when clinically appropriate."
+            ],
+
+            habits: [
+                "Follow the corrective-lens prescription provided by an eye-care professional.",
+                "Take regular breaks during prolonged near work.",
+                "Spend appropriate time outdoors as part of general eye-health habits.",
+                "Attend routine eye examinations."
+            ],
+
+            followup:
+                "Arrange a professional eye examination if your vision is changing or if you have not had a recent assessment.",
+
+            urgent: [
+                "Sudden vision loss.",
+                "Sudden flashes.",
+                "Sudden large increase in floaters.",
+                "A dark curtain or shadow across vision."
+            ],
+
+            urgency:
+                "LOW"
+        },
+
+
+        // ====================================================
+        // MACULAR SCAR
+        // ====================================================
+
+        "Macular Scar": {
+
+            meaning:
+                "The AI model classified the image as Macular Scar. A scar involving the macular region can affect central vision, but the AI result requires professional confirmation.",
+
+            examination: [
+                "Comprehensive retinal examination.",
+                "Macular assessment.",
+                "OCT examination when clinically appropriate."
+            ],
+
+            tests: [
+                "OCT imaging.",
+                "Retinal photography.",
+                "Additional retinal imaging when recommended."
+            ],
+
+            habits: [
+                "Monitor for changes in central vision.",
+                "Attend scheduled retinal examinations.",
+                "Report new distortion or worsening vision to an eye-care professional."
+            ],
+
+            followup:
+                "Arrange retinal evaluation to confirm the finding and determine appropriate monitoring.",
+
+            urgent: [
+                "Sudden central vision loss.",
+                "Rapid worsening of vision.",
+                "New distortion of straight lines."
+            ],
+
+            urgency:
+                "MODERATE"
+        }
+        ,
+        "MH": {
+            meaning: "The AI model classified the scan as Macular Hole. This is an AI screening result and requires professional confirmation.",
+            examination: ["Comprehensive retinal examination.", "Macular and OCT assessment by an eye-care professional."],
+            tests: ["OCT imaging.", "Additional retinal imaging when clinically indicated."],
+            habits: ["Monitor for new or worsening central-vision changes.", "Attend recommended retinal follow-up.", "Do not start or stop eye medication without professional advice."],
+            followup: "Arrange professional retinal evaluation to confirm the finding and determine appropriate follow-up.",
+            urgent: ["Sudden or rapidly worsening vision.", "New central vision loss or distortion."],
+            urgency: "HIGH"
+        },
+        "Macular Scar": {
+            meaning: "The AI model classified the image as Macular Scar. This screening result requires clinical interpretation.",
+            examination: ["Comprehensive retinal examination.", "Macular assessment and OCT when appropriate."],
+            tests: ["OCT imaging.", "Retinal photography when clinically indicated."],
+            habits: ["Monitor central vision for new changes or distortion.", "Attend scheduled retinal examinations."],
+            followup: "Arrange retinal evaluation to confirm the finding and determine an appropriate monitoring schedule.",
+            urgent: ["Sudden central vision loss.", "Rapid worsening of vision.", "New distortion of straight lines."],
+            urgency: "MODERATE"
+        },
+        "TSLN": {
+            meaning: "The AI model classified the image as TSLN. This is a screening classification and should be clinically assessed before drawing conclusions.",
+            examination: ["Comprehensive eye examination.", "Retinal or optic-nerve assessment as clinically appropriate."],
+            tests: ["Retinal imaging when recommended.", "Additional testing based on the clinical examination."],
+            habits: ["Monitor for new or worsening vision changes.", "Attend professional eye examinations."],
+            followup: "Arrange an eye-care assessment to confirm the finding and determine follow-up.",
+            urgent: ["Sudden vision loss.", "Severe eye pain.", "Sudden major visual changes."],
+            urgency: "MODERATE"
+        },
+        "Disease_Risk": {
+            meaning: "The AI model classified the image as Disease Risk. This indicates a screening flag rather than a confirmed diagnosis.",
+            examination: ["Comprehensive eye examination.", "Review the finding with a qualified eye-care professional."],
+            tests: ["Retinal imaging or OCT when clinically indicated.", "Additional tests selected after examination."],
+            habits: ["Monitor for changes in vision.", "Follow the examination plan recommended by your eye-care professional."],
+            followup: "Arrange professional eye-care assessment to determine whether further testing or monitoring is needed.",
+            urgent: ["Sudden vision loss.", "Severe eye pain.", "Sudden major visual changes."],
+            urgency: "MODERATE"
+        }
+
+    };
+
+
+    
+// ========================================================
+    // NORMALIZE DISEASE NAME
+    // ========================================================
+
+    function normalizeDiseaseName(
+        disease
+    ) {
+
+        if (
+            disease === null ||
+            disease === undefined
+        ) {
+
+            return "";
+        }
+
+
+        const original =
+            String(
+                disease
+            ).trim();
+
+
+        const lower =
+            original.toLowerCase();
+
+
+        const aliases = {
+
+            "odc":
+                "ODC",
+
+            "optic disc condition":
+                "ODC",
+
+            "optic disc":
+                "ODC",
+
+            "dr":
+                "DR",
+
+            "diabetic retinopathy":
+                "Diabetic Retinopathy",
+
+            "dme":
+                "DME",
+
+            "diabetic macular edema":
+                "DME",
+
+            "cnv":
+                "CNV",
+
+            "choroidal neovascularization":
+                "CNV",
+
+            "drusen":
+                "DRUSEN",
+
+            "normal":
+                "NORMAL",
+
+            "healthy":
+                "Healthy",
+
+            "glaucoma":
+                "Glaucoma",
+
+            "myopia":
+                "Myopia",
+
+            "macular scar":
+                "Macular Scar",
+
+            "mh":
+                "MH",
+
+            "tsln":
+                "TSLN",
+
+            "disease_risk":
+                "Disease_Risk"
+        };
+
+
+        return (
+            aliases[lower] ||
+            original
+        );
+    }
+
+
+    // ========================================================
+    // CREATE BULLET LIST
+    // ========================================================
+
+    function createCareList(
+        items
+    ) {
+
+        if (
+            !Array.isArray(items) ||
+            items.length === 0
+        ) {
+
+            return "";
+        }
+
+
+        return items
+            .map(
+                function (item) {
+
+                    return `
+                        <li>
+                            ${escapeHTML(item)}
+                        </li>
+                    `;
+                }
+            )
+            .join("");
+    }
+
+
+    // ========================================================
+    // RENDER CARE LIST
+    // ========================================================
+
+    function renderCareList(
+        element,
+        items
+    ) {
+
+        if (!element) {
+            return;
+        }
+
+        let list = items;
+
+        if (
+            list === null ||
+            list === undefined
+        ) {
+            list = [];
+        }
+
+        if (!Array.isArray(list)) {
+            list = [list];
+        }
+
+        list = list
+            .filter(function (item) {
+                return (
+                    item !== null &&
+                    item !== undefined &&
+                    String(item).trim() !== ""
+                );
+            })
+            .map(function (item) {
+                return String(item);
+            });
+
+        element.innerHTML =
+            createCareList(list);
+
+        element.style.display =
+            list.length > 0
+                ? "block"
+                : "none";
+    }
+
+
+    // ========================================================
+    // SHOW CARE GUIDANCE
+    // ========================================================
+
+    function getCareGuidanceForDisease(disease) {
+
+        if (
+            disease === null ||
+            disease === undefined
+        ) {
+            return null;
+        }
+
+        /*
+         * The prediction API returns the class as a string.
+         * This helper also safely handles an object in case an
+         * older backend returns { predicted_class: "ODC" }.
+         */
+        let name = disease;
+
+        if (
+            typeof name === "object"
+        ) {
+            name =
+                name.predicted_class ||
+                name.prediction ||
+                name.class_name ||
+                name.label ||
+                name.name ||
+                "";
+        }
+
+        name = String(name).trim();
+
+        if (!name) {
+            return null;
+        }
+
+        const normalized =
+            normalizeDiseaseName(name);
+
+        /* Exact normalized lookup. */
+        if (
+            careGuidance &&
+            careGuidance[normalized]
+        ) {
+            return careGuidance[normalized];
+        }
+
+        /* Exact original lookup. */
+        if (
+            careGuidance &&
+            careGuidance[name]
+        ) {
+            return careGuidance[name];
+        }
+
+        /* Case-insensitive lookup. */
+        const wanted =
+            normalized.toLowerCase();
+
+        if (careGuidance) {
+
+            const keys =
+                Object.keys(
+                    careGuidance
+                );
+
+            for (
+                let i = 0;
+                i < keys.length;
+                i++
+            ) {
+
+                const key =
+                    String(
+                        keys[i]
+                    ).trim();
+
+                if (
+                    key.toLowerCase() ===
+                    wanted
+                ) {
+                    return careGuidance[key];
+                }
+            }
+        }
+
+        return null;
+    }
+
+
+    function showCareGuidance(
+        disease
+    ) {
+
+        console.log(
+            "[EyeAI] showCareGuidance:",
+            disease
+        );
+
+        const guidance =
+            getCareGuidanceForDisease(
+                disease
+            );
+
+        console.log(
+            "[EyeAI] guidance found:",
+            !!guidance
+        );
+
+        if (!guidance) {
+
+            console.warn(
+                "[EyeAI] No care guidance configured for:",
+                disease
+            );
+
+            renderCareContent({
+
+                meaning:
+                    "The AI model produced a screening classification. This result should not be treated as a confirmed diagnosis.",
+
+                examination: [
+                    "Arrange a comprehensive eye examination.",
+                    "Discuss this AI screening result with a qualified eye-care professional."
+                ],
+
+                tests: [
+                    "Additional testing should be selected by an eye-care professional based on the examination and symptoms."
+                ],
+
+                habits: [
+                    "Monitor for new or worsening vision changes.",
+                    "Do not start, stop, or change eye medication without professional advice."
+                ],
+
+                followup:
+                    "Arrange professional eye-care assessment to interpret this AI screening result.",
+
+                urgent: [
+                    "Sudden loss of vision.",
+                    "Severe or sudden eye pain.",
+                    "Sudden major change in vision."
+                ],
+
+                urgency:
+                    "MODERATE"
+            });
+
+            return;
+        }
+
+        renderCareContent(
+            guidance
+        );
+    }
+
+
+    // ========================================================
+    // RENDER CARE CONTENT
+    // ========================================================
+
+    function renderCareContent(
+        guidance
+    ) {
+
+        const careMeaning =
+            document.getElementById(
+                "care-meaning"
+            );
+
+        const careExamination =
+            document.getElementById(
+                "care-examination"
+            );
+
+        const careTests =
+            document.getElementById(
+                "care-tests"
+            );
+
+        const careHabits =
+            document.getElementById(
+                "care-habits"
+            );
+
+        const careFollowup =
+            document.getElementById(
+                "care-followup"
+            );
+
+        const careWarningSigns =
+            document.getElementById(
+                "care-warning-signs"
+            );
+
+        const careSummary =
+            document.getElementById(
+                "care-summary"
+            );
+
+        const careUrgencyBadge =
+            document.getElementById(
+                "care-urgency-badge"
+            );
+
+
+        console.log(
+            "[EyeAI] care elements:",
+            {
+                meaning: !!careMeaning,
+                examination: !!careExamination,
+                tests: !!careTests,
+                habits: !!careHabits,
+                followup: !!careFollowup,
+                warning: !!careWarningSigns,
+                summary: !!careSummary,
+                urgency: !!careUrgencyBadge
+            }
+        );
+
+
+        if (!guidance) {
+            return;
+        }
+
+
+        // ----------------------------------------------------
+        // WHAT THIS RESULT MEANS
+        // ----------------------------------------------------
+
+        if (careMeaning) {
+
+            careMeaning.textContent =
+                guidance.meaning ||
+                "—";
+        }
+
+
+        // ----------------------------------------------------
+        // RECOMMENDED EXAMINATION
+        // ----------------------------------------------------
+
+        renderCareList(
+            careExamination,
+            guidance.examination
+        );
+
+
+        // ----------------------------------------------------
+        // SUGGESTED CHECKS / TESTS
+        // ----------------------------------------------------
+
+        renderCareList(
+            careTests,
+            guidance.tests
+        );
+
+
+        // ----------------------------------------------------
+        // SUPPORTIVE HABITS
+        // ----------------------------------------------------
+
+        renderCareList(
+            careHabits,
+            guidance.habits
+        );
+
+
+        // ----------------------------------------------------
+        // FOLLOW-UP
+        // ----------------------------------------------------
+
+        if (careFollowup) {
+
+            careFollowup.textContent =
+                guidance.followup ||
+                "—";
+        }
+
+
+        // ----------------------------------------------------
+        // WHEN TO SEEK URGENT CARE
+        // ----------------------------------------------------
+
+        renderCareList(
+            careWarningSigns,
+            guidance.urgent
+        );
+
+
+        // ----------------------------------------------------
+        // SUMMARY / NOTE
+        // ----------------------------------------------------
+
+        if (careSummary) {
+
+            careSummary.textContent =
+                "Supportive guidance based on the AI screening result. This does not replace examination by a qualified eye-care professional.";
+        }
+
+
+        // ----------------------------------------------------
+        // URGENCY BADGE
+        // ----------------------------------------------------
+
+        if (careUrgencyBadge) {
+
+            const urgency =
+                String(
+                    guidance.urgency ||
+                    guidance.level ||
+                    "MODERATE"
+                ).toUpperCase();
+
+            careUrgencyBadge.textContent =
+                urgency;
+
+            careUrgencyBadge.classList.remove(
+                "low",
+                "moderate",
+                "high"
+            );
+
+            if (
+                urgency === "LOW"
+            ) {
+
+                careUrgencyBadge.classList.add(
+                    "low"
+                );
+
+            } else if (
+                urgency === "HIGH"
+            ) {
+
+                careUrgencyBadge.classList.add(
+                    "high"
+                );
+
+            } else {
+
+                careUrgencyBadge.classList.add(
+                    "moderate"
+                );
+            }
+        }
+
+
+        console.log(
+            "[EyeAI] Care guidance rendered successfully."
+        );
+    }
+
+
+    // ========================================================
+    // EXPOSE FUNCTIONS FOR DEBUGGING
+    // ========================================================
+
+    window.__EYEAI_CARE_FIX_VERSION = "2026-08-20-care-fix-1";
+
+    window.getDiseaseInfo =
+        function (disease) {
+
+            const normalized =
+                normalizeDiseaseName(
+                    disease
+                );
+
+            return getCareGuidanceForDisease(
+                disease
+            );
+        };
+
+
+    window.renderCareList =
+        renderCareList;
+
+
+    window.showCareGuidance =
+        showCareGuidance;
+
+
+    window.normalizeDiseaseName =
+        normalizeDiseaseName;
+
+
+    // ========================================================
+    // DEBUG
+    // ========================================================
+
+    console.log(
+        "=================================================="
+    );
+
+    console.log(
+        "EYEAI CARE GUIDANCE READY"
+    );
+
+    console.log(
+        "Supported guidance:"
+    );
+
+    console.log(
+        Object.keys(
+            careGuidance
+        )
+    );
+
+    console.log(
+        "=================================================="
+    );
+
+
+        
 // ========================================================
 
 // HISTORY
@@ -2665,6 +3816,11 @@ async function loadHistoryDetail(
             "Unknown"
         );
 
+        showCareGuidance(
+            item.predicted_class ||
+            "Unknown"
+        );
+
 
         showToast(
             "Previous prediction loaded."
@@ -2697,6 +3853,67 @@ async function loadHistoryDetail(
 
     }
 
+}
+
+
+// ========================================================
+// PARSE EYEAI INDIA DATE
+// ========================================================
+
+function parseEyeAIIndiaDate(value) {
+
+    if (!value) {
+        return null;
+    }
+
+    // Expected backend format:
+    // DD-MM-YYYY HH:MM:SS AM/PM
+
+    const match = String(value).match(
+        /^(\d{2})-(\d{2})-(\d{4})\s+(\d{2}):(\d{2}):(\d{2})\s+(AM|PM)$/i
+    );
+
+    if (!match) {
+        const fallback = new Date(value);
+
+        return Number.isNaN(
+            fallback.getTime()
+        )
+            ? null
+            : fallback;
+    }
+
+    const day = Number(match[1]);
+    const month = Number(match[2]) - 1;
+    const year = Number(match[3]);
+
+    let hour = Number(match[4]);
+    const minute = Number(match[5]);
+    const second = Number(match[6]);
+    const period = match[7].toUpperCase();
+
+    if (period === "PM" && hour !== 12) {
+        hour += 12;
+    }
+
+    if (period === "AM" && hour === 12) {
+        hour = 0;
+    }
+
+    // Create the exact India time and convert it to
+    // the browser's equivalent Date object.
+    const utcMillis = Date.UTC(
+        year,
+        month,
+        day,
+        hour,
+        minute,
+        second
+    ) - (5 * 60 + 30) * 60 * 1000;
+
+    return new Date(
+        utcMillis
+    );
 }
 
 
@@ -2763,7 +3980,7 @@ function updateStatistics(
         function (item) {
 
             const date =
-                new Date(
+                parseEyeAIIndiaDate(
                     item.created_at
                 );
 

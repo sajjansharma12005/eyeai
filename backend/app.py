@@ -1,4 +1,6 @@
 from pathlib import Path
+from datetime import timezone
+from zoneinfo import ZoneInfo
 import sys
 import uuid
 import tempfile
@@ -230,6 +232,23 @@ CARE_GUIDANCE = {
     "DRUSEN": {"name":"Drusen","risk":"Needs attention","summary":"The OCT model identified drusen within its trained classes.","about":"Drusen are deposits beneath the retina and can be associated with age-related macular changes.","recommendation":"Arrange an eye examination so a clinician can determine the significance of the finding and whether monitoring is needed.","examination":["Comprehensive eye examination","Macular / retinal evaluation"],"tests":["OCT when recommended","Additional retinal imaging when clinically appropriate"],"habits":["Do not smoke","Maintain healthy blood pressure and cholesterol","Eat a balanced diet rich in vegetables and other nutrient-dense foods","Stay physically active"],"followup":"Follow the monitoring schedule recommended by your eye-care professional. Supplements should not be started solely from this AI result.","warnings":COMMON_WARNING_SIGNS},
     "Macular Scar": {"name":"Macular Scar","risk":"Needs attention","summary":"The fundus model identified a pattern associated with a macular scar.","about":"A scar affecting the macular region can influence central vision. The cause and clinical significance vary between people.","recommendation":"Arrange professional retinal evaluation to determine the cause, location and effect on vision.","examination":["Ophthalmologist / retina evaluation","Macular and retinal examination"],"tests":["OCT when recommended","Additional retinal imaging when clinically appropriate"],"habits":["Follow the eye-care professional's monitoring plan","Protect overall eye health","Do not attempt home treatment for a retinal scar"],"followup":"Follow-up depends on the underlying cause, scar location and effect on vision.","warnings":COMMON_WARNING_SIGNS}
 }
+
+
+# ============================================================
+# INDIA TIME CONVERSION
+# ============================================================
+
+def convert_to_india_time(dt):
+    if not dt:
+        return None
+
+    # Prediction.created_at is stored as UTC without timezone info.
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+
+    return dt.astimezone(
+        ZoneInfo("Asia/Kolkata")
+    )
 
 
 def allowed_file(
@@ -1521,15 +1540,14 @@ def get_history(
 
 
             if created_at:
-
-                created_at_string = (
-                    created_at.strftime(
-                        "%Y-%m-%d %H:%M:%S"
-                    )
+                created_at_india = convert_to_india_time(
+                    created_at
                 )
 
+                created_at_string = created_at_india.strftime(
+                    "%d-%m-%Y %I:%M:%S %p"
+                )
             else:
-
                 created_at_string = "-"
 
 
@@ -1657,13 +1675,14 @@ def get_prediction_detail(prediction_id):
             }), 404
 
         if prediction.created_at:
-
-            created_at = prediction.created_at.strftime(
-                "%Y-%m-%d %H:%M:%S"
+            created_at_india = convert_to_india_time(
+                prediction.created_at
             )
 
+            created_at = created_at_india.strftime(
+                "%d-%m-%Y %I:%M:%S %p"
+            )
         else:
-
             created_at = "-"
 
         detail_user = User.query.get(
